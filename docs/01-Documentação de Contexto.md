@@ -1,6 +1,11 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A cidade de Belo Horizonte, capital do estado de Minas Gerais, caracteriza-se por intensa dinâmica urbana, elevada densidade populacional e ampla rede de infraestrutura composta por vias públicas, sistemas de drenagem, iluminação, sinalização de trânsito, praças e demais equipamentos urbanos. Em grandes centros urbanos, a manutenção adequada desses elementos é fundamental para garantir mobilidade, segurança, acessibilidade e qualidade de vida à população. 
+Entretanto, a identificação e o encaminhamento de problemas relacionados à infraestrutura urbana nem sempre ocorrem de forma eficiente. A ausência de canais acessíveis, integrados e transparentes pode dificultar a comunicação entre cidadãos e administração pública, resultando na demora na resolução de demandas e na percepção de ineficiência dos serviços públicos. 
+
+Entretanto, a identificação e o encaminhamento de problemas relacionados à infraestrutura urbana nem sempre ocorrem de forma eficiente. A ausência de canais acessíveis, integrados e transparentes pode dificultar a comunicação entre cidadãos e administração pública, resultando na demora na resolução de demandas e na percepção de ineficiência dos serviços públicos. 
+
+Diante desse cenário, o presente projeto propõe o desenvolvimento de uma ferramenta destinada ao registro e acompanhamento de problemas relacionados à infraestrutura urbana em Belo Horizonte. A proposta fundamenta-se na utilização de recursos de mapas, registro por imagem e acompanhamento de status das solicitações, visando contribuir para a modernização da gestão pública e para o fortalecimento da participação cidadã. 
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
