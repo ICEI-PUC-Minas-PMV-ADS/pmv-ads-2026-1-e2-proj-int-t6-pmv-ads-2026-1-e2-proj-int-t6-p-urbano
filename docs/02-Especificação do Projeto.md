@@ -1,43 +1,31 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+# Especificações do Projeto
 
-Utilize também como referência o exemplo abaixo:
+## Personas
+As personas a seguir representam diferentes perfis de cidadãos e agentes públicos que enfrentam problemas relacionados à infraestrutura urbana em Belo Horizonte. Elas ajudam a compreender necessidades, dificuldades e expectativas em relação a um sistema colaborativo de denúncias e alertas urbanos.
+> **Persona 1 - Carlos Henrique Souza**
+<img width="762" height="624" alt="image" src="https://github.com/user-attachments/assets/89cf6af1-689f-4ff5-85ae-d9549909a5b1" />
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
+> **Persona 2 - Maria Aparecida**
+<img width="768" height="567" alt="image" src="https://github.com/user-attachments/assets/96f7b36e-1f7f-4d4a-b823-89bd69a7175b" />
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+> **Persona 3 - Rafael Oliveira**
+> <img width="766" height="598" alt="image" src="https://github.com/user-attachments/assets/7bc5c61a-dcc9-4c17-a515-960b82cf4b0c" />
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+> **Persona 4 - Eduardo Martins**
+> <img width="767" height="589" alt="image" src="https://github.com/user-attachments/assets/bf906ffb-c7d4-45d2-9a5b-7c94b95b5058" />
 
-## Histórias de Usuários
-
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+> **Persona 5 - Julaina Mendes**
+> <img width="763" height="556" alt="image" src="https://github.com/user-attachments/assets/db17877a-743e-46a7-a3fe-a46cea8a7086" 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Carlos  | Registrar problemas nas ruas com foto           | Avisar outros motoristas da região            |
-|Carlos       | Visualizar denúncias publicadas por outros usuários               | Evitar vias com dificuldades|
-|Carlos       |Confirmar problemas já relatados              | Ajudar a dar mais visibilidade à denúncia |
-|Carlos       | Comentar em publicações sobre problemas urbanos           | Compartilhar informações adicionais |
-|Carlos       | Consultar problemas mais relatados na cidade               | Planejar melhor minhas rotas |
+|Carlos  |Registrar, visualizar, confirmar e comentar denúncias sobre problemas nas ruas, além de consultar os problemas mais relatados na cidade. |Avisar outros motoristas, compartilhar informações, dar visibilidade às denúncias, evitar vias com dificuldades e planejar melhor minhas rotas.
+           
+
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
