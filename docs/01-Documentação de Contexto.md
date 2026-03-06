@@ -8,16 +8,17 @@ Entretanto, a identificação e o encaminhamento de problemas relacionados à in
 Diante desse cenário, o presente projeto propõe o desenvolvimento de uma ferramenta destinada ao registro e acompanhamento de problemas relacionados à infraestrutura urbana em Belo Horizonte. A proposta fundamenta-se na utilização de recursos de mapas, registro por imagem e acompanhamento de status das solicitações, visando contribuir para a modernização da gestão pública e para o fortalecimento da participação cidadã. 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+A manutenção da infraestrutura urbana é um desafio constante para a administração pública municipal, especialmente em cidades de grande porte como Belo Horizonte. Problemas como buracos nas vias, falhas na iluminação pública, ausência ou deterioração de sinalização, acúmulo de resíduos e defeitos em equipamentos urbanos são recorrentes e impactam diretamente a segurança e o bem-estar da população. 
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Apesar da existência de canais institucionais de atendimento ao cidadão, observa-se que: 
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+*Nem todos os cidadãos têm conhecimento desses canais; 
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+*O processo de registro pode ser burocrático ou pouco intuitivo; 
+
+*Há dificuldade no acompanhamento do andamento das solicitações; 
+
+*Os dados gerados nem sempre são organizados de forma a apoiar a tomada de decisão estratégica. 
 
 ## Objetivos
 
