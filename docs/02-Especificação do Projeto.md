@@ -36,38 +36,22 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Carlos  |Registrar, visualizar, confirmar e comentar denúncias sobre problemas nas ruas, além de consultar os problemas mais relatados na cidade. |Avisar outros motoristas, compartilhar informações, dar visibilidade às denúncias, evitar vias com dificuldades e planejar melhor minhas rotas.
            
 
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Dona Maria |Utilizar um aplicativo simples, com letras grandes e linguagem fácil, para registrar, publicar e visualizar problemas do bairro. |Conseguir enxergar melhor as informações, relatar situações com facilidade, avisar moradores da região, evitar locais perigosos e compreender melhor o funcionamento do aplicativo.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Dona Maria  | Utilizar um aplicativo com letras grandes       |Conseguir enxergar melhor as informações         |
-|Dona Maria        | Registrar problemas do bairro de forma simples               | Conseguir relatar situações sem dificuldade |
-|Dona Maria        |Publicar alertas sobre locais perigosos              | Avisar outros moradores |
-|Dona Maria        | Visualizar problemas relatados na região          | Evitar lugares que possam causar acidentes |
-|Dona Maria       | Navegar em um sistema com linguagem fácil            |Entender o funcionamento do aplicativo |
+|Rafael |Publicar denúncias, interagir com publicações de outros usuários, reforçar denúncias da comunidade, filtrar por categoria e explorar denúncias recentes.|Colaborar com melhorias na cidade, compartilhar informações relevantes, aumentar a visibilidade dos problemas, encontrar situações específicas e acompanhar a situação urbana.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Rafael | Publicar denúncias de problemas urbanos       |Colaborar com melhorias na cidade     |
-|Rafael      | Interagir nas publicações de outros usuários           | Compartilhar informações relevantes |
-|Rafael        |Reforçar denúncias feitas pela comunidade              | Aumentar a visibilidade dos problemas|
-|Rafael         | Filtrar denúncias por categoria          | Encontrar problemas específicos |
-|Rafael        |Explorar denúncias recentes da cidade        |Acompanhar a situação urbana |
+|Juliana |Relatar problemas do bairro, consultar publicações de moradores, participar das discussões, apoiar reclamações e identificar problemas mais comentados.|Informar a comunidade, verificar se outras pessoas têm o mesmo problema, trocar informações com moradores, fortalecer denúncias do bairro e entender os principais problemas da região.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Juliana | Relatar problemas encontrados no bairro   |Informar a comunidade    |
-|Juliana      | Consultar publicações feitas por moradores    | Ver se outras pessoas têm o mesmo problema |
-|Juliana        |Participar das discussões nas denúncias             | Trocar informações com a comunidade|
-|Juliana        |Apoiar reclamações de outros usuários          | Fortalecer as denúncias do bairro |
-|Juliana        |Identificar problemas mais comentados     |Entender o que mais afeta a região |
+|Eduardo |Visualizar, organizar e analisar as denúncias da população, identificando os problemas mais recorrentes, os mais comentados e os que têm maior participação.|Entender melhor as demandas da cidade, facilitar a análise das ocorrências e definir prioridades para planejar ações de melhoria urbana.
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Eduardo| Visualizar denúncias registadas pela população   |Entender as demandas da cidade    |
-|Eduardo      | Organizar denúncias por tipo de problema    | Facilitar a análise das ocorrências |
-|Eduardo        |Identificar denúncias com maior participação             | Definir prioridades de atendimento |
-|Eduardo        |Avaliar comentários feitos pelos cidadãos          | Compreender melhor os problemas relatados |
-|Eduardo        |Mapear problemas recorrentes    |Planejar ações de melhoria urbana |
 
 ## Requisitos
 
