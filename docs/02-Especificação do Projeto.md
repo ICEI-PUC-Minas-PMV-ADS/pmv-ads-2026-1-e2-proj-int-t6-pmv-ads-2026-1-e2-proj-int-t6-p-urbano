@@ -1,10 +1,6 @@
 # Especificações do Projeto
 
 ## Personas
-
-# Especificações do Projeto
-
-## Personas
 As personas a seguir representam diferentes perfis de cidadãos e agentes públicos que enfrentam problemas relacionados à infraestrutura urbana em Belo Horizonte. Elas ajudam a compreender necessidades, dificuldades e expectativas em relação a um sistema colaborativo de denúncias e alertas urbanos.
 > **Persona 1 - Carlos Henrique Souza**
 <img width="762" height="624" alt="image" src="https://github.com/user-attachments/assets/89cf6af1-689f-4ff5-85ae-d9549909a5b1" />
@@ -13,13 +9,13 @@ As personas a seguir representam diferentes perfis de cidadãos e agentes públi
 <img width="768" height="567" alt="image" src="https://github.com/user-attachments/assets/96f7b36e-1f7f-4d4a-b823-89bd69a7175b" />
 
 > **Persona 3 - Rafael Oliveira**
-> <img width="766" height="598" alt="image" src="https://github.com/user-attachments/assets/7bc5c61a-dcc9-4c17-a515-960b82cf4b0c" />
+ <img width="766" height="598" alt="image" src="https://github.com/user-attachments/assets/7bc5c61a-dcc9-4c17-a515-960b82cf4b0c" />
 
 > **Persona 4 - Eduardo Martins**
 > <img width="767" height="589" alt="image" src="https://github.com/user-attachments/assets/bf906ffb-c7d4-45d2-9a5b-7c94b95b5058" />
 
 > **Persona 5 - Julaina Mendes**
-> <img width="763" height="556" alt="image" src="https://github.com/user-attachments/assets/db17877a-743e-46a7-a3fe-a46cea8a7086" 
+> <img width="763" height="556" alt="image" src="https://github.com/user-attachments/assets/db17877a-743e-46a7-a3fe-a46cea8a7086" />
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
