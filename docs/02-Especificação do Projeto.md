@@ -47,7 +47,29 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Dona Maria        | Visualizar problemas relatados na região          | Evitar lugares que possam causar acidentes |
 |Dona Maria       | Navegar em um sistema com linguagem fácil            |Entender o funcionamento do aplicativo |
 
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Rafael | Publicar denúncias de problemas urbanos       |Colaborar com melhorias na cidade     |
+|Rafael      | Interagir nas publicações de outros usuários           | Compartilhar informações relevantes |
+|Rafael        |Reforçar denúncias feitas pela comunidade              | Aumentar a visibilidade dos problemas |
+|Rafael         | Filtrar denúncias por categoria          | Encontrar problemas específicos |
+|Rafael        |Explorar denúncias recentes da cidade        |Acompanhar a situação urbana |
 
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Juliana | Relatar problemas encontrados no bairro   |Informar a comunidade    |
+|Juliana      | Consultar publicações feitas por moradores    | Ver se outras pessoas têm o mesmo problema |
+|Juliana        |Participar das discussões nas denúncias             | Trocar informações com a comunidade |
+|Juliana        |Apoiar reclamações de outros usuários          | Fortalecer as denúncias do bairro |
+|Juliana        |Identificar problemas mais comentados     |Entender o que mais afeta a região |
+
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Eduardo| Visualizar denúncias registadas pela população   |Entender as demandas da cidade    |
+|Eduardo      | Organizar denúncias por tipo de problema    | Facilitar a análise das ocorrências |
+|Eduardo        |Identificar denúncias com maior participação             | Definir prioridades de atendimento |
+|Eduardo        |Avaliar comentários feitos pelos cidadãos          | Compreender melhor os problemas relatados |
+|Eduardo        |Mapear problemas recorrentes    |Planejar ações de melhoria urbana |
 
 ## Requisitos
 
