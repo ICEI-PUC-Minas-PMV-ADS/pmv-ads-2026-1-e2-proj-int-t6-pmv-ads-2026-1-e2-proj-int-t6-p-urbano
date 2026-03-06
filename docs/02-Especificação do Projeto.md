@@ -97,5 +97,5 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 O diagrama de caso de uso abaixo apresenta as principais interações entre os usuários e o sistema de denúncias urbanas. Ele ilustra como cidadãos e agentes públicos podem registrar, visualizar e acompanhar ocorrências relacionadas à infraestrutura da cidade. 
 
-<img width="721" height="763" alt="imagem (1)" src="https://github.com/user-attachments/assets/cb252f94-acf9-497b-be79-29e80a8f5298" />
+<img width="721" height="763" alt="Image" src="https://github.com/user-attachments/assets/92c1e28f-2e7c-44b3-977c-55dccebde384" />
 
