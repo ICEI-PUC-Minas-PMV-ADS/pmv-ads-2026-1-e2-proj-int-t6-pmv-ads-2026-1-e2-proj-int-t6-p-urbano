@@ -8,17 +8,18 @@ Entretanto, a identificação e o encaminhamento de problemas relacionados à in
 Diante desse cenário, o presente projeto propõe o desenvolvimento de uma ferramenta destinada ao registro e acompanhamento de problemas relacionados à infraestrutura urbana em Belo Horizonte. A proposta fundamenta-se na utilização de recursos de mapas, registro por imagem e acompanhamento de status das solicitações, visando contribuir para a modernização da gestão pública e para o fortalecimento da participação cidadã. 
 
 ## Problema
+
 A manutenção da infraestrutura urbana é um desafio constante para a administração pública municipal, especialmente em cidades de grande porte como Belo Horizonte. Problemas como buracos nas vias, falhas na iluminação pública, ausência ou deterioração de sinalização, acúmulo de resíduos e defeitos em equipamentos urbanos são recorrentes e impactam diretamente a segurança e o bem-estar da população. 
 
 Apesar da existência de canais institucionais de atendimento ao cidadão, observa-se que: 
 
-*Nem todos os cidadãos têm conhecimento desses canais; 
+- Nem todos os cidadãos têm conhecimento desses canais; 
 
-*O processo de registro pode ser burocrático ou pouco intuitivo; 
+- O processo de registro pode ser burocrático ou pouco intuitivo; 
 
-*Há dificuldade no acompanhamento do andamento das solicitações; 
+- Há dificuldade no acompanhamento do andamento das solicitações; 
 
-*Os dados gerados nem sempre são organizados de forma a apoiar a tomada de decisão estratégica. 
+- Os dados gerados nem sempre são organizados de forma a apoiar a tomada de decisão estratégica. 
 
 ## Objetivos
 
@@ -26,11 +27,11 @@ Desenvolver um software, com a finalidade de registrar, organizar e acompanhar p
  
 Objetivos Específicos: 
 
-*Identificar e classificar os principais tipos de ocorrências relacionadas à infraestrutura urbana no município; 
+- Identificar e classificar os principais tipos de ocorrências relacionadas à infraestrutura urbana no município; 
 
-*Estruturar um sistema que permita o registro georreferenciado das ocorrências; 
+- Estruturar um sistema que permita o registro georreferenciado das ocorrências; 
 
-*Implementar funcionalidade de acompanhamento do status das solicitações; 
+- Implementar funcionalidade de acompanhamento do status das solicitações; 
 
 ## Justificativa
 
