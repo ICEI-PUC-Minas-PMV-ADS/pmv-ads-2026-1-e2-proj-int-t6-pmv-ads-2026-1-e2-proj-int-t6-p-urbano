@@ -41,10 +41,10 @@ Nesse contexto, os objetivos específicos do projeto justificam-se pela necessid
 O projeto também se relaciona aos Objetivos de Desenvolvimento Sustentável. Contribui para o ODS 11 – Cidades e Comunidades Sustentáveis, especialmente para a meta 11.3, ao favorecer uma gestão urbana mais participativa por meio do envolvimento da população no registro e acompanhamento de ocorrências, e para a meta 11.6, ao apoiar a identificação de problemas que afetam a infraestrutura urbana e a gestão de resíduos, como o descarte irregular de lixo (ONU, 2025). Além disso, atende ao ODS 16 – Paz, Justiça e Instituições Eficazes, nas metas 16.6 e 16.7, ao incentivar maior transparência no acompanhamento das demandas e ampliar a participação cidadã na comunicação com o poder público (ONU, 2025). Dessa forma, a aplicação apresenta relevância social e tecnológica, contribuindo para uma gestão urbana mais organizada, eficiente e alinhada às metas de desenvolvimento sustentável.
 
 Referências:
-IBGE. Censo 2022: 87% da população brasileira vive em áreas urbanas. Agência de Notícias IBGE, 14 nov. 2024. Disponível em: Agência IBGE. Acesso em: 6 mar. 2026.
-IBGE. Belo Horizonte (MG) | Cidades e Estados. Rio de Janeiro: IBGE, 2024. Disponível em: portal Cidades e Estados IBGE. Acesso em: 6 mar. 2026.
-ONU. Objetivo 11: Cidades e comunidades sustentáveis. Nações Unidas Brasil, 2025. Disponível em: portal Brasil ONU. Acesso em: 6 mar. 2026.
-ONU. Objetivo 16: Paz, Justiça e Instituições Eficazes. Nações Unidas Brasil, 2025. Disponível em: portal Brasil ONU. Acesso em: 6 mar. 2026.
+- IBGE. Censo 2022: 87% da população brasileira vive em áreas urbanas. Agência de Notícias IBGE, 14 nov. 2024. Disponível em: Agência IBGE. Acesso em: 6 mar. 2026.
+- IBGE. Belo Horizonte (MG) | Cidades e Estados. Rio de Janeiro: IBGE, 2024. Disponível em: portal Cidades e Estados IBGE. Acesso em: 6 mar. 2026.
+- ONU. Objetivo 11: Cidades e comunidades sustentáveis. Nações Unidas Brasil, 2025. Disponível em: portal Brasil ONU. Acesso em: 6 mar. 2026.
+- ONU. Objetivo 16: Paz, Justiça e Instituições Eficazes. Nações Unidas Brasil, 2025. Disponível em: portal Brasil ONU. Acesso em: 6 mar. 2026.
 
 ## Público-Alvo
 
