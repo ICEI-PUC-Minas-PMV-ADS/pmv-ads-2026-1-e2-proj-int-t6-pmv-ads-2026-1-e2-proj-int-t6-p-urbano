@@ -109,11 +109,13 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
+|ID| Restrições                                           |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
+|01| A aplicação deverá possuir dois CRUDs.  |
+|02| A aplicação deverá conter duas APIs      |
+|03| O backend deverá ser desenvolvido em C#.       |
+|04| Deverá ser utilizado o Entity Framework para acesso e manipulação do banco de dados.        |
+|05|O banco de dados utilizado deverá ser MySQL ou Microsoft SQL Server.        |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
