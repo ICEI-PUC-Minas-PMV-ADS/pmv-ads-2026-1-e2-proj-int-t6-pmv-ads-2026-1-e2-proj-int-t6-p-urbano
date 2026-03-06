@@ -21,12 +21,15 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Desenvolver um software, com a finalidade de registrar, organizar e acompanhar problemas relacionados à infraestrutura urbana em Belo Horizonte, promovendo maior eficiência na comunicação entre cidadãos e poder público. 
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Objetivos Específicos: 
+
+*Identificar e classificar os principais tipos de ocorrências relacionadas à infraestrutura urbana no município; 
+
+*Estruturar um sistema que permita o registro georreferenciado das ocorrências; 
+
+*Implementar funcionalidade de acompanhamento do status das solicitações; 
 
 ## Justificativa
 
