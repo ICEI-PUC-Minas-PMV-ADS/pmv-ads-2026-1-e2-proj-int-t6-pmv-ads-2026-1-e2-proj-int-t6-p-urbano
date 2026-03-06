@@ -33,8 +33,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Carlos  | Registrar problemas nas ruas com foto           | Avisar outros motoristas da região            |
+|Carlos       | Visualizar denúncias publicadas por outros usuários               | Evitar vias com dificuldades |
+|Carlos       |Confirmar problemas já relatados              | Ajudar a dar mais visibilidade à denúncia |
+|Carlos       | Comentar em publicações sobre problemas urbanos           | Compartilhar informações adicionais |
+|Carlos       | Consultar problemas mais relatados na cidade               | Planejar melhor minhas rotas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
