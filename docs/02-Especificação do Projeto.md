@@ -112,7 +112,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrições                                           |
 |--|-------------------------------------------------------|
 |01| A aplicação deverá possuir dois CRUDs.  |
-|02| A aplicação deverá conter duas APIs      |
+|02| A aplicação deverá conter duas APIs.      |
 |03| O backend deverá ser desenvolvido em C#.       |
 |04| Deverá ser utilizado o Entity Framework para acesso e manipulação do banco de dados.        |
 |05|O banco de dados utilizado deverá ser MySQL ou Microsoft SQL Server.        |
