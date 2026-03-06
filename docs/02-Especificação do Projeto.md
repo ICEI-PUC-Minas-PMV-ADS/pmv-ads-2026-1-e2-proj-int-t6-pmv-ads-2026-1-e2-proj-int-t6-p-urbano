@@ -1,35 +1,26 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
+As personas a seguir representam diferentes perfis de cidadãos e agentes públicos que enfrentam problemas relacionados à infraestrutura urbana em Belo Horizonte. Elas ajudam a compreender necessidades, dificuldades e expectativas em relação a um sistema colaborativo de denúncias e alertas urbanos.
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+> **Persona 1 - Carlos Henrique Souza**
+<img width="762" height="624" alt="image" src="https://github.com/user-attachments/assets/89cf6af1-689f-4ff5-85ae-d9549909a5b1" />
 
-Utilize também como referência o exemplo abaixo:
+> **Persona 2 - Maria Aparecida**
+<img width="768" height="567" alt="image" src="https://github.com/user-attachments/assets/96f7b36e-1f7f-4d4a-b823-89bd69a7175b" />
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+> **Persona 3 - Rafael Oliveira**
+ <img width="766" height="598" alt="image" src="https://github.com/user-attachments/assets/7bc5c61a-dcc9-4c17-a515-960b82cf4b0c" />
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
-## Histórias de Usuários
+> **Persona 4 - Eduardo Martins**
+> <img width="767" height="589" alt="image" src="https://github.com/user-attachments/assets/bf906ffb-c7d4-45d2-9a5b-7c94b95b5058" />
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+
+> **Persona 5 - Julaina Mendes**
+  <img width="763" height="556" alt="image" src="https://github.com/user-attachments/assets/db17877a-743e-46a7-a3fe-a46cea8a7086" />
+
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
@@ -101,19 +92,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama de caso de uso abaixo apresenta as principais interações entre os usuários e o sistema de denúncias urbanas. Ele ilustra como cidadãos e agentes públicos podem registrar, visualizar e acompanhar ocorrências relacionadas à infraestrutura da cidade. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+<img width="721" height="763" alt="imagem (1)" src="https://github.com/user-attachments/assets/cb252f94-acf9-497b-be79-29e80a8f5298" />
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)

@@ -20,7 +20,7 @@ O grupo deve elaborar um conjunto de slides que registre, de forma organizada, t
 
 ## Vídeo de apresentação - Etapa 01
 
-Inclua aqui o vídeo de APRESENTAÇÃO INICIAL do projeto produzido na Etapa 01.
+https://github.com/user-attachments/assets/ba4be4f0-b898-410c-a8aa-f4020f2bcef1
 
 ## Vídeo de apresentação - Etapa 05
 
