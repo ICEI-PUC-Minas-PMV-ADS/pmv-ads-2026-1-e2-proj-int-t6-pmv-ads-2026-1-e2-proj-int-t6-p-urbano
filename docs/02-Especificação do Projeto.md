@@ -33,11 +33,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Carlos  | Registrar problemas nas ruas com foto           | Avisar outros motoristas da região            |
-|Carlos       | Visualizar denúncias publicadas por outros usuários               | Evitar vias com dificuldades|
-|Carlos       |Confirmar problemas já relatados              | Ajudar a dar mais visibilidade à denúncia |
-|Carlos       | Comentar em publicações sobre problemas urbanos           | Compartilhar informações adicionais |
-|Carlos       | Consultar problemas mais relatados na cidade               | Planejar melhor minhas rotas |
+|Carlos  |Registrar, visualizar, confirmar e comentar denúncias sobre problemas nas ruas, além de consultar os problemas mais relatados na cidade. |Avisar outros motoristas, compartilhar informações, dar visibilidade às denúncias, evitar vias com dificuldades e planejar melhor minhas rotas.
+           
+
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
