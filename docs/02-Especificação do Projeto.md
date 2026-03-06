@@ -34,7 +34,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Carlos  | Registrar problemas nas ruas com foto           | Avisar outros motoristas da região            |
-|Carlos       | Visualizar denúncias publicadas por outros usuários               | Evitar vias com dificuldades |
+|Carlos       | Visualizar denúncias publicadas por outros usuários               | Evitar vias com dificuldades                |
 |Carlos       |Confirmar problemas já relatados              | Ajudar a dar mais visibilidade à denúncia |
 |Carlos       | Comentar em publicações sobre problemas urbanos           | Compartilhar informações adicionais |
 |Carlos       | Consultar problemas mais relatados na cidade               | Planejar melhor minhas rotas |
@@ -51,7 +51,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Rafael | Publicar denúncias de problemas urbanos       |Colaborar com melhorias na cidade     |
 |Rafael      | Interagir nas publicações de outros usuários           | Compartilhar informações relevantes |
-|Rafael        |Reforçar denúncias feitas pela comunidade              | Aumentar a visibilidade dos problemas |
+|Rafael        |Reforçar denúncias feitas pela comunidade              | Aumentar a visibilidade dos problemas                  |
 |Rafael         | Filtrar denúncias por categoria          | Encontrar problemas específicos |
 |Rafael        |Explorar denúncias recentes da cidade        |Acompanhar a situação urbana |
 
@@ -59,7 +59,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Juliana | Relatar problemas encontrados no bairro   |Informar a comunidade    |
 |Juliana      | Consultar publicações feitas por moradores    | Ver se outras pessoas têm o mesmo problema |
-|Juliana        |Participar das discussões nas denúncias             | Trocar informações com a comunidade |
+|Juliana        |Participar das discussões nas denúncias             | Trocar informações com a comunidade                       |
 |Juliana        |Apoiar reclamações de outros usuários          | Fortalecer as denúncias do bairro |
 |Juliana        |Identificar problemas mais comentados     |Entender o que mais afeta a região |
 
@@ -67,7 +67,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Eduardo| Visualizar denúncias registadas pela população   |Entender as demandas da cidade    |
 |Eduardo      | Organizar denúncias por tipo de problema    | Facilitar a análise das ocorrências |
-|Eduardo        |Identificar denúncias com maior participação             | Definir prioridades de atendimento |
+|Eduardo        |Identificar denúncias com maior participação             | Definir prioridades de atendimento                    |
 |Eduardo        |Avaliar comentários feitos pelos cidadãos          | Compreender melhor os problemas relatados |
 |Eduardo        |Mapear problemas recorrentes    |Planejar ações de melhoria urbana |
 
