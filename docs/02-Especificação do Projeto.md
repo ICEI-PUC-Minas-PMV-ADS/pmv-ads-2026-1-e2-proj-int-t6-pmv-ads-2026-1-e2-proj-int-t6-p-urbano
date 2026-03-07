@@ -1,31 +1,29 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+As personas a seguir representam diferentes perfis de cidadãos e agentes públicos que enfrentam problemas relacionados à infraestrutura urbana em Belo Horizonte. Elas ajudam a compreender necessidades, dificuldades e expectativas em relação a um sistema colaborativo de denúncias e alertas urbanos.
 
-Utilize também como referência o exemplo abaixo:
+> **Persona 1 - Carlos Henrique Souza**
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
+<img width="762" height="624" alt="Captura de tela 2026-03-06 201428" src="https://github.com/user-attachments/assets/d6653195-0751-4338-ad4b-f64d563cb94b" />
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+> **Persona 2 - Maria Aparecida**
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+<img width="768" height="567" alt="Captura de tela 2026-03-06 201526" src="https://github.com/user-attachments/assets/89356522-efc1-45e7-b2ec-cc11216a1096" />
+
+> **Persona 3 - Rafael Oliveira**
+
+<img width="766" height="598" alt="Captura de tela 2026-03-06 201610" src="https://github.com/user-attachments/assets/e4cf89d5-5cbf-4245-81cb-d852be75af52" />
+
+> **Persona 4 - Eduardo Martins**
+
+<img width="767" height="589" alt="Captura de tela 2026-03-06 201705" src="https://github.com/user-attachments/assets/0b7e7cfe-fa65-4144-88ff-5a1d342e8770" />
+
+> **Persona 5 - Juliana Mendes**:
+
+<img width="763" height="556" alt="Captura de tela 2026-03-06 201816" src="https://github.com/user-attachments/assets/9af4d39d-0bae-4190-a3a9-744f95418fc4" />
+
 
 ## Histórias de Usuários
 
@@ -85,11 +83,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |04| Deverá ser utilizado o Entity Framework para acesso e manipulação do banco de dados.        |
 |05|O banco de dados utilizado deverá ser MySQL ou Microsoft SQL Server.        |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
