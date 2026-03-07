@@ -47,31 +47,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| O sistema deve permitir o cadastro de usuários informando, no mínimo, nome, e-mail e senha. | ALTA | 
+|RF-002| O sistema deve permitir que usuários cadastrados realizem login utilizando e-mail e senha previamente registrados.     | ALTA |
+|RF-003| O sistema deve permitir que usuários autenticados criem denúncias contendo obrigatoriamente título, descrição e ao menos uma imagem  | ALTA |
+|RF-004| O sistema deve permitir que o usuário informe ou selecione a localização geográfica da denúncia no momento do cadastro  | ALTA |
+|RF-005| O sistema deve exibir as denúncias registradas em um mapa interativo utilizando marcadores geográficos baseados na localização informada. | ALTA |
+|RF-006| O sistema deve permitir filtrar denúncias por categoria, ordenar por data de publicação e realizar busca por bairro ou endereço. | ALTA |
+|RF-007| O sistema deve permitir que o usuário visualize em seu perfil todas as denúncias criadas por ele.  | ALTA |
+|RF-008| O sistema deve permitir a atualização do status de uma denúncia para valores pré-definidos: pendente, em andamento ou resolvido.  | ALTA |
+|RF-009| O sistema deve permitir que o autor da denúncia exclua denúncias previamente publicadas em seu perfil. | MÉDIA |
+|RF-010| O sistema deve exibir as denúncias também em formato de feed cronológico semelhante ao de redes sociais.  | MÉDIA |
+|RF-011| O sistema deve calcular automaticamente a prioridade da denúncia com base na quantidade de interações recebidas (ex: curtidas, comentários ou confirmações)| MÉDIA |
+|RF-012| O sistema deve exibir cada denúncia como um ponto no mapa e permitir que o usuário visualize seus detalhes ao clicar no marcador. | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve funcionar em dispositivos móveis e desktops (responsivo). | ALTA | 
+|RNF-002| As senhas devem ser armazenadas de forma criptografada. |  ALTA | 
+|RNF-002| O sistema deve suportar múltiplos usuários simultâneos. |  ALTA | 
+|RNF-002| O sistema deve ter interface intuitiva e de fácil usabilidade.  |  ALTA | 
+|RNF-002| O sistema deve armazenar imagens com a qualidade otimizada. |  MÉDIA | 
+|RNF-002| O mapa deve carregar as denúncias dinamicamente sem recarregar a página.  |  BAIXA | 
+|RNF-002| O sistema deve garantir precisão na exibição das localizações no mapa.   |  BAIXA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
