@@ -10,6 +10,7 @@ Nome e marca do projeto
 
 [SlidesPortalUrbano.zip](https://github.com/user-attachments/files/25806706/SlidesPortalUrbano.zip)
 
+![Portal Urbano](img/4.jpg)
 
 O grupo deve elaborar um conjunto de slides que registre, de forma organizada, todas as etapas desenvolvidas ao longo do semestre. Esse material deve contemplar a linha do tempo do projeto, desde a concepção inicial até os resultados finais, podendo incluir também _prints_ das telas da aplicação para ilustrar a entrega concluída.
 
