@@ -64,11 +64,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| O sistema deve funcionar em dispositivos móveis e desktops (responsivo). | ALTA | 
 |RNF-002| As senhas devem ser armazenadas de forma criptografada. |  ALTA | 
-|RNF-003| O sistema deve suportar múltiplos usuários simultâneos. |  ALTA | 
-|RNF-004| O sistema deve ter interface intuitiva e de fácil usabilidade.  |  ALTA | 
-|RNF-005| O sistema deve armazenar imagens com a qualidade otimizada. |  MÉDIA | 
-|RNF-006| O mapa deve carregar as denúncias dinamicamente sem recarregar a página.  |  BAIXA | 
-|RNF-007| O sistema deve garantir precisão na exibição das localizações no mapa.   |  BAIXA | 
+|RNF-003| O sistema deve ter interface intuitiva e de fácil usabilidade.  |  ALTA | 
+|RNF-004| O sistema deve armazenar imagens com a qualidade otimizada. |  MÉDIA | 
+|RNF-005| O mapa deve carregar as denúncias dinamicamente sem recarregar a página.  |  BAIXA | 
+|RNF-006| O sistema deve garantir precisão na exibição das localizações no mapa.   |  BAIXA | 
 
 
 ## Restrições
