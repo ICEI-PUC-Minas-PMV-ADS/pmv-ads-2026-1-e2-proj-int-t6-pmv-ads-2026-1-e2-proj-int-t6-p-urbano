@@ -54,7 +54,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-05 | Definir georreferência na criação da denúncia                      | ALTA       |
 | RF-06 | Listar denúncias em mapa interativo                                | ALTA       |
 | RF-07 | Gerenciar status das denúncias com base nas interações dos usuários| ALTA       |
-| RF-08 | Filtrar e buscar denúncias por categoria, data ou localização      | MÉDIA      |
+| RF-08 | Filtrar denúncias por categoria, data ou localização      | MÉDIA      |
 | RF-09 | Exibir denúncias em feed cronológico                               | MÉDIA      |
 | RF-10 | Excluir denúncias indevidas automaticamente                        | MÉDIA      |
 
