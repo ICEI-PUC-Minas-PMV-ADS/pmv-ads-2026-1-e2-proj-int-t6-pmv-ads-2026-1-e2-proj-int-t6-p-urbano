@@ -43,31 +43,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| O sistema deve permitir o cadastro de usuários informando, no mínimo, nome, e-mail e senha. | ALTA | 
-|RF-002| O sistema deve permitir que usuários cadastrados realizem login utilizando e-mail e senha previamente registrados.     | ALTA |
-|RF-003| O sistema deve permitir que usuários autenticados criem denúncias contendo obrigatoriamente título, descrição e ao menos uma imagem  | ALTA |
-|RF-004| O sistema deve permitir que o usuário informe ou selecione a localização geográfica da denúncia no momento do cadastro  | ALTA |
-|RF-005| O sistema deve exibir as denúncias registradas em um mapa interativo utilizando marcadores geográficos baseados na localização informada. | ALTA |
-|RF-006| O sistema deve permitir filtrar denúncias por categoria, ordenar por data de publicação e realizar busca por bairro ou endereço. | ALTA |
-|RF-007| O sistema deve permitir que o usuário visualize em seu perfil todas as denúncias criadas por ele.  | ALTA |
-|RF-008| O sistema deve permitir a atualização do status de uma denúncia para valores pré-definidos: pendente, em andamento ou resolvido.  | ALTA |
-|RF-009| O sistema deve permitir que o autor da denúncia exclua denúncias previamente publicadas em seu perfil. | MÉDIA |
-|RF-010| O sistema deve exibir as denúncias também em formato de feed cronológico semelhante ao de redes sociais.  | MÉDIA |
-|RF-011| O sistema deve calcular automaticamente a prioridade da denúncia com base na quantidade de interações recebidas (ex: curtidas, comentários ou confirmações)| MÉDIA |
-|RF-012| O sistema deve exibir cada denúncia como um ponto no mapa e permitir que o usuário visualize seus detalhes ao clicar no marcador. | MÉDIA |
+## Requisitos Funcionais
 
-### Requisitos não Funcionais
+| ID    | Descrição do Requisito                                             | Prioridade |
+|-------|--------------------------------------------------------------------|------------|
+| RF-01 | Realizar cadastro                                                  | ALTA       |
+| RF-02 | Fazer login                                                        | ALTA       |
+| RF-03 | Recuperar senha por e-mail                                         | ALTA       |
+| RF-04 | Gerenciar denúncias no perfil do usuário                           | ALTA       |
+| RF-05 | Definir georreferência na criação da denúncia                      | ALTA       |
+| RF-06 | Listar denúncias em mapa interativo                                | ALTA       |
+| RF-07 | Gerenciar status das denúncias com base nas interações dos usuários| ALTA       |
+| RF-08 | Filtrar e buscar denúncias por categoria, data ou localização      | MÉDIA      |
+| RF-09 | Exibir denúncias em feed cronológico                               | MÉDIA      |
+| RF-10 | Excluir denúncias indevidas automaticamente                        | MÉDIA      |
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve funcionar em dispositivos móveis e desktops (responsivo). | ALTA | 
-|RNF-002| As senhas devem ser armazenadas de forma criptografada. |  ALTA | 
-|RNF-003| O sistema deve ter interface intuitiva e de fácil usabilidade.  |  ALTA | 
-|RNF-004| O sistema deve armazenar imagens com a qualidade otimizada. |  MÉDIA | 
-|RNF-005| O mapa deve carregar as denúncias dinamicamente sem recarregar a página.  |  BAIXA | 
-|RNF-006| O sistema deve garantir precisão na exibição das localizações no mapa.   |  BAIXA | 
+### Requisitos Não Funcionais
+
+| ID      | Descrição do Requisito                                   | Prioridade |
+|---------|-----------------------------------------------------------|------------|
+| RNF-001 | Garantir funcionamento em dispositivos móveis e desktops  | ALTA       |
+| RNF-002 | Armazenar senhas de forma criptografada                   | ALTA       |
+| RNF-003 | Garantir usabilidade e navegação intuitiva na interface   | ALTA       |
+| RNF-004 | Otimizar qualidade e armazenamento das imagens            | MÉDIA      |
+| RNF-005 | Carregar denúncias no mapa dinamicamente                  | BAIXA      |
+| RNF-006 | Garantir precisão na exibição das localizações no mapa    | BAIXA      |
 
 
 ## Restrições
