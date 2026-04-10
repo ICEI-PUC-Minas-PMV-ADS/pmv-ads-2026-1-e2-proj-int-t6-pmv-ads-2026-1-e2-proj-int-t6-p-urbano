@@ -24,16 +24,20 @@ Dessa forma, o time mantém um fluxo estruturado, transparente e alinhado com os
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+O projeto Portal Urbano utiliza o [Git](https://git-scm.com/) como sistema de controle de versão, com o [Github](https://github.com)
+como plataforma de hospedagem do repositório. Essa abordagem permite rastreabilidade das mudanças, colaboração eficiente entre os desenvolvedores e controle sobre as versões do software.
 
-O projeto segue a seguinte convenção para o nome de branches:
+## Estratégia de Branches
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+O projeto adota uma estratégia de branches baseada em ambientes e ciclo de desenvolvimento:
+
+- main: versão estável do sistema, homologada e pronta para produção
+- develop: branch principal de desenvolvimento contínuo
+- feature/*: utilizada para desenvolvimento de novas funcionalidades
+- bugfix/*: utilizada para correção de erros identificados
+- hotfix/*: utilizada para correções urgentes em produção
+
+Essa estrutura garante organização no fluxo de desenvolvimento e maior controle sobre as entregas.
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
