@@ -3,7 +3,24 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A equipe adota uma abordagem baseada em metodologias ágeis, utilizando práticas do Kanban para organizar e gerenciar as atividades do projeto.
+
+Essa estratégia permite:
+
+Dividir o desenvolvimento em etapas incrementais;
+Acompanhar continuamente o progresso das entregas;
+Promover colaboração constante entre os integrantes da equipe;
+Adaptar rapidamente o planejamento conforme a evolução do projeto.
+Gestão de Atividades
+
+O gerenciamento das atividades é realizado por meio de ferramentas online de acompanhamento de tarefas, que possibilitam:
+
+Registro e priorização de demandas;
+Definição clara de responsáveis;
+Visualização do status e progresso das atividades;
+Organização do fluxo de trabalho de ponta a ponta.
+
+Dessa forma, o time mantém um fluxo estruturado, transparente e alinhado com os objetivos do projeto.
 
 ## Controle de Versão
 
