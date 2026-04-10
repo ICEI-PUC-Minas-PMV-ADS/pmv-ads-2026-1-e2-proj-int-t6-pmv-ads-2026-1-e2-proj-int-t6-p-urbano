@@ -7,18 +7,18 @@ A equipe adota uma abordagem baseada em metodologias ágeis, utilizando prática
 
 Essa estratégia permite:
 
-Dividir o desenvolvimento em etapas incrementais;
-Acompanhar continuamente o progresso das entregas;
-Promover colaboração constante entre os integrantes da equipe;
-Adaptar rapidamente o planejamento conforme a evolução do projeto.
-Gestão de Atividades
+-Dividir o desenvolvimento em etapas incrementais;
+-Acompanhar continuamente o progresso das entregas;
+-Promover colaboração constante entre os integrantes da equipe;
+-Adaptar rapidamente o planejamento conforme a evolução do projeto.
+-Gestão de Atividades
 
 O gerenciamento das atividades é realizado por meio de ferramentas online de acompanhamento de tarefas, que possibilitam:
 
-Registro e priorização de demandas;
-Definição clara de responsáveis;
-Visualização do status e progresso das atividades;
-Organização do fluxo de trabalho de ponta a ponta.
+-Registro e priorização de demandas;
+-Definição clara de responsáveis;
+-Visualização do status e progresso das atividades;
+-Organização do fluxo de trabalho de ponta a ponta.
 
 Dessa forma, o time mantém um fluxo estruturado, transparente e alinhado com os objetivos do projeto.
 
