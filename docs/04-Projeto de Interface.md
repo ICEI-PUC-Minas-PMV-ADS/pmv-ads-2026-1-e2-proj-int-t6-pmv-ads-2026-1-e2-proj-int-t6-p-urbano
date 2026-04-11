@@ -15,11 +15,20 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 <img width="1022" height="771" alt="image" src="https://github.com/user-attachments/assets/05b4cc6a-0350-4752-ad00-03a1a409866d" />
 
 ## Wireframes
+Tela de Criar sua Senha (Cadastro)
+É o ponto de partida para novos usuários. Aqui, o sistema coleta os dados necessários para criar um novo perfil, garantindo que o usuário possa interagir com a plataforma de forma oficial.
+
+Requisitos: RF-01 e RNF-03.
+
+<img width="1440" height="665" alt="5 Criar conta" src="https://github.com/user-attachments/assets/a4009435-e0f3-4798-8825-0d54fffffc3f" />
 
 Tela de Login
 Esta é a interface inicial para quem já possui uma conta. O usuário insere suas credenciais para que o sistema valide sua identidade e libere o acesso às funcionalidades restritas.
 
 Requisitos: RF-02 e RNF-02.
+
+<img width="1440" height="616" alt="6 Fazer Login" src="https://github.com/user-attachments/assets/6c31d39e-e548-4ada-a9f4-0d202c0b9406" />
+
 
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
