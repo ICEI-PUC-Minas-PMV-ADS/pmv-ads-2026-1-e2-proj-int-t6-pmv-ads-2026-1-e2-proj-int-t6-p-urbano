@@ -46,7 +46,7 @@ Por exemplo:
 |Critério de Êxito |Denúncia registrada com sucesso e visível no sistema. |
 |  	|  	|
 | Caso de Teste 	| **CT06 – Visualizar Postagens do Usuário**	|
-|Requisito Associado | RF-04:Gerenciar denúncias,RF-10:Definir georreferência
+|Requisito Associado | RF-04:Gerenciar denúncias no perfil do usuário|
 | Objetivo do Teste 	| Validar se o sistema exibe corretamente a tela “Suas postagens” após o login do usuário.|
 | Passos 	| - Acessar o sistema logado <br> - Ir té  Aba "Perfil" no canto superior direito <br> -
 |Critério de Êxito |O sistema deverá exibir:Nome do usuário,Mensagem de boas-vindas,Botão Logout,Seção “Suas postagens”,Botões:,“Editar Posts”,“Criar nova denúncia” e visualizar a área destinada à exibição das postagens.|
