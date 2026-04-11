@@ -116,7 +116,7 @@ As denúncias são exibidas corretamente
 Os filtros funcionam conforme esperado
 As informações são claras e organizadas
 
-**Cenário 5-Criar Denúncia**
+**Cenário 6-Criar Denúncia**
 
 **Objetivo:** Avaliar a funcionalidade de registro de denúncias.
 **Contexto:** O usuário deseja registrar um problema ambiental na plataforma.
@@ -131,7 +131,7 @@ As informações são claras e organizadas
 - Os dados são salvos corretamente
 - A denúncia aparece no sistema
 
-**Cenário 6-Visualizar Postagens do Usuário**
+**Cenário 7-Visualizar Postagens do Usuário**
 
 **Objetivo:** Avaliar a visualização das postagens no perfil do usuário
 **Contexto:** O usuário deseja acessar suas próprias denúncias cadastradas.
