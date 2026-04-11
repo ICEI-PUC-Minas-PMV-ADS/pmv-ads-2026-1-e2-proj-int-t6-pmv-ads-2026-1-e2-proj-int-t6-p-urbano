@@ -16,6 +16,11 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Wireframes
 
+Tela de Login
+Esta é a interface inicial para quem já possui uma conta. O usuário insere suas credenciais para que o sistema valide sua identidade e libere o acesso às funcionalidades restritas.
+
+Requisitos: RF-02 e RNF-02.
+
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
 Os wireframes são protótipos utilizados no design de interfaces para representar a estrutura de um site e o relacionamento entre suas páginas. Eles funcionam como ilustrações do layout e da disposição dos elementos essenciais da interface.
