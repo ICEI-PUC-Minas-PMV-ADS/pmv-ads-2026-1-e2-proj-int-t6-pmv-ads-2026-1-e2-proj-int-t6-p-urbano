@@ -17,7 +17,7 @@ O fluxo de usuário (User Flow) foi estruturado para representar de forma clara 
 
 
 <img width="1022" height="771" alt="image" src="https://github.com/user-attachments/assets/05b4cc6a-0350-4752-ad00-03a1a409866d" />
-*Figura 2*
+<em> Figura 2</em>
 
 ## Wireframes
 Tela de Criar sua Senha (Cadastro):
