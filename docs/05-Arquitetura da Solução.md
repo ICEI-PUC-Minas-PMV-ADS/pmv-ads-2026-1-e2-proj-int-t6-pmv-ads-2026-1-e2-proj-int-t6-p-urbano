@@ -10,7 +10,8 @@ O diagrama de classes apresentado representa a estrutura do sistema Portal Urban
 
 As classes principais do sistema incluem Usuário, Perfil, Denúncia, Comentário e Mapa, que juntas modelam o funcionamento da aplicação. O diagrama demonstra como o usuário interage com o sistema, podendo realizar ações como cadastro, criação de denúncias, comentários e visualização de informações georreferenciadas.
 
-<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/552a1b40-7c79-4f6a-9978-f81bc094be3c" />
+<img width="1684" height="934" alt="Image" src="https://github.com/user-attachments/assets/5955d9db-cf6c-422e-b0b3-a8e79683ff03" />
+
 ## Modelo ER (Projeto Conceitual)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
