@@ -78,12 +78,14 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Cenário 3- Recuperação de Senha**
 
 **Objetivo:** Avaliar a facilidade de recuperação de senha.
+
 **Contexto:** O usuário esqueceu sua senha e precisa redefini-la.
 **Tarefa(s):** 
 - Acessar a tela de login
 -Clicar em "Esqueci minha senha"
 -Informar o código enviado pelo e-mail
 -Inserir nova senha
+
 **Critério(s) de Sucesso(s):**
 - O usuário consegue solicitar a recuperação
 - O sistema envia o e-mail de redefinição
@@ -92,12 +94,14 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Cenário 4- Visualizar Denúncias no Mapa**
 
 **Objetivo:** Avaliar a visualização das denúncias no mapa.
+
 **Contexto:** O usuário deseja consultar denúncias próximas à sua região.
 **Tarefa(s):** 
 - Acessar o sistema
 - Ir até a tela "Mapa"
 - Aplicar filtros de busca
 - Visualizar os pontos no mapa
+
 **Critério(s) de Sucesso(s):**
 - As denúncias aparecem corretamente no mapa
 - O usuário consegue identificar os locais
@@ -106,11 +110,13 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Cenário 5-Funcionalidade do Feed**
 
 **Objetivo:** Avaliar a exibição e filtragem de denúncias no feed.
+
 **Contexto:** O usuário deseja visualizar denúncias recentes e aplicar filtros.
 **Tarefa(s):** 
 - Acessar a tela "Feed"
 - Selecionar filtros (tudo,categoria, data, região)
 - Visualizar os resultados
+
 **Critério(s) de Sucesso(s):**
 - As denúncias são exibidas corretamente
 - Os filtros funcionam conforme esperado
@@ -119,13 +125,16 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Cenário 6-Criar Denúncia**
 
 **Objetivo:** Avaliar a funcionalidade de registro de denúncias.
+
 **Contexto:** O usuário deseja registrar um problema ambiental na plataforma.
+
 **Tarefa(s):** 
 - Acessar o sistema logado
 - Clicar em "Criar Denúncia"
 - Preencher os campos obrigatórios
 - Adicionar localização
 - Enviar denúncia
+
 **Critério(s) de Sucesso(s):**
 - A denúncia é registrada com sucesso
 - Os dados são salvos corretamente
@@ -134,11 +143,13 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Cenário 7-Visualizar Postagens do Usuário**
 
 **Objetivo:** Avaliar a visualização das postagens no perfil do usuário
+
 **Contexto:** O usuário deseja acessar suas próprias denúncias cadastradas.
 **Tarefa(s):** 
 - Acessar o sistema logado
 - Ir até a aba "Perfil"
 - Visualizar a seção "Suas postagens"
+
 **Critério(s) de Sucesso(s):**
 - As postagens são exibidas corretamente
 - Os botões "Editar Posts" e "Criar nova denúncia" estão visíveis
