@@ -1,31 +1,29 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+As personas a seguir representam diferentes perfis de cidadãos e agentes públicos que enfrentam problemas relacionados à infraestrutura urbana em Belo Horizonte. Elas ajudam a compreender necessidades, dificuldades e expectativas em relação a um sistema colaborativo de denúncias e alertas urbanos.
 
-Utilize também como referência o exemplo abaixo:
+> **Persona 1 - Carlos Henrique Souza**
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
+<img width="762" height="624" alt="Captura de tela 2026-03-06 201428" src="https://github.com/user-attachments/assets/d6653195-0751-4338-ad4b-f64d563cb94b" />
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+> **Persona 2 - Maria Aparecida**
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+<img width="768" height="567" alt="Captura de tela 2026-03-06 201526" src="https://github.com/user-attachments/assets/89356522-efc1-45e7-b2ec-cc11216a1096" />
+
+> **Persona 3 - Rafael Oliveira**
+
+<img width="766" height="598" alt="Captura de tela 2026-03-06 201610" src="https://github.com/user-attachments/assets/e4cf89d5-5cbf-4245-81cb-d852be75af52" />
+
+> **Persona 4 - Eduardo Martins**
+
+<img width="767" height="589" alt="Captura de tela 2026-03-06 201705" src="https://github.com/user-attachments/assets/0b7e7cfe-fa65-4144-88ff-5a1d342e8770" />
+
+> **Persona 5 - Juliana Mendes**:
+
+<img width="763" height="556" alt="Captura de tela 2026-03-06 201816" src="https://github.com/user-attachments/assets/9af4d39d-0bae-4190-a3a9-744f95418fc4" />
+
 
 ## Histórias de Usuários
 
@@ -45,33 +43,32 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+## Requisitos Funcionais
 
-### Requisitos não Funcionais
+| ID    | Descrição do Requisito                                             | Prioridade |
+|-------|--------------------------------------------------------------------|------------|
+| RF-01 | Realizar cadastro                                                  | ALTA       |
+| RF-02 | Fazer login                                                        | ALTA       |
+| RF-03 | Recuperar senha por e-mail                                         | ALTA       |
+| RF-04 | Gerenciar denúncias no perfil do usuário                           | ALTA       |
+| RF-05 | Definir georreferência na criação da denúncia                      | ALTA       |
+| RF-06 | Listar denúncias em mapa interativo                                | ALTA       |
+| RF-07 | Gerenciar status das denúncias com base nas interações dos usuários| ALTA       |
+| RF-08 | Filtrar denúncias por categoria, data ou localização      | MÉDIA      |
+| RF-09 | Exibir denúncias em feed cronológico                               | MÉDIA      |
+| RF-10 | Excluir denúncias indevidas automaticamente                        | MÉDIA      |
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+### Requisitos Não Funcionais
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+| ID      | Descrição do Requisito                                   | Prioridade |
+|---------|-----------------------------------------------------------|------------|
+| RNF-001 | Garantir funcionamento em dispositivos móveis e desktops  | ALTA       |
+| RNF-002 | Armazenar senhas de forma criptografada                   | ALTA       |
+| RNF-003 | Garantir usabilidade e navegação intuitiva na interface   | ALTA       |
+| RNF-004 | Otimizar qualidade e armazenamento das imagens            | MÉDIA      |
+| RNF-005 | Carregar denúncias no mapa dinamicamente                  | BAIXA      |
+| RNF-006 | Garantir precisão na exibição das localizações no mapa    | BAIXA      |
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -85,21 +82,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |04| Deverá ser utilizado o Entity Framework para acesso e manipulação do banco de dados.        |
 |05|O banco de dados utilizado deverá ser MySQL ou Microsoft SQL Server.        |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+<img width="721" height="763" alt="Image" src="https://github.com/user-attachments/assets/92c1e28f-2e7c-44b3-977c-55dccebde384" />

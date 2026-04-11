@@ -5,34 +5,59 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
+## Protótipo interativo
+[Figma Interativo](https://www.figma.com/proto/99IZZfHhTKQlvDtkmhfBEd/Portal-Urbano?page-id=0%3A1&node-id=109-280&p=f&viewport=379%2C1405%2C0.2&t=FnXh7wxt4uUnrD5z-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=109%3A2)
+
  Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## Diagrama de Fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
-
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
-
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
-
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+<img width="1022" height="771" alt="image" src="https://github.com/user-attachments/assets/05b4cc6a-0350-4752-ad00-03a1a409866d" />
 
 ## Wireframes
+Tela de Criar sua Senha (Cadastro):
+É o ponto de partida para novos usuários. Aqui, o sistema coleta os dados necessários para criar um novo perfil, garantindo que o usuário possa interagir com a plataforma de forma oficial.
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Requisitos: RF-01 e RNF-03.
 
-Os wireframes são protótipos utilizados no design de interfaces para representar a estrutura de um site e o relacionamento entre suas páginas. Eles funcionam como ilustrações do layout e da disposição dos elementos essenciais da interface.
+<img width="1440" height="665" alt="5 Criar conta" src="https://github.com/user-attachments/assets/a4009435-e0f3-4798-8825-0d54fffffc3f" />
 
-Nesta seção, é FUNDAMENTAL indicar, para cada tela/wireframe proposto, quais requisitos do projeto estão sendo contemplados por aquela tela.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Tela de Login:
+Esta é a interface inicial para quem já possui uma conta. O usuário insere suas credenciais para que o sistema valide sua identidade e libere o acesso às funcionalidades restritas.
+
+Requisitos: RF-02 e RNF-02.
+
+<img width="1440" height="616" alt="6 Fazer Login" src="https://github.com/user-attachments/assets/6c31d39e-e548-4ada-a9f4-0d202c0b9406" />
+
+Tela de Recupere sua Senha:
+Caso o usuário esqueça como acessar sua conta, esta tela oferece um fluxo de segurança para resetar a credencial através do e-mail cadastrado, evitando a perda definitiva do perfil.
+
+Requisitos: RF-03.
+<img width="1440" height="542" alt="7 Recupere sua conta" src="https://github.com/user-attachments/assets/2ce40178-42fe-4dc4-abbb-44bdf706ddce" />
+
+Tela de Mapa:
+Uma central de visualização geográfica onde o usuário consegue enxergar onde cada problema foi registrado. É uma ferramenta visual e interativa que facilita o entendimento da distribuição das ocorrências na região.
+
+Requisitos: RF-06, RF-08, RNF-05 e RNF-06.
+
+<img width="1452" height="1696" alt="1 Mapa" src="https://github.com/user-attachments/assets/3e0850d1-4f85-4624-9380-b4d51e2356f0" />
+Tela de Feed:
+Funciona como um mural de notícias, onde as denúncias aparecem uma após a outra em ordem de postagem. É ideal para quem quer acompanhar as atualizações mais recentes sem precisar navegar pelo mapa.
+
+Requisitos: RF-09 e RF-07.
+
+<img width="1029" height="2111" alt="2 Feed" src="https://github.com/user-attachments/assets/c5599e52-2894-4789-a433-ad73082a50de" />
+
+Tela de Criar Denúncia:
+O formulário onde o usuário descreve a ocorrência, anexa evidências fotográficas e marca o ponto exato no mapa para que a denúncia seja criada com georreferência.
+
+Requisitos: RF-05 e RNF-04.
+
+<img width="1452" height="1456" alt="3 Criar Denúncia" src="https://github.com/user-attachments/assets/5b56a094-2cba-4089-a296-d3f4e599f10e" />
+
+Tela de Perfil:
+O espaço pessoal do usuário. Nela, ele pode gerenciar suas próprias postagens, acompanhar o histórico de suas atividades e realizar a manutenção ou exclusão de conteúdos que enviou.
+
+Requisitos: RF-04 e RF-10.
+
+<img width="1207" height="1312" alt="4 Perfil" src="https://github.com/user-attachments/assets/587f0e0d-dc66-45ff-b813-4186b6e0fa97" />
