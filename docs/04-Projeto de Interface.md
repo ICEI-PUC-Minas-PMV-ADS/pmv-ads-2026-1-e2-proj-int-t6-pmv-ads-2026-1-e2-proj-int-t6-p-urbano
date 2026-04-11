@@ -29,18 +29,35 @@ Requisitos: RF-02 e RNF-02.
 
 <img width="1440" height="616" alt="6 Fazer Login" src="https://github.com/user-attachments/assets/6c31d39e-e548-4ada-a9f4-0d202c0b9406" />
 
+Tela de Recupere sua Senha
+Caso o usuário esqueça como acessar sua conta, esta tela oferece um fluxo de segurança para resetar a credencial através do e-mail cadastrado, evitando a perda definitiva do perfil.
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Requisitos: RF-03.
+<img width="1440" height="542" alt="7 Recupere sua conta" src="https://github.com/user-attachments/assets/2ce40178-42fe-4dc4-abbb-44bdf706ddce" />
 
-Os wireframes são protótipos utilizados no design de interfaces para representar a estrutura de um site e o relacionamento entre suas páginas. Eles funcionam como ilustrações do layout e da disposição dos elementos essenciais da interface.
+Tela de Mapa
+Uma central de visualização geográfica onde o usuário consegue enxergar onde cada problema foi registrado. É uma ferramenta visual e interativa que facilita o entendimento da distribuição das ocorrências na região.
 
-Nesta seção, é FUNDAMENTAL indicar, para cada tela/wireframe proposto, quais requisitos do projeto estão sendo contemplados por aquela tela.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Requisitos: RF-06, RF-08, RNF-05 e RNF-06.
+
+<img width="1452" height="1696" alt="1 Mapa" src="https://github.com/user-attachments/assets/3e0850d1-4f85-4624-9380-b4d51e2356f0" />
+Tela de Feed
+Funciona como um mural de notícias, onde as denúncias aparecem uma após a outra em ordem de postagem. É ideal para quem quer acompanhar as atualizações mais recentes sem precisar navegar pelo mapa.
+
+Requisitos: RF-09 e RF-07.
+
+<img width="1029" height="2111" alt="2 Feed" src="https://github.com/user-attachments/assets/c5599e52-2894-4789-a433-ad73082a50de" />
+
+Tela de Criar Denúncia
+O formulário onde o usuário descreve a ocorrência, anexa evidências fotográficas e marca o ponto exato no mapa para que a denúncia seja criada com georreferência.
+
+Requisitos: RF-05 e RNF-04.
+
+<img width="1452" height="1456" alt="3 Criar Denúncia" src="https://github.com/user-attachments/assets/5b56a094-2cba-4089-a296-d3f4e599f10e" />
+
+Tela de Perfil
+O espaço pessoal do usuário. Nela, ele pode gerenciar suas próprias postagens, acompanhar o histórico de suas atividades e realizar a manutenção ou exclusão de conteúdos que enviou.
+
+Requisitos: RF-04 e RF-10.
+
+<img width="1207" height="1312" alt="4 Perfil" src="https://github.com/user-attachments/assets/587f0e0d-dc66-45ff-b813-4186b6e0fa97" />
