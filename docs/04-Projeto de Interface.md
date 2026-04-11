@@ -13,9 +13,11 @@ Este projeto conta com um protótipo interativo desenvolvido no Figma, onde são
 O fluxo de usuário (User Flow) foi estruturado para representar de forma clara os caminhos que o usuário pode percorrer dentro da aplicação, desde o primeiro acesso até a interação com as funcionalidades principais, auxiliando tanto na validação quanto no desenvolvimento do sistema.
 
 ![Fluxo de Usuário](https://github.com/user-attachments/assets/4b5a702e-de2d-4a7b-bffd-cd8d5afd35b1)
+*Figura 1*
 
 
 <img width="1022" height="771" alt="image" src="https://github.com/user-attachments/assets/05b4cc6a-0350-4752-ad00-03a1a409866d" />
+*Figura 2*
 
 ## Wireframes
 Tela de Criar sua Senha (Cadastro):
