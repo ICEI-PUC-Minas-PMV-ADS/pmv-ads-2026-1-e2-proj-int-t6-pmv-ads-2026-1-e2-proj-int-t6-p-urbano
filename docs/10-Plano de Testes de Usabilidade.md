@@ -108,13 +108,13 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Objetivo:** Avaliar a exibição e filtragem de denúncias no feed.
 **Contexto:** O usuário deseja visualizar denúncias recentes e aplicar filtros.
 **Tarefa(s):** 
--Acessar a tela "Feed"
--Selecionar filtros (tudo,categoria, data, região)
--Visualizar os resultados
+- Acessar a tela "Feed"
+- Selecionar filtros (tudo,categoria, data, região)
+- Visualizar os resultados
 **Critério(s) de Sucesso(s):**
-As denúncias são exibidas corretamente
-Os filtros funcionam conforme esperado
-As informações são claras e organizadas
+- As denúncias são exibidas corretamente
+- Os filtros funcionam conforme esperado
+- As informações são claras e organizadas
 
 **Cenário 6-Criar Denúncia**
 
