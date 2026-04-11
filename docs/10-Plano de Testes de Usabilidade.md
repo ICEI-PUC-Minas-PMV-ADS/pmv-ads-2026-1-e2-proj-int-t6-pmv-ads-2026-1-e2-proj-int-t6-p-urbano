@@ -48,6 +48,7 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Objetivo:** Avaliar a facilidade do usuário ao realizar o cadastro na plataforma.
 
 **Contexto:** O usuário acessa o sistema pela primeira vez e deseja se cadastrar para utilizar as funcionalidades disponíveis.
+
 **Tarefa(s):** 
 - Acessar o sistema
 - Clicar em "Cadastrar"
