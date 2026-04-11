@@ -26,5 +26,11 @@ Por exemplo:
 | Objetivo do Teste 	| Permitir que o usuário recupere sua senha. |
 | Passos 	| - Acessar a tela de login <br>  - Clicar no botão "Esqueci minha senha" <br> - Preencher o campo de código( com o código enviado para o e-mail do usuário) <br> - Preencher o campo "Senha nova" <br> - Clicar em "Faça seu login" |
 |Critério de Êxito |  Envio de e-mail para redefinição de senha. |
+|  	|  	|
+| Caso de Teste 	| **CT04 – Visualizar denúncias no Mapa**	|
+|Requisito Associado | RF-06: Listar denúncias em mapa interativo, RF-08:Filtrar denúncias por categoria, data ou localização |
+| Objetivo do Teste 	| Permitir visualizar denúncias georreferenciadas.|
+| Passos 	| - Acessar a tela "Mapa"<br>  - Selecionar o filtro que deseja "Procurar Região" ou "Procurar Rua" <br> - Clicar em "Procurar"  |
+|Critério de Êxito |Denúncias exibidas corretamente na tela mapa. |
 
 
