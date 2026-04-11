@@ -28,9 +28,24 @@ Por exemplo:
 |Critério de Êxito |  Envio de e-mail para redefinição de senha. |
 |  	|  	|
 | Caso de Teste 	| **CT04 – Visualizar denúncias no Mapa**	|
-|Requisito Associado | RF-06: Listar denúncias em mapa interativo, RF-08:Filtrar denúncias por categoria, data ou localização |
+|Requisito Associado | RF-06: Listar denúncias em mapa interativo |
 | Objetivo do Teste 	| Permitir visualizar denúncias georreferenciadas.|
 | Passos 	| - Acessar a tela "Mapa"<br>  - Selecionar o filtro que deseja "Procurar Região" ou "Procurar Rua" <br> - Clicar em "Procurar"  |
 |Critério de Êxito |Denúncias exibidas corretamente na tela mapa. |
+|  	|  	|
+| Caso de Teste 	| **CT05 – Funcionamento da tela Feed**	|
+|Requisito Associado | RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico|
+| Objetivo do Teste 	| Exibir denúncias, permitir refinar a busca de denúncias, através de filtros.|
+| Passos 	| - Acessar a tela "Feed"<br>  - Selecionar o filtro que deseja "Tudo", "Categoria", "Data", "Região" <br> - Clicar em uma dessas opções para filtrar ou clicar em "Criar Post" |
+|Critério de Êxito |Exibir as informações filtradas e o botão criar novo post. |
+|  	|  	|
+| Caso de Teste 	| **CT05 – Criar Denúnci*	|
+|Requisito Associado | RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico|
+| Objetivo do Teste 	| Exibir denúncias, permitir refinar a busca de denúncias, através de filtros.|
+| Passos 	| - Acessar a tela "Feed"<br>  - Selecionar o filtro que deseja "Tudo", "Categoria", "Data", "Região" <br> - Clicar em uma dessas opções para filtrar ou clicar em "Criar Post" |
+|Critério de Êxito |Exibir as informações filtradas e o botão criar novo post. |
+
+
+
 
 
