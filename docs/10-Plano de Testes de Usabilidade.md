@@ -65,6 +65,8 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Objetivo:** Avaliar se o usuário consegue acessar o sistema corretamente.
 
 **Contexto:** O usuário já possui cadastro e deseja acessar sua conta.
+
+
 **Tarefa(s):** 
 - Acessar o sistema
 -Clicar em "Já tenho uma conta"
@@ -81,6 +83,7 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Objetivo:** Avaliar a facilidade de recuperação de senha.
 
 **Contexto:** O usuário esqueceu sua senha e precisa redefini-la.
+
 **Tarefa(s):** 
 - Acessar a tela de login
 -Clicar em "Esqueci minha senha"
@@ -97,6 +100,7 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Objetivo:** Avaliar a visualização das denúncias no mapa.
 
 **Contexto:** O usuário deseja consultar denúncias próximas à sua região.
+
 **Tarefa(s):** 
 - Acessar o sistema
 - Ir até a tela "Mapa"
@@ -113,6 +117,7 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Objetivo:** Avaliar a exibição e filtragem de denúncias no feed.
 
 **Contexto:** O usuário deseja visualizar denúncias recentes e aplicar filtros.
+
 **Tarefa(s):** 
 - Acessar a tela "Feed"
 - Selecionar filtros (tudo,categoria, data, região)
@@ -146,6 +151,7 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 **Objetivo:** Avaliar a visualização das postagens no perfil do usuário
 
 **Contexto:** O usuário deseja acessar suas próprias denúncias cadastradas.
+
 **Tarefa(s):** 
 - Acessar o sistema logado
 - Ir até a aba "Perfil"
