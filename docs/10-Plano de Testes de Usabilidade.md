@@ -69,9 +69,9 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 
 **Tarefa(s):** 
 - Acessar o sistema
--Clicar em "Já tenho uma conta"
--Informar e-mail e senha
--Clicar em "Fazer login"
+- Clicar em "Já tenho uma conta"
+- Informar e-mail e senha
+- Clicar em "Fazer login"
 
 **Critério(s) de Sucesso(s):**
 - O login é realizado com sucesso
@@ -86,9 +86,9 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 
 **Tarefa(s):** 
 - Acessar a tela de login
--Clicar em "Esqueci minha senha"
--Informar o código enviado pelo e-mail
--Inserir nova senha
+- Clicar em "Esqueci minha senha"
+- Informar o código enviado pelo e-mail
+- Inserir nova senha
 
 **Critério(s) de Sucesso(s):**
 - O usuário consegue solicitar a recuperação
