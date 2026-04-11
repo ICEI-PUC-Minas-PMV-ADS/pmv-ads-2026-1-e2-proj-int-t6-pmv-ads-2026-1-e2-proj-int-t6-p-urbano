@@ -6,6 +6,10 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
+O diagrama de classes apresentado representa a estrutura do sistema Portal Urbano, evidenciando as principais entidades, seus atributos, métodos e os relacionamentos entre elas.
+
+As classes principais do sistema incluem Usuário, Perfil, Denúncia, Comentário e Mapa, que juntas modelam o funcionamento da aplicação. O diagrama demonstra como o usuário interage com o sistema, podendo realizar ações como cadastro, criação de denúncias, comentários e visualização de informações georreferenciadas.
+
 <img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/552a1b40-7c79-4f6a-9978-f81bc094be3c" />
 ## Modelo ER (Projeto Conceitual)
 
