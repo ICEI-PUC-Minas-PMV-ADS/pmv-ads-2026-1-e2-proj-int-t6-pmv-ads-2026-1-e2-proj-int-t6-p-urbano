@@ -6,8 +6,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![Image](https://github.com/user-attachments/assets/5fbc9be8-7c84-4d7b-abc3-821fd53d1ea4)
-
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/552a1b40-7c79-4f6a-9978-f81bc094be3c" />
 ## Modelo ER (Projeto Conceitual)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
