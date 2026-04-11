@@ -1,12 +1,8 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+<span style="color:red">Pré-requisitos: <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/blob/main/docs/04-Projeto%20de%20Interface.md> Projeto de Interface</a>
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
-
-Por exemplo:
+Os casos de teste apresentados a seguir têm como objetivo validar as principais funcionalidades do sistema, garantindo que os requisitos definidos sejam atendidos corretamente. Cada caso de teste descreve um cenário de uso da aplicação, incluindo os passos a serem executados e os resultados esperados, assegurando o funcionamento adequado da plataforma.
  
 | **Caso de Teste** 	| **CT01 – Cadastro do usuário** 	|
 |:---:	|:---:	|
