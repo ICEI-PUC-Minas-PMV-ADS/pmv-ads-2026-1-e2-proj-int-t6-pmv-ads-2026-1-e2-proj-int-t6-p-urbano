@@ -33,13 +33,13 @@ Os casos de teste apresentados a seguir têm como objetivo validar as principais
 | Passos 	| - Acessar a tela "Feed"<br>  - Selecionar o filtro que deseja "Tudo", "Categoria", "Data", "Região" <br> - Clicar em uma dessas opções para filtrar ou clicar em "Criar Post" |
 |Critério de Êxito |Exibir as informações filtradas e o botão criar novo post. |
 |  	|  	|
-| Caso de Teste 	| **CT05 – Criar Denúncia**	|
+| Caso de Teste 	| **CT06 – Criar Denúncia**	|
 |Requisito Associado | RF-04:Gerenciar denúncias,RF-05:Definir georreferência
 | Objetivo do Teste 	| Permitir que o usuário registre uma denúncia.|
 | Passos 	| - Acessar a sistema logado <br> - Clicar em "Criar Denúnica" no botão superior da página <br> - Preencher as informações do formulário com: "Titúlo","Descrição", "Categoria", "CEP", "Rua", "Bairro", "Ponto de referência", "Adicionar imagem" e "Postar anônimo" <br> - Clicar em "Enviar denúncia"|
 |Critério de Êxito |Denúncia registrada com sucesso e visível no sistema. |
 |  	|  	|
-| Caso de Teste 	| **CT06 – Visualizar Postagens do Usuário**	|
+| Caso de Teste 	| **CT07 – Visualizar Postagens do Usuário**	|
 |Requisito Associado | RF-04:Gerenciar denúncias no perfil do usuário|
 | Objetivo do Teste 	| Validar se o sistema exibe corretamente a tela “Suas postagens” após o login do usuário.|
 | Passos 	| - Acessar o sistema logado <br> - Ir té  Aba "Perfil" no canto superior direito <br> -
