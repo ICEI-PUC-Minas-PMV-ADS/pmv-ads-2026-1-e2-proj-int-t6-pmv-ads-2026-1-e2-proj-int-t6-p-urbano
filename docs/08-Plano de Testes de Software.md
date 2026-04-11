@@ -44,7 +44,12 @@ Por exemplo:
 | Objetivo do Teste 	| Permitir que o usuário registre uma denúncia.|
 | Passos 	| - Acessar a sistema logado <br> - Clicar em "Criar Denúnica" no botão superior da página <br> - Preencher as informações do formulário com: "Titúlo","Descrição", "Categoria", "CEP", "Rua", "Bairro", "Ponto de referência", "Adicionar imagem" e "Postar anônimo" <br> - Clicar em "Enviar denúncia"|
 |Critério de Êxito |Denúncia registrada com sucesso e visível no sistema. |
-
+|  	|  	|
+| Caso de Teste 	| **CT06 – Visualizar Postagens do Usuário**	|
+|Requisito Associado | RF-04:Gerenciar denúncias,RF-10:Definir georreferência
+| Objetivo do Teste 	| Validar se o sistema exibe corretamente a tela “Suas postagens” após o login do usuário.|
+| Passos 	| - Acessar o sistema logado <br> - Ir té  Aba "Perfil" no canto superior direito <br> -
+|Critério de Êxito |O sistema deverá exibir:Nome do usuário,Mensagem de boas-vindas,Botão Logout,Seção “Suas postagens”,Botões:,“Editar Posts”,“Criar nova denúncia” e visualizar a área destinada à exibição das postagens.|
 
 
 
