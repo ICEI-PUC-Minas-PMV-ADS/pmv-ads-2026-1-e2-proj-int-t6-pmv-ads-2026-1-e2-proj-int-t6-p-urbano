@@ -8,17 +8,23 @@ Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o
 
 Por exemplo:
  
-| **Caso de Teste** 	| **CT01 –Cadastro do usuário** 	|
+| **Caso de Teste** 	| **CT01 – Cadastro do usuário** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-001 -Realizar cadastro|
+|	Requisito Associado 	| RF-01 -Realizar cadastro|
 | Objetivo do Teste 	| Permitir que o usuário realize o cadastro na plataforma com sucesso. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do sistema <br> - Preencher os campos obrigatórios (Nome, e-mail, senha) <br> - Clicar em "Se inscreva" |
-|Critério de Êxito | - "Cadastrado realizado com sucesso" ou redirecionamento para login. |
+|Critério de Êxito | "Cadastrado realizado com sucesso" ou redirecionamento para login. |
 |  	|  	|
-| Caso de Teste 	| CT02 – Login do Usuário	|
-|Requisito Associado | RF-002	- Fazer login. |
+| Caso de Teste 	| **CT02 – Login do Usuário**	|
+|Requisito Associado | RF-02	- Fazer login |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| - Acessar o sistema <br>  - Clicar no botão "Já tenho uma conta" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Faça login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| **CT02 – Recuperar Senha**	|
+|Requisito Associado | RF-03	- Recuperar senha por e-mail |
+| Objetivo do Teste 	| Permitir que o usuário recupere sua senha. |
+| Passos 	| - Acessar a tela de login <br>  - Clicar no botão "Esqueci minha senha" <br> - Preencher o campo de código( com o código enviado para o e-mail do usuário) <br> - Preencher o campo "Senha nova" <br> - Clicar em "Faça seu login" |
+|Critério de Êxito | - Envio de e-mail para redefinição de senha. |
 
- 
+
