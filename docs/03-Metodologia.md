@@ -117,10 +117,9 @@ O **GitHub**, por sua vez, foi utilizado tanto para o versionamento do código-f
 
 Dessa forma, os artefatos do projeto foram produzidos com o apoio dessas ferramentas, cada uma exercendo uma função específica e contribuindo diretamente para o alcance dos objetivos estabelecidos no desenvolvimento da solução.
 
-| Ferramenta                          | Finalidade                                     | Aplicação no Projeto                       
-|-------------------------------------|------------------------------------------------|----------------------------------------
-| Visual Studio Code                  | Desenvolvimento e manutenção do código-fonte   |Utilizado na implementação das funcionalidades da aplicação e na edição dos arquivos do projeto|                            
-| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e1-proj-web-t10-pmv-ads-2025-2-e1-proj- 
-| Projeto de Interface                | Figma                              | https://www.figma.com/design/4BMhswwhDs22qgsfF3OkAg/Untitled?node-id=2-1303&t=Sm1xzLpDC2YAWExH-0         
-| Gerenciamento do Projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2454                                             
-| Hospedagem                          | GitHub Pages                       | https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-2-e1-proj-web-t10-pmv-ads-2025-2-e1-proj-          | Fluxograma                          | Draw.io                            | https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=FFFFFF&layers=1&nav=1&title=Fluxograma.drawio&dark=0#R%3Cmxfile%3E%3Cdiagram%20name%3D%22P%C3%A1gina-
+| Ferramenta                          | Finalidade                                             | Aplicação no Projeto                       
+|-------------------------------------|--------------------------------------------------------|----------------------------------------
+| Visual Studio Code                  | Desenvolvimento e manutenção do código-fonte           |Utilizado na implementação das funcionalidades da aplicação e na edição dos arquivos do projeto|                            
+| Figma                               | Criação de telas, protótipos e fluxogramas             |Empregado na elaboração da interface visual e na representação dos fluxos da solução
+| GitHub                              | Versionamento, organização e gerenciamento do projeto  |Utilizado para armazenar o repositório, controlar versões e acompanhar as tarefas da equipe       
+
