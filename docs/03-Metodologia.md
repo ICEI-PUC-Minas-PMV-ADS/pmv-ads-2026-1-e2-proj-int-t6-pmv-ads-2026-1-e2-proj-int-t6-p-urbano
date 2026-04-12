@@ -85,12 +85,6 @@ O quadro kanban do grupo no GitHub está disponível no link https://github.com/
 
 ![Quadro Kanban](img/QuadroKanban.png)
  
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
-
 ### Ferramentas
 
 As ferramentas adotadas no desenvolvimento do projeto foram selecionadas com o objetivo de apoiar as diferentes etapas de elaboração, organização e implementação da solução. Entre os recursos utilizados, destacam-se o Visual Studio Code, o Figma e o GitHub.
