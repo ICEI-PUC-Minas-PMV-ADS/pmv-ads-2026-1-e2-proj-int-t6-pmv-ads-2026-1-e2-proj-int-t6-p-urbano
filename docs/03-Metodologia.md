@@ -107,20 +107,20 @@ O quadro kanban do grupo no GitHub está disponível no link https://github.com/
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As ferramentas adotadas no desenvolvimento do projeto foram selecionadas com o objetivo de apoiar as diferentes etapas de elaboração, organização e implementação da solução. Entre os recursos utilizados, destacam-se o Visual Studio Code, o Figma e o GitHub.
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+O **Visual Studio Code** foi utilizado como editor de código, principalmente por oferecer recursos que facilitam o desenvolvimento da aplicação, além de integração com sistemas de versionamento, o que contribui para o controle das alterações realizadas e para o acompanhamento da evolução do projeto.
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+O **Figma** foi empregado na criação de telas, protótipos e fluxogramas, permitindo representar visualmente as funcionalidades e necessidades da solução. Essa ferramenta auxilia na organização das ideias e no planejamento da interface do sistema.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+O **GitHub**, por sua vez, foi utilizado tanto para o versionamento do código-fonte quanto para o gerenciamento e acompanhamento das atividades do projeto. Por meio dessa plataforma, foi possível centralizar o repositório da aplicação, registrar alterações e organizar as tarefas desenvolvidas pela equipe.
+
+Dessa forma, os artefatos do projeto foram produzidos com o apoio dessas ferramentas, cada uma exercendo uma função específica e contribuindo diretamente para o alcance dos objetivos estabelecidos no desenvolvimento da solução.
+
+| Ferramenta                          | Finalidade                                     | Aplicação no Projeto                       
+|-------------------------------------|------------------------------------------------|----------------------------------------
+| Visual Studio Code                  | Desenvolvimento e manutenção do código-fonte   |Utilizado na implementação das funcionalidades da aplicação e na edição dos arquivos do projeto|                            
+| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e1-proj-web-t10-pmv-ads-2025-2-e1-proj- 
+| Projeto de Interface                | Figma                              | https://www.figma.com/design/4BMhswwhDs22qgsfF3OkAg/Untitled?node-id=2-1303&t=Sm1xzLpDC2YAWExH-0         
+| Gerenciamento do Projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2454                                             
+| Hospedagem                          | GitHub Pages                       | https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-2-e1-proj-web-t10-pmv-ads-2025-2-e1-proj-          | Fluxograma                          | Draw.io                            | https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=FFFFFF&layers=1&nav=1&title=Fluxograma.drawio&dark=0#R%3Cmxfile%3E%3Cdiagram%20name%3D%22P%C3%A1gina-
