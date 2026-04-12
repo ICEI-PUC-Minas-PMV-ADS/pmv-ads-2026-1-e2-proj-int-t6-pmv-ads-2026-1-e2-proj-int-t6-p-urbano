@@ -85,7 +85,19 @@ Essa divisão de papéis contribui para a organização do trabalho em equipe, f
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Para organizar e distribuir as atividades do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes colunas:
+
+Product Backlog: Reúne as demandas que precisam ser desenvolvidas e corresponde ao Backlog do produto. Todas as tarefas identificadas ao longo do projeto são adicionadas a essa lista.
+
+To Do: Representa o Sprint Backlog em andamento, reunindo as atividades que devem ser executadas.
+
+In Progress: Contém as tarefas que já foram iniciadas e estão em desenvolvimento.
+
+Done: Nessa coluna ficam as atividades concluídas, que passaram por testes e validações de qualidade, estando prontas para entrega aos usuários.
+
+O quadro kanban do grupo no GitHub está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2584 e é apresentado, no estado atual, na figura abaixo:
+
+
  
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
