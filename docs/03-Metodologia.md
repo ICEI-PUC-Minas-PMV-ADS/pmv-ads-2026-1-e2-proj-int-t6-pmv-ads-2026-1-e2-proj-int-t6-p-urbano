@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-A equipe adota uma abordagem baseada em metodologias ágeis, utilizando práticas do Kanban para organizar e gerenciar as atividades do projeto.
+A equipe adota uma abordagem baseada em metodologias ágeis, combinando práticas dos frameworks Scrum e Kanban para organizar e gerenciar as atividades do projeto.
 
 Essa estratégia permite:
 
