@@ -87,13 +87,13 @@ Essa divisão de papéis contribui para a organização do trabalho em equipe, f
 
 Para organizar e distribuir as atividades do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes colunas:
 
-Product Backlog: Reúne as demandas que precisam ser desenvolvidas e corresponde ao Backlog do produto. Todas as tarefas identificadas ao longo do projeto são adicionadas a essa lista.
+**Backlog:** Reúne as demandas que precisam ser desenvolvidas e corresponde ao Backlog do produto. Todas as tarefas identificadas ao longo do projeto são adicionadas a essa lista.
 
-To Do: Representa o Sprint Backlog em andamento, reunindo as atividades que devem ser executadas.
+**Ready**: Corresponde às atividades que já estão refinadas, definidas e prontas para serem iniciadas pela equipe. São tarefas que possuem informações suficientes para execução e aguardam apenas o momento de serem assumidas.
 
-In Progress: Contém as tarefas que já foram iniciadas e estão em desenvolvimento.
+**In Progress**: Contém as tarefas que já foram iniciadas e estão em desenvolvimento.
 
-Done: Nessa coluna ficam as atividades concluídas, que passaram por testes e validações de qualidade, estando prontas para entrega aos usuários.
+**Done**: Refere-se às atividades que foram concluídas com sucesso. Nesse status, encontram-se as entregas finalizadas e validadas dentro do escopo previsto.
 
 O quadro kanban do grupo no GitHub está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2584 e é apresentado, no estado atual, na figura abaixo:
 
