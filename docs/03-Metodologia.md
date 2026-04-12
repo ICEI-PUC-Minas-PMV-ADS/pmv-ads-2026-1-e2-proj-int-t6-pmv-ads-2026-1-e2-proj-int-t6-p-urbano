@@ -117,6 +117,9 @@ O **GitHub**, por sua vez, foi utilizado tanto para o versionamento do código-f
 
 Dessa forma, os artefatos do projeto foram produzidos com o apoio dessas ferramentas, cada uma exercendo uma função específica e contribuindo diretamente para o alcance dos objetivos estabelecidos no desenvolvimento da solução.
 
+#### Tabela de Ferramentas
+
+
 | Ferramenta                          | Finalidade                                             | Aplicação no Projeto                       
 |-------------------------------------|--------------------------------------------------------|----------------------------------------
 | Visual Studio Code                  | Desenvolvimento e manutenção do código-fonte           |Utilizado na implementação das funcionalidades da aplicação e na edição dos arquivos do projeto|                            
