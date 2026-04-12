@@ -1,8 +1,6 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
 A equipe adota uma abordagem baseada em metodologias ágeis, combinando práticas dos frameworks Scrum e Kanban para organizar e gerenciar as atividades do projeto.
 
 Essa estratégia permite:
@@ -49,13 +47,6 @@ etiquetas:
 
 A configuração do projeto foi realizada criando-se um repositório central no GitHub. A gerência de commits é feita de forma frequente para evitar grandes conflitos. As merges são realizadas preferencialmente via Pull Requests após a revisão básica dos pares, garantindo que a branch main contenha apenas código funcional.
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis e Responsabilidade 
@@ -77,11 +68,6 @@ Ana Oliveira, Maria Resende, Marianna Farias, Rian Paixão, Vinicius Feitosa e V
 Maria Resende
 
 Essa divisão de papéis contribui para a organização do trabalho em equipe, favorecendo a comunicação entre os membros e a condução eficiente das atividades previstas no projeto.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
 
