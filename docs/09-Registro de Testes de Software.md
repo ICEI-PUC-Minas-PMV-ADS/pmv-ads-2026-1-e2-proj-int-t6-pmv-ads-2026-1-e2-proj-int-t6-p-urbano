@@ -7,7 +7,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT01 – Cadastro do usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Permitir que o usuário realize o cadastro na plataforma com sucesso. |
-|Registro de evidência | https://github.com/user-attachments/assets/5a652ab3-81cc-4474-a510-aad22ce0127f |
+|Registro de evidência | [Cadastro do usuário] https://github.com/user-attachments/assets/5a652ab3-81cc-4474-a510-aad22ce0127f |
 
 | **Caso de Teste** 	| **CT02 – Realizar login** 	|
 |:---:	|:---:	|
