@@ -7,12 +7,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|  RF-01 -Realizar cadastro |
-|Registro de evidência | <a href="www.teste.com.br/drive/ct-01> Fazer Cadastro </a></span>       |                                                                                                     
+|Registro de evidência | <a href="www.teste.com.br/drive/ct-01"> Fazer Cadastro </a></span>       |                                                                                                     
 
 | **Caso de Teste** 	| **CT02 – Realizar login** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - Fazer login |
-|Registro de evidência |<a href=" www.teste.com.br/drive/ct-02> Fazer Login</a></span>   |                                                                                                        
+|Registro de evidência |<a href=" www.teste.com.br/drive/ct-02"> Fazer Login</a></span>   |                                                                                                        
 
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
@@ -22,12 +22,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT05 – Funcionamento da tela Feed** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico
-|Registro de evidência |<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/21#issue-4412384742> Funcionamento da Tela Feed</a></span>|
+|Registro de evidência |<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/21#issue-4412384742"> Funcionamento da Tela Feed</a></span>|
 
 | **Caso de Teste** 	| **CT06 – Criar Denúncia** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04:Gerenciar denúncias, RF-05:Definir georreferência
-|Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/20#issue-4412346943> Criar Denúncia</a></span>|
+|Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/20#issue-4412346943"> Criar Denúncia</a></span>|
 
 
 
