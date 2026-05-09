@@ -7,12 +7,12 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|  RF-01 -Realizar cadastro |
-|Registro de evidência | <a href="www.teste.com.br/drive/ct-01"> Fazer Cadastro </a></span>       |                                                                                                     
+|Registro de evidência | www.teste.com.br/drive/ct-01      |                                                                                                     
 
 | **Caso de Teste** 	| **CT02 – Realizar login** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - Fazer login |
-|Registro de evidência | www.teste.com.br/drive/ct-02"> Fazer Login</a></span>   |                                                                                                        
+|Registro de evidência | www.teste.com.br/drive/ct-02 |                                                                                                        
 
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
