@@ -13,7 +13,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 
 ## Exemplo de tabela de registro dos testes de usabilidade  
 
-**Cenário 1**: Cadastro de Usuário         
+##Cenário 1: Cadastro de Usuário         
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
@@ -33,7 +33,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 | Usuário 4 | 18 | 3 | Sim | Nenhum | Navegação eficiente |
 | Usuário 5 | 25 | 3 | Sim | Nenhum | Sistema respondeu rapidamente | 
 
-**Cenário 3**: Recuperação de Senha        
+## Cenário 3: Recuperação de Senha        
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
@@ -43,7 +43,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 | Usuário 4 | 35 | 4 | Sim | Nenhum | Processo rápido |
 | Usuário 5 | 50 | 5 | Sim | Nenhum | Fluxo organizado |
 
-**Cenário 4**: Visualizar Denúncias no Mapa         
+## Cenário 4: Visualizar Denúncias no Mapa         
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
@@ -53,7 +53,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 | Usuário 4 | 25 | 3 | Sim | Nenhum | Excelente desempenho |
 | Usuário 5 | 40 | 4 | Sim | Nenhum | Fácil localizar denúncias | 
 
-## Cenário 5**: Funcionalidade do Feed:
+## Cenário 5: Funcionalidade do Feed:
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
@@ -63,7 +63,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 | Usuário 4 | 20 | 3 | Sim | Nenhum | Navegação fluida |
 | Usuário 5 | 35 | 4 | Sim | Nenhum | Curtidas e comentários funcionaram bem |
 
-**Cenário 6**: Criar Denúncia        
+##Cenário 6: Criar Denúncia        
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
@@ -72,10 +72,8 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 | Usuário 3 | 180 | 12 | Parcialmente | Dificuldade em preencher CEP | Precisou de ajuda |
 | Usuário 4 | 45 | 5 | Sim | Nenhum | Fluxo bem estruturado |
 | Usuário 5 | 60 | 6 | Sim | Nenhum | Gostou da organização dos campos |
-
-
-**Cenário 7**: Visualizar Postagens do Usuário       
-## Cenário 7:
+     
+## Cenário 7:Visualizar Postagens do Usuário  
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
