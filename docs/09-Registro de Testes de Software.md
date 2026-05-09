@@ -7,12 +7,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|  RF-01 -Realizar cadastro |
-|Registro de evidência | www.teste.com.br/drive/ct-01                                                                                                            |
+|Registro de evidência | www.teste.com.br/drive/ct-01       |                                                                                                     
 
 | **Caso de Teste** 	| **CT02 – Realizar login** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - Fazer login |
-|Registro de evidência | www.teste.com.br/drive/ct-02                                                                                                            |
+|Registro de evidência | www.teste.com.br/drive/ct-02    |                                                                                                        
 
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
