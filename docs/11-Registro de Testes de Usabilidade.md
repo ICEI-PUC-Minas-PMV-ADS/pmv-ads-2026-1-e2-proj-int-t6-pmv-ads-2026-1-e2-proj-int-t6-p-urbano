@@ -16,9 +16,9 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 Para registrar os indicadores de cada cenário, é preciso manter a coerência com os critérios quantitativos e qualitativos que foram definidos no plano de testes de usabilidade.
 
 **Cenário 1**: O usuário deverá realizar o Cadastro de Usuário         
-| **Usuário**   | **Tempo Total (seg)**    | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |     95               |            8                                Sim                |                  Dificuldade para localizar botão de cadastro      |   Achou o processo simples após encontrar a opção correta                            |                     |      
+| **Usuário**   | **Tempo Total (seg)**    | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** |                                    **Feedback do Usuário** |
+|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------ |
+| Usuário 1    |     95               |            8                                Sim                         |Dificuldade para localizar botão de cadastro         |  Achou o processo simples após encontrar a opção correta                            |                     |      
 | Usuário 2    |                    |                                 |                 |                        |                              |                     |      
 | Usuário 3    |                    |                                 |                 |                        |                              |                     |  
 | Usuário 4    |                    |                                 |                 |                        |                              |                     | 
