@@ -3,20 +3,22 @@
 O registro de testes de usabilidade é um documento ou planilha onde são coletadas e organizadas as informações sobre a experiência dos usuários ao interagir com um sistema. Ele inclui dados como tempo de execução de tarefas, taxa de sucesso, dificuldades encontradas, erros cometidos e _feedback_ dos usuários. Esse registro permite identificar padrões de uso, obstáculos/dificuldades encontrados na interface e oportunidades de melhoria, fornecendo _insights_ quantitativos e qualitativos para otimizar a experiência do usuário. Além disso, serve como base para análises, correções e futuras iterações do sistema, garantindo que ele atenda às necessidades do público-alvo de forma eficiente.
 
 ## Perfil dos usuários que participaram do teste
-- Usuário 1: 45 anos, nível básico incompleto, conhecimento básico tecnologia
-- Usuário 2: 18 anos, nível superior incompleto, conhecimento avançado tecnologia
-- Usuário 1: 70 anos, nível básico incompleto, conhecimento básico tecnologia
-- Usuário 2: 25 anos, nível superior completo, conhecimento avançado tecnologia
-- Usuário 2: 28 anos, nível superior completo, conhecimento avançado tecnologia
+- Usuário 1: Carlos Henrique, 45 anos, ensino médio incompleto, conhecimento básico em tecnologia. Utiliza redes sociais e aplicativos de mensagens diariamente, mas possui dificuldade com sistemas mais complexos. 
+- Usuário 2: Ana Júlia, 19 anos, ensino superior incompleto, conhecimento avançado em tecnologia. Possui familiaridade com redes sociais, aplicativos mobile e plataformas digitais.
+- Usuário 3: Maria Aparecida, 68 anos, ensino fundamental incompleto, conhecimento básico em tecnologia. Utiliza celular para tarefas simples e apresentou maior dificuldade na navegação. 
+- Usuário 4: Lucas Fernandes, 27 anos, ensino superior completo, conhecimento avançado em tecnologia. Possui experiência com plataformas interativas e mapas digitais.  
+- Usuário 5:  Juliana Souza, 32 anos, ensino superior completo, conhecimento intermediário em tecnologia. Utiliza frequentemente aplicativos de localização e redes sociais. 
+
+ 
 
 ## Exemplo de tabela de registro dos testes de usabilidade  
 
 Para registrar os indicadores de cada cenário, é preciso manter a coerência com os critérios quantitativos e qualitativos que foram definidos no plano de testes de usabilidade.
 
-**Cenário 1**: O usuário deseja comprar um notebook para uso pessoal. Para isso, ele deverá entrar no site www.compras.com.br para buscar opções disponíveis, comparar preços, adicionar o produto ao carrinho e finalizar a compra com pagamento via cartão de crédito.         
-| **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+**Cenário 1**: O usuário deverá realizar o Cadastro de Usuário         
+| **Usuário**   | **Tempo Total (seg)**    | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |                    |                                 |                 |                        |                              |                     |      
+| Usuário 1    |     95               |            8                                Sim                |                  Dificuldade para localizar botão de cadastro      |   Achou o processo simples após encontrar a opção correta                            |                     |      
 | Usuário 2    |                    |                                 |                 |                        |                              |                     |      
 | Usuário 3    |                    |                                 |                 |                        |                              |                     |  
 | Usuário 4    |                    |                                 |                 |                        |                              |                     | 
