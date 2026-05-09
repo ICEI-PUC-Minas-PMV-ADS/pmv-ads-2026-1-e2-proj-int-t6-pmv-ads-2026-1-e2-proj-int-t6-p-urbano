@@ -92,8 +92,6 @@ Características:
 - Placeholder discreto  
 - Boa legibilidade  
 
----
-
 ## Botões Primários
 
 Características:
