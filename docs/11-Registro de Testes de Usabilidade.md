@@ -14,13 +14,15 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 ## Exemplo de tabela de registro dos testes de usabilidade  
 
 **Cenário 1**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+## Cenário 1:
+
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|------------------------|-------------------|------------------|----------------------|
+| Usuário 1 | 95 | 8 | Sim | Dificuldade para localizar o botão de cadastro | Achou o processo simples após encontrar a opção correta |
+| Usuário 2 | 40 | 5 | Sim | Nenhum | Cadastro rápido e intuitivo |
+| Usuário 3 | 130 | 10 | Sim | Confusão ao preencher senha | Letras pequenas dificultaram a leitura |
+| Usuário 4 | 32 | 4 | Sim | Nenhum | Processo rápido e organizado |
+| Usuário 5 | 50 | 5 | Sim | Nenhum | Interface agradável e fácil de utilizar |
 
 **Cenário 2**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
