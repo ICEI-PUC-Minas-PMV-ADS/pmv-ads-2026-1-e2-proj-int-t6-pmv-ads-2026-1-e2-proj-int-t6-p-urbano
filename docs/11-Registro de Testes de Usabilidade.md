@@ -13,8 +13,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 
 ## Exemplo de tabela de registro dos testes de usabilidade  
 
-**Cenário 1**:         
-## Cenário 1:
+**Cenário 1**: Cadastro de Usuário         
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
@@ -24,41 +23,69 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 | Usuário 4 | 32 | 4 | Sim | Nenhum | Processo rápido e organizado |
 | Usuário 5 | 50 | 5 | Sim | Nenhum | Interface agradável e fácil de utilizar |
 
-**Cenário 2**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+## Cenário 2: Fazer Login
 
-**Cenário 3**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|------------------------|-------------------|------------------|----------------------|
+| Usuário 1 | 45 | 4 | Sim | Digitou senha incorreta uma vez | Login simples |
+| Usuário 2 | 20 | 3 | Sim | Nenhum | Processo rápido |
+| Usuário 3 | 70 | 5 | Sim | Dificuldade em localizar botão login | Poderia ter letras maiores |
+| Usuário 4 | 18 | 3 | Sim | Nenhum | Navegação eficiente |
+| Usuário 5 | 25 | 3 | Sim | Nenhum | Sistema respondeu rapidamente | 
 
-**Cenário 4**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+**Cenário 3**: Recuperação de Senha        
 
-**Cenário 5**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|------------------------|-------------------|------------------|----------------------|
+| Usuário 1 | 110 | 7 | Sim | Não encontrou imediatamente "Esqueci minha senha" | Processo funcional |
+| Usuário 2 | 45 | 5 | Sim | Nenhum | Recuperação prática |
+| Usuário 3 | 150 | 9 | Sim | Dificuldade para inserir código recebido | Precisou de auxílio |
+| Usuário 4 | 35 | 4 | Sim | Nenhum | Processo rápido |
+| Usuário 5 | 50 | 5 | Sim | Nenhum | Fluxo organizado |
+
+**Cenário 4**: Visualizar Denúncias no Mapa         
+
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|------------------------|-------------------|------------------|----------------------|
+| Usuário 1 | 85 | 7 | Sim | Dificuldade ao aplicar filtros | Gostou da visualização do mapa |
+| Usuário 2 | 30 | 4 | Sim | Nenhum | Mapa interativo muito intuitivo |
+| Usuário 3 | 140 | 10 | Parcialmente | Dificuldade na navegação do mapa | Ícones poderiam ser maiores |
+| Usuário 4 | 25 | 3 | Sim | Nenhum | Excelente desempenho |
+| Usuário 5 | 40 | 4 | Sim | Nenhum | Fácil localizar denúncias | 
+
+## Cenário 5**: Funcionalidade do Feed:
+
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|------------------------|-------------------|------------------|----------------------|
+| Usuário 1 | 70 | 6 | Sim | Confusão nos filtros | Feed lembra redes sociais conhecidas |
+| Usuário 2 | 22 | 3 | Sim | Nenhum | Muito semelhante ao Instagram |
+| Usuário 3 | 120 | 8 | Parcialmente | Não encontrou filtro de região rapidamente | Muitas informações na tela |
+| Usuário 4 | 20 | 3 | Sim | Nenhum | Navegação fluida |
+| Usuário 5 | 35 | 4 | Sim | Nenhum | Curtidas e comentários funcionaram bem |
+
+**Cenário 6**: Criar Denúncia        
+
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|------------------------|-------------------|------------------|----------------------|
+| Usuário 1 | 140 | 10 | Sim | Dificuldade ao anexar imagem | Processo compreensível |
+| Usuário 2 | 55 | 6 | Sim | Nenhum | Cadastro da denúncia simples |
+| Usuário 3 | 180 | 12 | Parcialmente | Dificuldade em preencher CEP | Precisou de ajuda |
+| Usuário 4 | 45 | 5 | Sim | Nenhum | Fluxo bem estruturado |
+| Usuário 5 | 60 | 6 | Sim | Nenhum | Gostou da organização dos campos |
+
+
+**Cenário 7**: Visualizar Postagens do Usuário       
+## Cenário 7:
+
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|------------------------|-------------------|------------------|----------------------|
+| Usuário 1 | 60 | 5 | Sim | Dificuldade para localizar perfil | Gostou de visualizar suas denúncias |
+| Usuário 2 | 18 | 2 | Sim | Nenhum | Perfil organizado |
+| Usuário 3 | 95 | 7 | Parcialmente | Não encontrou botão editar inicialmente | Interface poderia ser mais simples |
+| Usuário 4 | 20 | 2 | Sim | Nenhum | Informações bem distribuídas |
+| Usuário 5 | 30 | 3 | Sim | Nenhum | Navegação rápida e intuitiva |
+
+
 
 ## Relatório dos testes de usabilidade 
 
