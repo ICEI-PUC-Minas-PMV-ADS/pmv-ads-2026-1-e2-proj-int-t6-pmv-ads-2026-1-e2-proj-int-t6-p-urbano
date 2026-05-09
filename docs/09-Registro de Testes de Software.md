@@ -7,12 +7,12 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 -Realizar cadastro |
-|Registro de evidência | [Cadastro do usuário](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/19#issue-4403474751)      |                                                                                                     
+|Registro de evidência | [Cadastro do usuário](https://github.com/user-attachments/assets/5a652ab3-81cc-4474-a510-aad22ce0127f)      |                                                                                                     
 
 | **Caso de Teste** 	| **CT02 – Login do Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - Fazer login |
-|Registro de evidência | [Fazer login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/19#issue-4403474751)  |                                                                                                        
+|Registro de evidência | [Fazer login](https://github.com/user-attachments/assets/5a652ab3-81cc-4474-a510-aad22ce0127f)  |                                                                                                        
 
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
