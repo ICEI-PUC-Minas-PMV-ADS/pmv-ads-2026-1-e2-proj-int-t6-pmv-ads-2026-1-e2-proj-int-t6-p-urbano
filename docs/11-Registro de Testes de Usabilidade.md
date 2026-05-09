@@ -13,7 +13,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 
 ## Exemplo de tabela de registro dos testes de usabilidade  
 
-##Cenário 1: Cadastro de Usuário         
+## Cenário 1: Cadastro de Usuário         
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
@@ -63,7 +63,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 | Usuário 4 | 20 | 3 | Sim | Nenhum | Navegação fluida |
 | Usuário 5 | 35 | 4 | Sim | Nenhum | Curtidas e comentários funcionaram bem |
 
-##Cenário 6: Criar Denúncia        
+## Cenário 6: Criar Denúncia        
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
