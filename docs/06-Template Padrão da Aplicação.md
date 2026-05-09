@@ -10,51 +10,6 @@ A identidade visual do projeto adota um estilo **Dark Mode**, utilizando contras
 
 <img width="874" height="569" alt="image" src="https://github.com/user-attachments/assets/f6ece6ca-098c-4423-92f8-2c39d3b59b9f" />
 
----
-
-# 🖥 Estrutura do Layout
-
-## Cabeçalho (Header)
-
-O cabeçalho é responsável pela identificação visual e navegação principal da plataforma.
-
-### Elementos:
-
-- Logo institucional  
-- Nome da plataforma  
-- Navegação principal  
-- Acesso rápido às funcionalidades  
-
----
-
-## Conteúdo Principal (Main Content)
-
-Área central da aplicação onde estão concentradas as funcionalidades principais do sistema.
-
-### Componentes:
-
-- Formulário de Login  
-- Formulário de Cadastro  
-- Campos de entrada de dados  
-- Botões de ação  
-- Links auxiliares  
-
-A estrutura foi planejada para oferecer uma navegação simples, objetiva e intuitiva.
-
----
-
-## Rodapé (Footer)
-
-Área complementar destinada a informações institucionais e suporte.
-
-### Elementos:
-
-- Informações de contato  
-- Direitos autorais  
-- Links complementares  
-
----
-
 # Tipografia
 
 A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibilidade e modernidade.
@@ -76,7 +31,7 @@ A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibi
 - Labels de formulário  
 - Textos descritivos  
 - Conteúdo informativo
-- 
+  
 ## Textos secundários
 
 **Fonte:** Poppins Italic  
