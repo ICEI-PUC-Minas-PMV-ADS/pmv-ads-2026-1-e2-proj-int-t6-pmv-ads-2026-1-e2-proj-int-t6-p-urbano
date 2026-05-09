@@ -1,5 +1,4 @@
 # Template Padrão da Aplicação
-# 🎨 Layout e Identidade Visual do Projeto
 
 ## Introdução
 
@@ -56,7 +55,7 @@ A estrutura foi planejada para oferecer uma navegação simples, objetiva e intu
 
 ---
 
-# 🔤 Tipografia
+# Tipografia
 
 A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibilidade e modernidade.
 
@@ -67,13 +66,7 @@ A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibi
 ### Aplicação:
 - Títulos principais  
 - Destaques visuais  
-- Chamadas de ação  
-
-**Exemplos:**  
-- Bem-vindo de volta!  
-- Crie uma conta  
-
----
+- Chamadas de ação 
 
 ## Textos principais
 
@@ -82,15 +75,8 @@ A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibi
 ### Aplicação:
 - Labels de formulário  
 - Textos descritivos  
-- Conteúdo informativo  
-
-**Exemplos:**  
-- Email  
-- Senha  
-- Nome  
-
----
-
+- Conteúdo informativo
+- 
 ## Textos secundários
 
 **Fonte:** Poppins Italic  
@@ -99,14 +85,9 @@ A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibi
 - Links auxiliares  
 - Observações  
 - Microtextos  
-
-**Exemplos:**  
-- Esqueceu sua senha?  
-- Crie a sua conta  
-
 ---
 
-# 🖼 Identidade Visual (Logo)
+#  Identidade Visual (Logo)
 
 Espaço reservado para aplicação da logo oficial da plataforma.
 
@@ -117,7 +98,7 @@ Espaço reservado para aplicação da logo oficial da plataforma.
 
 ---
 
-# 🎨 Paleta de Cores
+#  Paleta de Cores
 
 | Elemento | Cor | Código Hexadecimal |
 |---|---|---|
@@ -129,7 +110,7 @@ Espaço reservado para aplicação da logo oficial da plataforma.
 
 ---
 
-# 📐 Especificações do Layout
+# Especificações do Layout
 
 As configurações estruturais do layout seguem o padrão definido no protótipo desenvolvido no Figma.
 
@@ -145,7 +126,7 @@ As configurações estruturais do layout seguem o padrão definido no protótipo
 
 ---
 
-# 🧩 Componentes Principais
+# Componentes Principais
 
 ## Campos de Formulário
 
@@ -170,8 +151,6 @@ Características:
 - Entrar  
 - Comece Agora  
 
----
-
 ## Botões Secundários
 
 Características:
@@ -185,16 +164,4 @@ Características:
 
 ---
 
-# 💡 Conceito Visual
 
-O design do projeto foi construído para transmitir:
-
-- Modernidade  
-- Segurança  
-- Organização  
-- Tecnologia  
-- Facilidade de navegação  
-
-A combinação entre tipografia em itálico, cores contrastantes e estrutura organizada fortalece a identidade visual da plataforma e melhora a experiência do usuário.
-
----
