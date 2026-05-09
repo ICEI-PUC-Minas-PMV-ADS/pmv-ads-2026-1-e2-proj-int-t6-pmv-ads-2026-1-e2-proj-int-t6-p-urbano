@@ -13,15 +13,15 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 
 ## Exemplo de tabela de registro dos testes de usabilidade  
 
-Para registrar os indicadores de cada cenário, é preciso manter a coerência com os critérios quantitativos e qualitativos que foram definidos no plano de testes de usabilidade.
-**Cenário 2**:         
+**Cenário 1**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |95                   |     8                          |Sim              | Dificuldade para localizar botão de cadastro           Achou o processo simples após encontrar a opção correta              |                             |                     |      
+| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
 | Usuário 2   |                    |                                 |                 |                        |                              |                     |      
 | Usuário 3   |                    |                                 |                 |                        |                              |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+
 **Cenário 2**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
