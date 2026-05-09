@@ -12,7 +12,12 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT02 – Login do Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - Fazer login |
-|Registro de evidência | [Fazer login](https://github.com/user-attachments/assets/5a652ab3-81cc-4474-a510-aad22ce0127f)  |                                                                                                        
+|Registro de evidência | [Fazer login](https://github.com/user-attachments/assets/5a652ab3-81cc-4474-a510-aad22ce0127f)  |   
+
+| **Caso de Teste** 	| **CT03 – Recuperar Senha** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-03 - Recuperar senha por e-mail |
+|Registro de evidência | [Recuperar senha por e-mail](https://github.com/user-attachments/assets/5a652ab3-81cc-4474-a510-aad22ce0127f)  | 
 
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
