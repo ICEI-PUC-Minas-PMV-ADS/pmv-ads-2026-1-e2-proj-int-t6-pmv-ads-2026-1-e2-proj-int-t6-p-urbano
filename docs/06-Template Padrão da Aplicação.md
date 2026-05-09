@@ -1,12 +1,200 @@
 # Template Padrão da Aplicação
+# 🎨 Layout e Identidade Visual do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+## Introdução
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O layout do projeto foi desenvolvido com foco em **usabilidade, organização e acessibilidade**, visando proporcionar uma experiência intuitiva e eficiente para os usuários da plataforma.
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+A estrutura da interface segue uma organização clássica e funcional, dividida em três áreas principais: **Cabeçalho (Header)**, **Conteúdo Principal (Main Content)** e **Rodapé (Footer)**. Essa divisão permite uma navegação clara, mantendo a hierarquia das informações e facilitando a interação do usuário com o sistema.
+
+A identidade visual do projeto adota um estilo **Dark Mode**, utilizando contraste entre cores escuras e elementos de destaque em tons vibrantes, reforçando modernidade, tecnologia e praticidade.
+
+<img width="874" height="569" alt="image" src="https://github.com/user-attachments/assets/f6ece6ca-098c-4423-92f8-2c39d3b59b9f" />
+
+---
+
+# 🖥 Estrutura do Layout
+
+## Cabeçalho (Header)
+
+O cabeçalho é responsável pela identificação visual e navegação principal da plataforma.
+
+### Elementos:
+
+- Logo institucional  
+- Nome da plataforma  
+- Navegação principal  
+- Acesso rápido às funcionalidades  
+
+---
+
+## Conteúdo Principal (Main Content)
+
+Área central da aplicação onde estão concentradas as funcionalidades principais do sistema.
+
+### Componentes:
+
+- Formulário de Login  
+- Formulário de Cadastro  
+- Campos de entrada de dados  
+- Botões de ação  
+- Links auxiliares  
+
+A estrutura foi planejada para oferecer uma navegação simples, objetiva e intuitiva.
+
+---
+
+## Rodapé (Footer)
+
+Área complementar destinada a informações institucionais e suporte.
+
+### Elementos:
+
+- Informações de contato  
+- Direitos autorais  
+- Links complementares  
+
+---
+
+# 🔤 Tipografia
+
+A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibilidade e modernidade.
+
+## Títulos
+
+**Fonte:** Poppins Bold Italic  
+
+### Aplicação:
+- Títulos principais  
+- Destaques visuais  
+- Chamadas de ação  
+
+**Exemplos:**  
+- Bem-vindo de volta!  
+- Crie uma conta  
+
+---
+
+## Textos principais
+
+**Fonte:** Poppins Light Italic  
+
+### Aplicação:
+- Labels de formulário  
+- Textos descritivos  
+- Conteúdo informativo  
+
+**Exemplos:**  
+- Email  
+- Senha  
+- Nome  
+
+---
+
+## Textos secundários
+
+**Fonte:** Poppins Italic  
+
+### Aplicação:
+- Links auxiliares  
+- Observações  
+- Microtextos  
+
+**Exemplos:**  
+- Esqueceu sua senha?  
+- Crie a sua conta  
+
+---
+
+# 🖼 Identidade Visual (Logo)
+
+Espaço reservado para aplicação da logo oficial da plataforma.
+
+<p align="center">
+ <img width="1111" height="1416" alt="image" src="https://github.com/user-attachments/assets/94f6a18d-9757-4fa4-8070-aaee0908cb42" />
+
+</p>
+
+---
+
+# 🎨 Paleta de Cores
+
+| Elemento | Cor | Código Hexadecimal |
+|---|---|---|
+| Fundo Principal | Azul Escuro | `#050A24` |
+| Títulos e Botões | Laranja | `#F68B00` |
+| Textos e Bordas | Branco | `#FFFFFF` |
+| Contraste Secundário | Preto | `#000000` |
+| Botões Secundários | Azul Médio | `#205375` |
+
+---
+
+# 📐 Especificações do Layout
+
+As configurações estruturais do layout seguem o padrão definido no protótipo desenvolvido no Figma.
+
+| Configuração | Valor |
+|---|---|
+| Largura | 425px |
+| Altura | 521px |
+| Espaçamento (Gap) | 32px |
+| Border Radius | 10px |
+| Opacidade | 100% |
+| Padding | 0px |
+| Auto Layout | Ativado |
+
+---
+
+# 🧩 Componentes Principais
+
+## Campos de Formulário
+
+Características:
+
+- Bordas finas em branco  
+- Fundo escuro  
+- Placeholder discreto  
+- Boa legibilidade  
+
+---
+
+## Botões Primários
+
+Características:
+
+- Cor principal `#F68B00`  
+- Alto contraste visual  
+- Destaque para ações principais  
+
+**Exemplos:**  
+- Entrar  
+- Comece Agora  
+
+---
+
+## Botões Secundários
+
+Características:
+
+- Cor secundária `#205375`  
+- Menor destaque visual  
+- Ações complementares  
+
+**Exemplo:**  
+- Entre com o E-mail  
+
+---
+
+# 💡 Conceito Visual
+
+O design do projeto foi construído para transmitir:
+
+- Modernidade  
+- Segurança  
+- Organização  
+- Tecnologia  
+- Facilidade de navegação  
+
+A combinação entre tipografia em itálico, cores contrastantes e estrutura organizada fortalece a identidade visual da plataforma e melhora a experiência do usuário.
+
+---
