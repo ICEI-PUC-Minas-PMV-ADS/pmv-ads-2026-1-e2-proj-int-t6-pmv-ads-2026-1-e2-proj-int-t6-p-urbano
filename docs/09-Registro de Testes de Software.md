@@ -7,12 +7,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|  RF-01 -Realizar cadastro |
-|Registro de evidência | www.teste.com.br/drive/ct-01 |
+|Registro de evidência | www.teste.com.br/drive/ct-01                                                                                                            |
 
 | **Caso de Teste** 	| **CT02 – Realizar login** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - Fazer login |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | www.teste.com.br/drive/ct-02                                                                                                            |
 
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
@@ -21,7 +21,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | **Caso de Teste** 	| **CT05 – Funcionamento da tela Feed** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| F-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico
+|	Requisito Associado 	| RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico
 |Registro de evidência |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/21#issue-4412384742|
 
 | **Caso de Teste** 	| **CT06 – Criar Denúncia** 	|
