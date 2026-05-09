@@ -16,8 +16,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | **Caso de Teste** 	| **CT06 – Criar Denúncia** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-04:Gerenciar denúncias,RF-05:Definir georreferência
-|Registro de evidência | https://drive.google.com/file/d/1wOjWNnZKg5WUq-bLtqh4rF-135euz1l_/view?usp=drive_link |
+|	Requisito Associado 	| RF-04:Gerenciar denúncias, RF-05:Definir georreferência
+|Registro de evidência | [Criar denúncia] https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/20#issue-4412346943|
 
 
 ## Relatório de testes de software
