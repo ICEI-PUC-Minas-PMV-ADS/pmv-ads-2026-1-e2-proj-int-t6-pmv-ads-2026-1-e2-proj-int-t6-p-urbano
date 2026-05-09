@@ -73,7 +73,7 @@ Os testes de usabilidade realizados permitiram avaliar a eficiência, navegabili
 | Usuário 4 | 45 | 5 | Sim | Nenhum | Fluxo bem estruturado |
 | Usuário 5 | 60 | 6 | Sim | Nenhum | Gostou da organização dos campos |
      
-## Cenário 7:Visualizar Postagens do Usuário  
+## Cenário 7: Visualizar Postagens do Usuário  
 
 | Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
 |----------|-------------------|------------------------|-------------------|------------------|----------------------|
