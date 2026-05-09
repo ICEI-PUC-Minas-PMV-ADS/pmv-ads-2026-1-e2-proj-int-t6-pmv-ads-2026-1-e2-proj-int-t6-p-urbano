@@ -1,18 +1,23 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
 ## Protótipo interativo
+Este projeto conta com um protótipo interativo desenvolvido no Figma, onde são apresentadas as principais interfaces da plataforma, como tela inicial (feed), login, cadastro, perfil e navegação principal.
+
 [Figma Interativo](https://www.figma.com/proto/99IZZfHhTKQlvDtkmhfBEd/Portal-Urbano?page-id=0%3A1&node-id=109-280&p=f&viewport=379%2C1405%2C0.2&t=FnXh7wxt4uUnrD5z-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=109%3A2)
 
  Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## Diagrama de Fluxo
+O fluxo de usuário (User Flow) foi estruturado para representar de forma clara os caminhos que o usuário pode percorrer dentro da aplicação, desde o primeiro acesso até a interação com as funcionalidades principais, auxiliando tanto na validação quanto no desenvolvimento do sistema.
+
+![Fluxo de Usuário](https://github.com/user-attachments/assets/4b5a702e-de2d-4a7b-bffd-cd8d5afd35b1)
+*Figura 1*
+
 
 <img width="1022" height="771" alt="image" src="https://github.com/user-attachments/assets/05b4cc6a-0350-4752-ad00-03a1a409866d" />
+<em> Figura 2</em>
 
 ## Wireframes
 Tela de Criar sua Senha (Cadastro):

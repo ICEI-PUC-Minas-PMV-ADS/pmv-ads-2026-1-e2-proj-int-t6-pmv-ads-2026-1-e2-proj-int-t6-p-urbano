@@ -1,9 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-A equipe adota uma abordagem baseada em metodologias ágeis, utilizando práticas do Kanban para organizar e gerenciar as atividades do projeto.
+A equipe adota uma abordagem baseada em metodologias ágeis, combinando práticas dos frameworks Scrum e Kanban para organizar e gerenciar as atividades do projeto.
 
 Essa estratégia permite:
 
@@ -47,52 +45,64 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+A configuração do projeto foi realizada criando-se um repositório central no GitHub. A gerência de commits é feita de forma frequente para evitar grandes conflitos. As merges são realizadas preferencialmente via Pull Requests após a revisão básica dos pares, garantindo que a branch main contenha apenas código funcional.
 
 ## Gerenciamento de Projeto
 
-### Divisão de Papéis
+### Divisão de Papéis e Responsabilidade 
 
-Apresente a divisão de papéis entre os membros do grupo.
+A organização da equipe do projeto foi definida com base em papéis que contribuem para o planejamento, acompanhamento e desenvolvimento das atividades. Essa estrutura visa promover uma melhor distribuição das responsabilidades, maior clareza na execução das tarefas e alinhamento entre os integrantes ao longo do desenvolvimento do projeto.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+A composição da equipe está definida da seguinte forma:
+
+**Scrum Master:**
+Vitor Souza
+
+**Product Owner:**
+Ana Oliveira
+
+**Equipe de Desenvolvimento:**
+Ana Oliveira, Maria Resende, Marianna Farias, Rian Paixão, Vinicius Feitosa e Vitor Souza
+
+**Equipe de Design:**
+Maria Resende
+
+Essa divisão de papéis contribui para a organização do trabalho em equipe, favorecendo a comunicação entre os membros e a condução eficiente das atividades previstas no projeto.
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para organizar e distribuir as atividades do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes colunas:
 
+**Backlog:** Reúne as demandas que precisam ser desenvolvidas e corresponde ao Backlog do produto. Todas as tarefas identificadas ao longo do projeto são adicionadas a essa lista.
+
+**Ready**: Corresponde às atividades que já estão refinadas, definidas e prontas para serem iniciadas pela equipe. São tarefas que possuem informações suficientes para execução e aguardam apenas o momento de serem assumidas.
+
+**In Progress**: Contém as tarefas que já foram iniciadas e estão em desenvolvimento.
+
+**Done**: Refere-se às atividades que foram concluídas com sucesso. Nesse status, encontram-se as entregas finalizadas e validadas dentro do escopo previsto.
+
+O quadro kanban do grupo no GitHub está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2584 e é apresentado, no estado atual, na figura abaixo:
+
+![Quadro Kanban](img/QuadroKanban.png)
+ 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As ferramentas adotadas no desenvolvimento do projeto foram selecionadas com o objetivo de apoiar as diferentes etapas de elaboração, organização e implementação da solução. Entre os recursos utilizados, destacam-se o Visual Studio Code, o Figma e o GitHub.
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+O **Visual Studio Code** foi utilizado como editor de código, principalmente por oferecer recursos que facilitam o desenvolvimento da aplicação, além de integração com sistemas de versionamento, o que contribui para o controle das alterações realizadas e para o acompanhamento da evolução do projeto.
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+O **Figma** foi empregado na criação de telas, protótipos e fluxogramas, permitindo representar visualmente as funcionalidades e necessidades da solução. Essa ferramenta auxilia na organização das ideias e no planejamento da interface do sistema.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+O **GitHub**, por sua vez, foi utilizado tanto para o versionamento do código-fonte quanto para o gerenciamento e acompanhamento das atividades do projeto. Por meio dessa plataforma, foi possível centralizar o repositório da aplicação, registrar alterações e organizar as tarefas desenvolvidas pela equipe.
+
+Dessa forma, os artefatos do projeto foram produzidos com o apoio dessas ferramentas, cada uma exercendo uma função específica e contribuindo diretamente para o alcance dos objetivos estabelecidos no desenvolvimento da solução.
+
+#### Tabela de Ferramentas
+
+
+| Ferramenta                          | Finalidade                                             | Aplicação no Projeto                       
+|-------------------------------------|--------------------------------------------------------|----------------------------------------
+| Visual Studio Code                  | Desenvolvimento e manutenção do código-fonte           |Utilizado na implementação das funcionalidades da aplicação e na edição dos arquivos do projeto|                            
+| Figma                               | Criação de telas, protótipos e fluxogramas             |Empregado na elaboração da interface visual e na representação dos fluxos da solução
+| GitHub                              | Versionamento, organização e gerenciamento do projeto  |Utilizado para armazenar o repositório, controlar versões e acompanhar as tarefas da equipe       
+

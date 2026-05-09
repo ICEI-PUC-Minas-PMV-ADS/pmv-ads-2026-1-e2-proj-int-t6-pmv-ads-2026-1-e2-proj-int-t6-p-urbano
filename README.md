@@ -14,7 +14,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Maria Carolina Passos Resende
 * Marianna Flaviane Teodoro Farias
 * Rian Keven de Jesus da Paixao
-* Vinicius Feitosa
+* Vinícius Gabriel da Silva Feitosa
 * Vitor Lucas Matias de Souza
 
 ## Orientador
