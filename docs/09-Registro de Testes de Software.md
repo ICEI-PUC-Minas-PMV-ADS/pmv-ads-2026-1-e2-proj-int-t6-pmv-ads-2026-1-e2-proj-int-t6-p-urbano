@@ -14,10 +14,21 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |	Requisito Associado 	| RF-02 - Fazer login |
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
 
+| **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-06: Listar denúncias em mapa interativo
+|Registro de evidência |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/22#issue-4412396188|
+
+| **Caso de Teste** 	| **CT05 – Funcionamento da tela Feed** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| F-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico
+|Registro de evidência |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/21#issue-4412384742|
+
 | **Caso de Teste** 	| **CT06 – Criar Denúncia** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04:Gerenciar denúncias, RF-05:Definir georreferência
 |Registro de evidência | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/20#issue-4412346943|
+
 
 
 ## Relatório de testes de software
