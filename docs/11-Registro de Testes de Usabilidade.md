@@ -11,7 +11,7 @@ Os testes de usabilidade realizados permitiram avaliar a eficiência, navegabili
 
  
 
-## Exemplo de tabela de registro dos testes de usabilidade  
+## Tabela de registro dos testes de usabilidade  
 
 ## Cenário 1: Cadastro de Usuário         
 
