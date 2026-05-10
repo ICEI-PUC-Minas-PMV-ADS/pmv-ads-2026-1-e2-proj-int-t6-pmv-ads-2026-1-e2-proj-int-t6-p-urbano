@@ -106,9 +106,4 @@ Dica: Agrupe problemas em níveis de prioridade:
 - Moderado: Dificulta a experiência, mas não impede o uso.
 - Leve: Pode ser melhorado, mas não compromete a usabilidade.
 
-Apresente propostas de ações para corrigir os problemas críticos e recorrentes identificados e proponha melhorias incrementais para otimizar a experiência do usuário.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
