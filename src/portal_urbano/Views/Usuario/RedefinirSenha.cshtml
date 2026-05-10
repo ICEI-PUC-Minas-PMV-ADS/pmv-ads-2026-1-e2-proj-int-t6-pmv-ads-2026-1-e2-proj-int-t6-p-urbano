@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Redefinir senha";
+    ViewData["HideLayoutFooter"] = true;
+    ViewData["HideLayoutHeader"] = true;
+}
+
+<div class="login-page">
+    <div class="esqueci-hero">
+        <a class="login-brand" asp-controller="Home" asp-action="Index">
+            <span class="login-brand-icon">🧭</span>
+            <span class="login-brand-text">PortalUrbano</span>
+        </a>
+    </div>
+    <div class="login-panel">
+        <div class="login-card">
+            <h1 class="login-title">Redefinir senha</h1>
+
+            @if (ViewBag.Erro != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Erro</div>
+            }
+
+            <form method="post" class="login-form">
+                <input type="hidden" name="token" value="@ViewBag.Token" />
+                <input type="hidden" name="email" value="@ViewBag.Email" />
+
+                <div class="mb-4">
+                    <label class="form-label login-label">Nova senha</label>
+                    <input name="senha" type="password" class="form-control login-input" placeholder="Digite a nova senha" required />
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <button type="submit" class="btn login-btn-primary">Redefinir senha</button>
+                </div>
+            </form>
+
+            <div class="login-footer">
+                <span>Voltar</span>
+                <a asp-action="Login">Ao login</a>
+            </div>
+        </div>
+    </div>
+</div>

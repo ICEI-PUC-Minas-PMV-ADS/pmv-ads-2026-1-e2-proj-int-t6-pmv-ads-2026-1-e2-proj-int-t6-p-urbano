@@ -1,0 +1,327 @@
+﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.portal-home {
+  min-height: calc(100vh - 190px);
+}
+
+.cadastro-page {
+  min-height: calc(100vh - 170px);
+  display: flex;
+  align-items: stretch;
+}
+
+.cadastro-shell {
+  max-width: 1120px;
+  min-height: calc(100vh - 170px);
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.cadastro-copy {
+  padding-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+}
+
+.cadastro-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.cadastro-text {
+  font-size: 1.1rem;
+  color: #111827;
+  margin-bottom: 0;
+}
+
+.cadastro-form-card {
+  padding-left: 1rem;
+}
+
+.cadastro-form {
+  max-width: 640px;
+  margin-left: auto;
+}
+
+.cadastro-input {
+  height: 44px;
+  border-radius: 0.5rem;
+}
+
+.cadastro-btn {
+  min-width: 240px;
+  height: 48px;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.cadastro-btn-outline {
+  background: #fff;
+  color: #111;
+  border-color: #111;
+}
+
+.cadastro-btn-outline:hover {
+  background: #f3f4f6;
+  color: #111;
+}
+
+.cadastro-btn-dark {
+  background: #000;
+  border-color: #000;
+}
+
+.cadastro-btn-dark:hover {
+  background: #111;
+  border-color: #111;
+}
+
+.cadastro-footer {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  background-color: #fff;
+}
+
+.cadastro-links-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.cadastro-links-row a {
+  color: #0077cc;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.cadastro-links-row a:hover {
+  color: #005fa3;
+}
+
+.cadastro-link-separator {
+  color: #d1d5db;
+  margin: 0 0.25rem;
+  font-weight: 300;
+}
+
+.cadastro-copyright {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.cadastro-criar-conta {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.cadastro-criar-conta:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+body {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-word;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.portal-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.portal-center-group {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  line-height: 1;
+}
+
+.portal-brand {
+  justify-self: auto;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.portal-nav {
+  justify-self: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.portal-nav .nav-item,
+.portal-nav .nav-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.portal-user {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.portal-user .badge {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.btn {
+  border-radius: 0.5rem;
+}
+
+.validation-summary-errors {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.field-validation-valid {
+  display: none;
+}
+
+.field-validation-error {
+  color: #dc3545;
+  padding: 0.25rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .cadastro-copy,
+  .cadastro-form-card {
+    padding-left: 0;
+  }
+
+  .cadastro-form {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .cadastro-main {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cadastro-page {
+    align-items: flex-start;
+  }
+
+  .cadastro-shell {
+    min-height: auto;
+  }
+
+  .cadastro-title {
+    font-size: 2.25rem;
+  }
+
+  .cadastro-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}

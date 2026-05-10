@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Perfil";
+    ViewData["HideLayoutHeader"] = true;
+    ViewData["HideLayoutFooter"] = true;
+}
+
+<div class="perfil-page">
+    <div class="perfil-header">
+        <a class="perfil-brand" asp-controller="Home" asp-action="Perfil">
+            <div class="perfil-logo">🧭</div>
+            <div class="perfil-brand-text">Portal Urbano</div>
+        </a>
+<nav class="perfil-nav">
+    <a asp-controller="Home" asp-action="Feed">Feed</a>
+<a asp-controller="Home" asp-action="CriarDenuncia" class="perfil-btn">Criar nova denúncia</a>
+<a asp-controller="Home" asp-action="Mapa">Mapa</a>
+    <a asp-controller="Home" asp-action="Perfil" class="active">Perfil</a>
+</nav>
+    </div>
+
+    <div class="perfil-hero">
+        <div class="perfil-user">
+            <div class="perfil-avatar">@ViewBag.UsuarioNome?.Substring(0,1)</div>
+            <div>
+                <h1>@ViewBag.UsuarioNome</h1>
+                <p>Seja bem-vindo! Você pode visualizar denúncias e configurar seu perfil.</p>
+            </div>
+        </div>
+        <a asp-controller="Usuario" asp-action="Logout" class="perfil-sair">sair</a>
+    </div>
+
+    <div class="perfil-actions">
+        <button class="perfil-btn-outline">Editar Posts</button>
+        <button class="perfil-btn">Criar nova denúncia</button>
+    </div>
+
+    <div class="perfil-grid">
+        <div class="perfil-card">
+            <div class="perfil-card-media"></div>
+            <div class="perfil-card-body">
+                <span class="perfil-tag">Exemplo</span>
+                <div class="perfil-card-footer">
+                    <span class="perfil-dot"></span>
+                    <span>@ViewBag.UsuarioNome</span>
+                </div>
+            </div>
+        </div>
+        <div class="perfil-card">
+            <div class="perfil-card-media"></div>
+            <div class="perfil-card-body">
+                <span class="perfil-tag">Exemplo</span>
+                <div class="perfil-card-footer">
+                    <span class="perfil-dot"></span>
+                    <span>@ViewBag.UsuarioNome</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="perfil-footer">
+        <a href="#">Sugestões</a>
+        <a href="#">Políticas de privacidade</a>
+        <a href="#">Ajuda</a>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+﻿@model Usuario
+@{
+    ViewData["Title"] = "Cadastro";
+    ViewData["HideLayoutFooter"] = true;
+    ViewData["HideLayoutHeader"] = true;
+}
+
+<div class="login-page">
+    <div class="cadastro-hero">
+        <a class="login-brand" asp-controller="Home" asp-action="Index">
+            <span class="login-brand-icon">🧭</span>
+            <span class="login-brand-text">Portal Urbano</span>
+        </a>
+    </div>
+    <div class="login-panel">
+        <div class="login-card">
+            <h1 class="login-title">Crie uma conta</h1>
+
+            @if (ViewBag.Erro != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Erro</div>
+            }
+
+            <form method="post" class="login-form">
+                <div class="mb-4">
+                    <label class="form-label login-label">Nome</label>
+                    <input name="Nome" class="form-control login-input" placeholder="Seu nome completo" required />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label login-label">Email</label>
+                    <input name="Email" class="form-control login-input" placeholder="usuario@email.com" type="email" required />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label login-label">Senha</label>
+                    <input name="Senha" type="password" class="form-control login-input" placeholder="Crie uma senha forte" required />
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <button type="submit" class="btn login-btn-primary">Se inscreva</button>
+                </div>
+            </form>
+
+            <div class="login-footer">
+                <span>Já tem conta?</span>
+                <a asp-controller="Usuario" asp-action="Login">Faça login</a>
+            </div>
+        </div>
+    </div>
+</div>

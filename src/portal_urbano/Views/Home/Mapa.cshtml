@@ -1,0 +1,621 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa de Denúncias - Portal Urbano</title>
+    <link rel="icon" type="image/png" href="~/images/logo.png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+    <style>
+        :root {
+            --primary: #f97316;
+            --primary-hover: #ea580c;
+            --bg-dark: #020617;
+            --bg-panel: rgba(15, 23, 42, 0.9);
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --sidebar-width: 280px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* SIDEBAR (Glassmorphism) */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: var(--bg-panel);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-right: 1px solid var(--border-color);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 2000;
+            box-shadow: 4px 0 24px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .brand h2 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .menu-item {
+            padding: 12px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .menu-item:hover, .menu-item.active {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-light);
+        }
+
+        .menu-item.active {
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--primary);
+            border-left: 3px solid var(--primary);
+        }
+
+        .btn-new {
+            background: linear-gradient(135deg, var(--primary) 0%, #c2410c 100%);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-new:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(249, 115, 22, 0.4);
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            flex: 1;
+            position: relative;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+        }
+
+        /* FLOATING FILTERS (Glassmorphism) */
+        .filters-panel {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 320px;
+            background: var(--bg-panel);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            animation: slideInRight 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.3s ease;
+        }
+
+        .menu-toggle {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1500;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(8px);
+        }
+
+        .filter-toggle-mobile {
+            display: none;
+            margin-top: 10px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        /* MEDIA QUERIES */
+        @@media (max-width: 768px) {
+            .sidebar {
+                position: fixed;
+                height: 100vh;
+                transform: translateX(-100%);
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .filters-panel {
+                top: auto;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                width: auto;
+                max-height: 60px;
+                overflow: hidden;
+                padding: 12px 20px;
+            }
+
+            .filters-panel.active {
+                max-height: 500px;
+                padding: 20px;
+            }
+
+            .filters-panel h3 {
+                margin-bottom: 0;
+                cursor: pointer;
+                justify-content: space-between;
+            }
+
+            .filters-panel.active h3 {
+                margin-bottom: 16px;
+            }
+
+            .filters-panel h3::after {
+                content: '▼';
+                font-size: 12px;
+                transition: transform 0.3s;
+            }
+
+            .filters-panel.active h3::after {
+                transform: rotate(180deg);
+            }
+
+            .filters-panel .input-group, 
+            .filters-panel .btn-apply {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .filters-panel.active .input-group,
+            .filters-panel.active .btn-apply {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+
+        @@keyframes slideInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .filters-panel h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .input-group {
+            margin-bottom: 16px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .glass-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-light);
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            outline: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-input:focus {
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+        }
+
+        .glass-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .glass-input option {
+            background: #0f172a;
+            color: white;
+        }
+
+        .btn-apply {
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .btn-apply:hover {
+            background: rgba(249, 115, 22, 0.15);
+            border-color: rgba(249, 115, 22, 0.3);
+        }
+
+        /* CUSTOM POPUP */
+        .leaflet-popup-content-wrapper {
+            background: var(--bg-panel);
+            backdrop-filter: blur(8px);
+            color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        .leaflet-popup-tip {
+            background: var(--bg-panel);
+        }
+        .leaflet-popup-content {
+            font-family: 'Inter', sans-serif;
+            margin: 16px;
+        }
+        .popup-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        .popup-desc {
+            font-size: 13px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+        }
+        .popup-date {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        .popup-image {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background: #000;
+        }
+        
+        /* OVERRIDE LEAFLET CONTROLS TO DARK */
+        .leaflet-bar a {
+            background-color: var(--bg-panel) !important;
+            color: white !important;
+            border-bottom: 1px solid var(--border-color) !important;
+        }
+        .leaflet-bar a:hover {
+            background-color: rgba(255,255,255,0.1) !important;
+        }
+
+        /* MARKER CLUSTER STYLES */
+        .marker-cluster-small {
+            background-color: rgba(249, 115, 22, 0.6);
+        }
+        .marker-cluster-small div {
+            background-color: rgba(249, 115, 22, 0.9);
+            color: white;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+        .marker-cluster-medium {
+            background-color: rgba(234, 88, 12, 0.6);
+        }
+        .marker-cluster-medium div {
+            background-color: rgba(234, 88, 12, 0.9);
+            color: white;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+        .marker-cluster-large {
+            background-color: rgba(194, 65, 12, 0.6);
+        }
+        .marker-cluster-large div {
+            background-color: rgba(194, 65, 12, 0.9);
+            color: white;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="menu-toggle" onclick="toggleSidebar()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+    </button>
+
+    <div class="sidebar" id="sidebar">
+        <div>
+            <div class="brand">
+                <img src="~/images/logo.png" alt="Portal Urbano Logo" style="width: 40px; height: 40px; object-fit: contain; margin-right: 12px; filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.3));">
+                <h2 style="margin-bottom: 0; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Portal Urbano
+                </h2>
+            </div>
+            <div class="menu-list" style="margin-top: 32px;">
+                <a href="/Home/Feed" class="menu-item" style="text-decoration: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                    Feed
+                </a>
+                <div class="menu-item active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
+                    Mapa Interativo
+                </div>
+                <div class="menu-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Perfil
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <a href="/Home/CriarDenuncia" class="btn-new" style="text-decoration: none;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Nova Denúncia
+            </a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div id="map"></div>
+
+        <div class="filters-panel" id="filtersPanel">
+            <h3 onclick="toggleFilters()">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                    Filtros
+                </div>
+            </h3>
+
+            <div class="input-group">
+                <label for="category">Categoria</label>
+                <select id="category" class="glass-input">
+                    <option value="">Carregando categorias...</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="search">Pesquisar</label>
+                <input type="text" id="search" class="glass-input" placeholder="Título, descrição ou endereço..." />
+            </div>
+
+            <button class="btn-apply" onclick="loadMarkers()">
+                Aplicar Filtros
+            </button>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+    <script>
+        // Beige/Light theme map (CartoDB Voyager)
+        var map = L.map('map', {
+            zoomControl: false // We will move it
+        }).setView([-19.92, -43.94], 13);
+
+        // Add zoom control to bottom right
+        L.control.zoom({
+            position: 'bottomright'
+        }).addTo(map);
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
+
+        // Define a custom icon for markers
+        var customIcon = L.divIcon({
+            className: 'custom-div-icon',
+            html: `<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0px 4px 6px rgba(249, 115, 22, 0.4)); fill: #0f172a;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="#f97316"></circle></svg>`,
+            iconSize: [30, 30],
+            iconAnchor: [15, 30],
+            popupAnchor: [0, -30]
+        });
+
+        let markersGroup = L.markerClusterGroup({
+            chunkedLoading: true,
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: false,
+            zoomToBoundsOnClick: true,
+            maxClusterRadius: 50 // Adjust this to group more or fewer markers together
+        });
+
+        function clearMarkers() {
+            if (map.hasLayer(markersGroup)) {
+                map.removeLayer(markersGroup);
+            }
+            markersGroup.clearLayers();
+        }
+
+        function loadMarkers() {
+            clearMarkers();
+
+            // Usando dummy data como fallback caso a API não responda
+            const fallbackData = [
+                { latitude: -19.92, longitude: -43.94, titulo: "Buraco na via", descricao: "Buraco perigoso na avenida principal", criadoEm: new Date().toISOString(), imagemUrl: "https://images.unsplash.com/photo-1584462198614-03c2a5239e5d?auto=format&fit=crop&w=400&q=80", categoria: "Infraestrutura", endereco: "Rua das Flores, 123" },
+                { latitude: -19.925, longitude: -43.945, titulo: "Poste sem luz", descricao: "Rua muito escura", criadoEm: new Date().toISOString(), imagemUrl: "https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&w=400&q=80", categoria: "Iluminação Pública", endereco: "Av. Central, 500" },
+                { latitude: -19.915, longitude: -43.935, titulo: "Lixo acumulado", descricao: "Falta de coleta de lixo há dias", criadoEm: new Date().toISOString(), imagemUrl: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=400&q=80", categoria: "Limpeza", endereco: "Beco da Esperança, 10" }
+            ];
+
+            fetch('/api/Denuncia')
+                .then(res => {
+                    if (!res.ok) throw new Error("API não disponível");
+                    return res.json();
+                })
+                .then(data => {
+                    console.log("Dados recebidos da API:", data);
+                    renderData(data);
+                })
+                .catch(err => {
+                    console.error("Erro ao carregar marcadores:", err);
+                    renderData(fallbackData);
+                });
+        }
+
+        function renderData(data) {
+            let search = document.getElementById('search').value.toLowerCase();
+            let categoryFilter = document.getElementById('category').value.toLowerCase();
+            
+            data.forEach(d => {
+                // Filtro de Busca (Título, Descrição ou Endereço)
+                let textToSearch = (d.titulo + " " + (d.descricao || "") + " " + (d.endereco || "")).toLowerCase();
+                if (search && !textToSearch.includes(search)) return;
+
+                // Filtro de Categoria
+                let categoria = (d.categoria || "").toLowerCase();
+                if (categoryFilter && !categoria.includes(categoryFilter)) return;
+                
+                // Garantir que temos coordenadas válidas
+                if (!d.latitude || !d.longitude || (d.latitude == 0 && d.longitude == 0)) return;
+
+                const imageUrl = d.imagemUrl ? d.imagemUrl.split(',')[0] : null;
+
+                let marker = L.marker([d.latitude, d.longitude], { icon: customIcon })
+                    .bindPopup(`
+                        ${imageUrl ? `<img src="${imageUrl}" class="popup-image">` : ''}
+                        <div class="popup-title">${d.titulo}</div>
+                        <div class="popup-desc">${d.descricao || "Sem descrição"}</div>
+                        <div class="popup-date">${new Date(d.criadoEm).toLocaleString('pt-BR')}</div>
+                    `);
+
+                // Mostrar detalhes ao passar o mouse
+                marker.on('mouseover', function (e) {
+                    this.openPopup();
+                });
+                marker.on('mouseout', function (e) {
+                    this.closePopup();
+                });
+                
+                markersGroup.addLayer(marker);
+            });
+
+            map.addLayer(markersGroup);
+        }
+
+        // Carregar categorias dinamicamente
+        async function loadCategories() {
+            try {
+                const res = await fetch('/api/Denuncia/categorias');
+                const categories = await res.json();
+                const select = document.getElementById('category');
+                select.innerHTML = '<option value="">Todas as categorias</option>';
+                categories.forEach(cat => {
+                    const opt = document.createElement('option');
+                    opt.value = cat.nome;
+                    opt.innerText = cat.nome;
+                    select.appendChild(opt);
+                });
+            } catch (e) { console.error(e); }
+        }
+        loadCategories();
+
+        // Initialize map
+        loadMarkers();
+
+        // Responsive Functions
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        function toggleFilters() {
+            if (window.innerWidth <= 768) {
+                document.getElementById('filtersPanel').classList.toggle('active');
+            }
+        }
+
+        // Close sidebar when clicking map on mobile
+        map.on('click', function() {
+            if (window.innerWidth <= 768) {
+                document.getElementById('sidebar').classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

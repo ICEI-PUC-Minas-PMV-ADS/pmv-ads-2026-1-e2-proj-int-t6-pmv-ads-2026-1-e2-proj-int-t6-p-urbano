@@ -1,0 +1,896 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed de Denúncias - Portal Urbano</title>
+    <link rel="icon" type="image/png" href="~/images/logo.png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #f97316;
+            --bg-dark: #020617;
+            --bg-panel: #0f172a;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --sidebar-width: 280px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+        }
+
+        /* SIDEBAR (Glassmorphism) */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: var(--bg-panel);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-right: 1px solid var(--border-color);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: fixed;
+            height: 100vh;
+            z-index: 2000;
+            box-shadow: 4px 0 24px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .brand h2 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .menu-item {
+            padding: 12px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .menu-item:hover, .menu-item.active {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-light);
+        }
+
+        .menu-item.active {
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--primary);
+            border-left: 3px solid var(--primary);
+        }
+
+        .btn-new {
+            background: linear-gradient(135deg, var(--primary) 0%, #c2410c 100%);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .btn-new:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(249, 115, 22, 0.4);
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .feed-header {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .feed-header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .feed-header p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .filter-pill {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-light);
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-pill:hover, .filter-pill.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .category-scroll {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding: 10px 4px 20px 4px; /* Adicionado padding lateral e superior para evitar corte no hover */
+            margin-bottom: 38px;
+            width: 100%;
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .category-scroll::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+
+        .top-cat-card {
+            min-width: 240px;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .top-cat-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.2);
+        }
+
+        .top-cat-card.rank-1 {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, var(--bg-panel) 100%);
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .top-cat-card.rank-1:hover {
+            transform: translateY(-10px) scale(1.08);
+        }
+
+        .cat-icon-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cat-info h4 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .cat-info p {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        .cta-box {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .cta-box h2 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .btn-cta {
+            background: white;
+            color: black;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: opacity 0.2s;
+        }
+
+        .btn-cta:hover {
+            opacity: 0.9;
+        }
+
+        .feed-container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* POST CARD (Instagram Style) */
+        .post-card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Post Header */
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px;
+            gap: 12px;
+        }
+
+        .user-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #334155, #1e293b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .header-info .username {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .header-info .location {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .time-ago {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Post Image */
+        .post-image {
+            width: 100%;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+
+        .post-image img {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .no-image {
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Post Actions */
+        .post-actions {
+            display: flex;
+            padding: 12px 16px;
+            gap: 16px;
+        }
+
+        .action-btn {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: color 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .action-btn:hover {
+            color: var(--text-muted);
+        }
+
+        .action-btn.liked svg {
+            fill: #ef4444;
+            stroke: #ef4444;
+        }
+
+        /* Post Content */
+        .post-content {
+            padding: 0 16px 16px 16px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .post-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .post-desc {
+            color: #cbd5e1;
+            display: block;
+        }
+
+        .category-badge {
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--primary);
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .view-more-comments {
+            color: var(--text-muted);
+            font-size: 13px;
+            cursor: pointer;
+            padding: 4px 0;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .view-more-comments:hover {
+            color: var(--text-light);
+        }
+
+        .comment-count {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        .action-group {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .menu-toggle {
+            display: none;
+            position: fixed; /* Fixed so it scrolls with the user */
+            top: 20px;
+            left: 20px;
+            z-index: 2500; /* Higher than sidebar */
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(8px);
+        }
+
+        /* MEDIA QUERIES */
+        @@media (max-width: 768px) {
+            .sidebar {
+                position: fixed;
+                height: 100vh;
+                transform: translateX(-100%);
+                z-index: 2000;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="menu-toggle" onclick="toggleSidebar()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+    </button>
+
+    <!-- SIDEBAR / BOTTOM BAR -->
+    <div class="sidebar" id="sidebar">
+        <div>
+            <div class="brand">
+                <img src="~/images/logo.png" alt="Portal Urbano Logo" style="width: 40px; height: 40px; object-fit: contain; margin-right: 12px; filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.3));">
+                <h2 style="margin-bottom: 0;">
+                    Portal Urbano
+                </h2>
+            </div>
+            <div class="menu-list" style="margin-top: 32px;">
+                <a href="/Home/Feed" class="menu-item active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                    Feed
+                </a>
+                <a href="/Home/Index" class="menu-item" style="text-decoration: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
+                    Mapa Interativo
+                </a>
+                <div class="menu-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Perfil
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <a href="/Home/CriarDenuncia" class="btn-new">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Nova Denúncia
+            </a>
+        </div>
+    </div>
+
+    <!-- FEED CONTAINER -->
+    <div class="main-content">
+        <div class="feed-header">
+            <h1>Filtrar denúncias</h1>
+            <p>Procure posts relacionados a temas específicos</p>
+            
+            <div class="filter-buttons" id="filter-pills-container">
+                <button class="filter-pill active" onclick="filterBy('tudo', this)">Tudo</button>
+                <!-- Preenchido dinamicamente -->
+            </div>
+
+            <h2 class="section-title">Top Categorias</h2>
+            
+            <div class="category-scroll" id="top-categories-container">
+                <!-- Será preenchido dinamicamente via JS -->
+                <div style="color: var(--text-muted); font-size: 14px;">Calculando tendências...</div>
+            </div>
+
+            <div class="cta-box">
+                <h2>Relate um incidente</h2>
+                <a href="/Home/CriarDenuncia" class="btn-cta">Criar post</a>
+            </div>
+        </div>
+
+        <div class="feed-container" id="feed-container">
+            <!-- Loading -->
+            <div style="text-align: center; color: var(--text-muted); padding: 40px;">
+                Carregando feed...
+            </div>
+        </div>    <script>
+        // Objeto para controlar quais denúncias estão com comentários expandidos
+        const expandedComments = new Set();
+        let allFeedData = []; // Armazenar dados originais para filtros
+        let allCategories = []; // Categorias vindas do banco
+        let currentFilter = 'tudo';
+
+        // Função para calcular "tempo atrás" (ex: há 2 horas)
+        function timeAgo(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const seconds = Math.floor((now - date) / 1000);
+
+            if (seconds < 60) return "agora mesmo";
+            const minutes = Math.floor(seconds / 60);
+            if (minutes < 60) return `há ${minutes}m`;
+            const hours = Math.floor(minutes / 60);
+            if (hours < 24) return `há ${hours}h`;
+            const days = Math.floor(hours / 24);
+            return `há ${days}d`;
+        }
+
+        // Função para pegar a primeira imagem se houver múltiplas
+        function getFirstImage(urls) {
+            if (!urls) return null;
+            const urlArray = urls.split(',');
+            return urlArray[0] || null;
+        }
+
+        // Like Animation Toggle & Fetch
+        async function toggleLike(btn, denunciaId) {
+            btn.classList.toggle('liked');
+            const svg = btn.querySelector('svg');
+            
+            // Animating scale
+            svg.style.transform = "scale(1.2)";
+            setTimeout(() => svg.style.transform = "scale(1)", 150);
+
+            // Fetch request
+            try {
+                const res = await fetch(`/api/Denuncia/${denunciaId}/like`, { method: 'POST' });
+                const data = await res.json();
+                
+                // Update Like Count Text
+                const countSpan = document.getElementById(`like-count-${denunciaId}`);
+                let current = parseInt(countSpan.innerText.split(' ')[0]) || 0;
+                countSpan.innerText = data.liked ? `${current + 1} curtidas` : `${Math.max(0, current - 1)} curtidas`;
+                
+                if (data.liked) btn.classList.add('liked');
+                else btn.classList.remove('liked');
+
+            } catch (err) { console.error('Erro ao curtir', err); }
+        }
+
+        // Add Comment Fetch
+        async function submitComment(event, denunciaId) {
+            event.preventDefault();
+            const input = document.getElementById(`comment-input-${denunciaId}`);
+            const text = input.value.trim();
+            if(!text) return;
+
+            const formData = new FormData();
+            formData.append('texto', text);
+
+            try {
+                const res = await fetch(`/api/Denuncia/${denunciaId}/comentario`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if(res.ok) {
+                    input.value = '';
+                    // Ao comentar, expandimos para ver o novo comentário
+                    expandedComments.add(denunciaId);
+                    carregarFeed(); 
+                }
+            } catch(e) { console.error(e); }
+        }
+
+        // Delete Comment Fetch
+        async function deleteComment(comentarioId) {
+            if(confirm('Deseja realmente excluir este comentário?')) {
+                try {
+                    await fetch(`/api/Denuncia/comentario/${comentarioId}`, { method: 'DELETE' });
+                    carregarFeed(); // Recarrega a tela
+                } catch(e) { console.error(e); }
+            }
+        }
+
+        function toggleExpandComments(denunciaId) {
+            if (expandedComments.has(denunciaId)) {
+                expandedComments.delete(denunciaId);
+            } else {
+                expandedComments.add(denunciaId);
+            }
+            carregarFeed();
+        }
+
+        // Carregar Feed
+        async function carregarFeed(customData = null) {
+            try {
+                // Se for a primeira carga, busca categorias e denúncias
+                if (!customData && allFeedData.length === 0) {
+                    const [resDenuncias, resCategorias] = await Promise.all([
+                        fetch('/api/Denuncia'),
+                        fetch('/api/Denuncia/categorias')
+                    ]);
+                    
+                    allFeedData = await resDenuncias.json();
+                    allCategories = await resCategorias.json();
+                    
+                    renderFilterPills(allCategories);
+                    renderTopCategories(allFeedData);
+                }
+
+                let data = customData || allFeedData;
+                
+                const container = document.getElementById('feed-container');
+                container.innerHTML = ''; // Limpa o loading
+
+                if(!data || data.length === 0) {
+                    container.innerHTML = '<div style="text-align: center; color: #94a3b8; padding: 40px;">Nenhuma denúncia encontrada para este filtro.</div>';
+                    return;
+                }
+
+                data.forEach(d => {
+                    const imageUrl = getFirstImage(d.imagemUrl);
+                    const initial = d.nomeUsuario ? d.nomeUsuario.charAt(0).toUpperCase() : 'A';
+                    const locationText = d.endereco ? d.endereco : 'Localização não informada';
+
+                    // Lógica de "Ver Mais" Comentários
+                    const isExpanded = expandedComments.has(d.idDenuncia);
+                    const totalComentarios = d.comentarios ? d.comentarios.length : 0;
+                    const comentariosParaExibir = isExpanded ? d.comentarios : d.comentarios.slice(0, 2);
+
+                    let commentsHtml = '';
+                    if(comentariosParaExibir && comentariosParaExibir.length > 0) {
+                        comentariosParaExibir.forEach(c => {
+                            commentsHtml += `
+                                <div style="margin-bottom: 6px; display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div style="flex: 1; padding-right: 10px;">
+                                        <strong style="color: var(--text-light); font-size: 13px;">${c.nomeUsuario}</strong> 
+                                        <span style="color: #cbd5e1; font-size: 13px;">${c.texto}</span>
+                                    </div>
+                                    ${c.isOwner ? `<button onclick="deleteComment(${c.idComentario})" style="background: none; border: none; color: #ef4444; font-size: 11px; cursor: pointer; white-space: nowrap;">Excluir</button>` : ''}
+                                </div>
+                            `;
+                        });
+                    }
+
+                    // Botão "Ver mais"
+                    let viewMoreBtn = '';
+                    if (totalComentarios > 2) {
+                        viewMoreBtn = `<span class="view-more-comments" onclick="toggleExpandComments(${d.idDenuncia})">
+                            ${isExpanded ? 'Ver menos...' : `Ver todos os ${totalComentarios} comentários...`}
+                        </span>`;
+                    }
+
+                    const card = document.createElement('div');
+                    card.className = 'post-card';
+                    card.innerHTML = `
+                        <div class="post-header">
+                            <div class="user-avatar">${initial}</div>
+                            <div class="header-info">
+                                <div class="username">${d.nomeUsuario || 'Usuário Anônimo'}</div>
+                                <div class="location">${locationText}</div>
+                            </div>
+                            <div class="time-ago">${timeAgo(d.criadoEm)}</div>
+                        </div>
+
+                        <div class="post-image" ondblclick="toggleLike(this.nextElementSibling.querySelector('.btn-like'), ${d.idDenuncia})">
+                            ${imageUrl 
+                                ? `<img src="${imageUrl}" alt="Imagem da Denúncia" loading="lazy">` 
+                                : `<div class="no-image">Nenhuma imagem enviada</div>`
+                            }
+                        </div>
+
+                        <div class="post-actions">
+                            <div class="action-group">
+                                <button class="action-btn btn-like ${d.likedByUser ? 'liked' : ''}" onclick="toggleLike(this, ${d.idDenuncia})">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                            </div>
+                            <div class="action-group">
+                                <button class="action-btn" onclick="document.getElementById('comment-input-${d.idDenuncia}').focus()">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                </button>
+                                <span class="comment-count">${totalComentarios}</span>
+                            </div>
+                        </div>
+                        <div style="padding: 0 16px; font-size: 13px; font-weight: 600; margin-bottom: 12px;" id="like-count-${d.idDenuncia}">
+                            ${d.totalLikes} curtidas
+                        </div>
+
+                        <div class="post-content">
+                            <div class="category-badge">${d.categoria}</div>
+                            <span class="post-title">${d.titulo}</span>
+                            <span class="post-desc">${d.descricao}</span>
+                        </div>
+
+                        <div class="comments-section" style="padding: 0 16px 8px 16px;">
+                            ${viewMoreBtn}
+                            ${commentsHtml}
+                        </div>
+
+                        <form style="display: flex; border-top: 1px solid var(--border-color); padding: 12px 16px;" onsubmit="submitComment(event, ${d.idDenuncia})">
+                            <input type="text" id="comment-input-${d.idDenuncia}" placeholder="Adicione um comentário..." style="flex: 1; background: none; border: none; color: var(--text-light); outline: none; font-size: 14px;">
+                            <button type="submit" style="background: none; border: none; color: var(--primary); font-weight: 600; cursor: pointer;">Publicar</button>
+                        </form>
+                    `;
+
+                    container.appendChild(card);
+                });
+
+            } catch (err) {
+                console.error(err);
+                document.getElementById('feed-container').innerHTML = '<div style="text-align: center; color: #ef4444; padding: 40px;">Erro ao carregar o feed.</div>';
+            }
+        }
+
+        // Função para renderizar as pílulas de filtro
+        function renderFilterPills(categories) {
+            const container = document.getElementById('filter-pills-container');
+            // Mantém o "Tudo" e adiciona o resto
+            container.innerHTML = '<button class="filter-pill active" onclick="filterBy(\'tudo\', this)">Tudo</button>';
+            
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-pill';
+                btn.innerText = cat.nome;
+                btn.onclick = (e) => filterBy(cat.nome, e.target);
+                container.appendChild(btn);
+            });
+        }
+
+        // Função para renderizar as 3 categorias com mais denúncias
+        function renderTopCategories(data) {
+            const counts = {};
+            data.forEach(d => {
+                const cat = d.categoria || 'Outros';
+                counts[cat] = (counts[cat] || 0) + 1;
+            });
+
+            // Ordena por contagem
+            const sorted = Object.keys(counts)
+                .sort((a, b) => counts[b] - counts[a])
+                .slice(0, 3);
+
+            // Reorganiza para o estilo pódio: [2º, 1º, 3º]
+            let podium = [];
+            if (sorted.length === 3) {
+                podium = [sorted[1], sorted[0], sorted[2]];
+            } else if (sorted.length === 2) {
+                podium = [sorted[1], sorted[0]];
+            } else {
+                podium = sorted;
+            }
+
+            const container = document.getElementById('top-categories-container');
+            container.innerHTML = '';
+            container.style.justifyContent = 'center';
+
+            podium.forEach(catName => {
+                // Busca meta-dados da categoria na lista carregada do banco
+                const dbCat = allCategories.find(c => c.nome === catName) || {};
+                const desc = dbCat.descricao || 'Denúncias relacionadas.';
+                const icon = dbCat.icone || '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>';
+                
+                const isFirst = catName === sorted[0];
+                const card = document.createElement('div');
+                card.className = `top-cat-card ${isFirst ? 'rank-1' : ''}`;
+                card.onclick = () => filterBy(catName);
+                card.innerHTML = `
+                    <div class="cat-icon-box">
+                        ${icon}
+                    </div>
+                    <div class="cat-info">
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <h4>${catName}</h4>
+                            ${isFirst ? '<span style="font-size: 10px; background: var(--primary); color: white; padding: 2px 6px; border-radius: 4px;">Top 1</span>' : ''}
+                        </div>
+                        <p>${desc}</p>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function filterBy(type, btn = null) {
+            currentFilter = type;
+            
+            // Função para remover acentos e facilitar comparação
+            const normalize = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+            // Atualiza botões visuais
+            if (btn) {
+                document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+            } else {
+                // Se clicou no card, tenta achar o botão correspondente
+                document.querySelectorAll('.filter-pill').forEach(p => {
+                    const textNormalized = normalize(p.innerText);
+                    const targetNormalized = normalize(type);
+                    
+                    if (textNormalized === targetNormalized || textNormalized.includes(targetNormalized) || targetNormalized.includes(textNormalized)) {
+                        p.classList.add('active');
+                    } else {
+                        p.classList.remove('active');
+                    }
+                });
+            }
+
+            let filtered;
+            if (type === 'tudo') {
+                filtered = allFeedData;
+            } else {
+                filtered = allFeedData.filter(d => {
+                    const catNormalized = normalize(d.categoria || "");
+                    const targetNormalized = normalize(type);
+                    return catNormalized.includes(targetNormalized);
+                });
+            }
+            
+            carregarFeed(filtered);
+        }
+
+        // Inicializa
+        carregarFeed();
+
+        // Responsive Functions
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        // Close sidebar when clicking main content on mobile
+        document.querySelector('.main-content').addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                document.getElementById('sidebar').classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
