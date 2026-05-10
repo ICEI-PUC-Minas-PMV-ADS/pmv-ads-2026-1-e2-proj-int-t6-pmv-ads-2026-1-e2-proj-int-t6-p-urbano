@@ -1,7 +1,5 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/blob/main/docs/04-Projeto%20de%20Interface.md"> Projeto de Interface</a></span>, <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/blob/main/docs/08-Plano%20de%20Testes%20de%20Software.md"> Plano de Testes de Software</a>
-
 Os testes realizados na aplicação tiveram como objetivo validar o funcionamento correto das funcionalidades definidas no Plano de Testes de Software. Para cada caso de teste executado, foram registradas evidências por meio de capturas de tela e vídeos do tipo screencast, demonstrando a execução das funcionalidades e comprovando se os critérios de êxito foram alcançados ou não.
 
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
