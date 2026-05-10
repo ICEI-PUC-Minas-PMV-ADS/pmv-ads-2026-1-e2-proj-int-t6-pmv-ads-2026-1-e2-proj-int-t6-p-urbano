@@ -8,6 +8,16 @@ A estrutura da interface segue uma organização clássica e funcional, dividida
 
 A identidade visual do projeto adota um estilo **Dark Mode**, utilizando contraste entre cores escuras e elementos de destaque em tons vibrantes, reforçando modernidade, tecnologia e praticidade.
 
+<img width="1440" height="665" alt="Criar conta- oficial" src="https://github.com/user-attachments/assets/f009b6f1-d26b-403b-a9d0-e0ba0a94f25e" />
+<img width="718" height="449" alt="LoginPU" src="https://github.com/user-attachments/assets/76bee0e1-388c-4747-826f-4388dd53b95f" />
+<img width="1440" height="531" alt="Recuperar senha - oficial" src="https://github.com/user-attachments/assets/00998aea-c665-4901-b508-8733a20ad689" />
+<img width="1207" height="1252" alt="Perfil - oficial" src="https://github.com/user-attachments/assets/b80f431d-43a6-4bbc-a658-82da41daee52" />
+<img width="1452" height="1696" alt="Mapa - oficial " src="https://github.com/user-attachments/assets/f2b8021e-0d30-4b2e-9bff-a0b708bf2b29" />
+<img width="1029" height="2099" alt="Feed - oficial" src="https://github.com/user-attachments/assets/bf56b0a4-30cd-43a4-af0f-76405a87276f" />
+<img width="1452" height="1451" alt="Criar Denúncia - oficial" src="https://github.com/user-attachments/assets/0c0015ee-7f68-4e64-9c93-cf1f15922c96" />
+
+
+
 <img width="874" height="569" alt="image" src="https://github.com/user-attachments/assets/f6ece6ca-098c-4423-92f8-2c39d3b59b9f" />
 
 # Tipografia
