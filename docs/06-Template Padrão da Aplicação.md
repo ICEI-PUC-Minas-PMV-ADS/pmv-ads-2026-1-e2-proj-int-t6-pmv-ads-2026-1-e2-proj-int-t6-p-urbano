@@ -17,9 +17,6 @@ A identidade visual do projeto adota um estilo **Dark Mode**, utilizando contras
 <img width="1452" height="1451" alt="Criar Denúncia - oficial" src="https://github.com/user-attachments/assets/0c0015ee-7f68-4e64-9c93-cf1f15922c96" />
 
 
-
-<img width="874" height="569" alt="image" src="https://github.com/user-attachments/assets/f6ece6ca-098c-4423-92f8-2c39d3b59b9f" />
-
 # Tipografia
 
 A tipografia escolhida para o projeto foi a **Poppins**, por oferecer boa legibilidade e modernidade.
