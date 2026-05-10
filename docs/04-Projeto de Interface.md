@@ -7,7 +7,6 @@ Este projeto conta com um protótipo interativo desenvolvido no Figma, onde são
 
 [Figma Interativo](https://www.figma.com/proto/99IZZfHhTKQlvDtkmhfBEd/Portal-Urbano?page-id=0%3A1&node-id=109-280&p=f&viewport=379%2C1405%2C0.2&t=FnXh7wxt4uUnrD5z-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=109%3A2)
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## Diagrama de Fluxo
 O fluxo de usuário (User Flow) foi estruturado para representar de forma clara os caminhos que o usuário pode percorrer dentro da aplicação, desde o primeiro acesso até a interação com as funcionalidades principais, auxiliando tanto na validação quanto no desenvolvimento do sistema.
