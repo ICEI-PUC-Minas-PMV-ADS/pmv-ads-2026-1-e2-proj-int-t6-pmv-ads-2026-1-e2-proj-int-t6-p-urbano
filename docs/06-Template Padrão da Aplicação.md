@@ -14,11 +14,29 @@ A identidade visual do projeto adota um estilo **Dark Mode**, utilizando contras
 
 ---
 <img width="718" height="449" alt="LoginPU" src="https://github.com/user-attachments/assets/76bee0e1-388c-4747-826f-4388dd53b95f" />
+<em> Tela de login </em>
+
+---
 <img width="1440" height="531" alt="Recuperar senha - oficial" src="https://github.com/user-attachments/assets/00998aea-c665-4901-b508-8733a20ad689" />
+<em> Tela de recuperção de senha</em>
+
+---
 <img width="1207" height="1252" alt="Perfil - oficial" src="https://github.com/user-attachments/assets/b80f431d-43a6-4bbc-a658-82da41daee52" />
+<em> Tela de cadastro </em>
+
+---
 <img width="1452" height="1696" alt="Mapa - oficial " src="https://github.com/user-attachments/assets/f2b8021e-0d30-4b2e-9bff-a0b708bf2b29" />
+<em> Tela de cadastro </em>
+
+---
 <img width="1029" height="2099" alt="Feed - oficial" src="https://github.com/user-attachments/assets/bf56b0a4-30cd-43a4-af0f-76405a87276f" />
+<em> Tela de cadastro </em>
+
+---
 <img width="1452" height="1451" alt="Criar Denúncia - oficial" src="https://github.com/user-attachments/assets/0c0015ee-7f68-4e64-9c93-cf1f15922c96" />
+<em> Tela de cadastro </em>
+
+---
 
 
 # Tipografia
