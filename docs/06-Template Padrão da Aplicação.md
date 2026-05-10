@@ -9,7 +9,7 @@ A estrutura da interface segue uma organização clássica e funcional, dividida
 A identidade visual do projeto adota um estilo **Dark Mode**, utilizando contraste entre cores escuras e elementos de destaque em tons vibrantes, reforçando modernidade, tecnologia e praticidade.
 
 <img width="1440" height="665" alt="Criar conta- oficial" src="https://github.com/user-attachments/assets/f009b6f1-d26b-403b-a9d0-e0ba0a94f25e" />
-*Figura 1*
+<em> Figura 2</em>
 <img width="718" height="449" alt="LoginPU" src="https://github.com/user-attachments/assets/76bee0e1-388c-4747-826f-4388dd53b95f" />
 <img width="1440" height="531" alt="Recuperar senha - oficial" src="https://github.com/user-attachments/assets/00998aea-c665-4901-b508-8733a20ad689" />
 <img width="1207" height="1252" alt="Perfil - oficial" src="https://github.com/user-attachments/assets/b80f431d-43a6-4bbc-a658-82da41daee52" />
