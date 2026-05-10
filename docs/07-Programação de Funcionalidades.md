@@ -29,9 +29,9 @@ A tabela a seguir é um exemplo de como ela deverá ser preenchida considerando 
 
 | ID | Descrição do Requisito | Artefatos produzidos | Aluno(a) responsável |
 | :--- | :--- | :--- | :--- |
-| RF-01 | Realizar cadastro | | |
-| RF-02 | Fazer login | | |
-| RF-03 | Recuperar senha por e-mail | | |
+| RF-01 | Realizar cadastro | `Cadastro.cshtml` | Vinicius Feitosa |
+| RF-02 | Fazer login | `Login.cshtml` | Vinicius Feitosa |
+| RF-03 | Recuperar senha por e-mail | `EsqueciSenha.cshtml`, `RedefinirSenha.cshtml` | Vinicius Feitosa |
 | RF-04 | Gerenciar denúncias no perfil do usuário | | |
 | RF-05 | Definir georreferência na criação da denúncia | `CriarDenuncia.cshtml` | Rian Keven |
 | RF-06 | Listar denúncias em mapa interativo | `Index.cshtml` | Rian Keven |
