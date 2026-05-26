@@ -1,29 +1,29 @@
 message: Please cite this software using these metadata.
-title:
+title: Portal Urbano
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Gonçalves de Oliveira
+    given-names: Ana Luísa
+  - family-names: Passos Resende
+    given-names: Maria Carolina
+  - family-names: Teodoro Farias
+    given-names: Marianna Flaviane
+  - family-names: de Jesus da Paixao
+    given-names: Rian Keven
+  - family-names: da Silva Feitosa
+    given-names: Vinícius Gabriel
+  - family-names: Matias de Souza
+    given-names: Vitor Lucas
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Jeunon de Alencar
+    given-names: Bernardo
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 
     given-names: 
 keywords:
+  - Portal Urbano, denúncia urbana, aplicativo de zeladoria, reportar problemas urbanos, melhoria da cidade, cidadania digital, participação cidadã, buraco na rua, buraco no asfalto, iluminação pública com defeito, poste queimado, calçada quebrada, acessibilidade urbana, vazamento de água, esgoto a céu aberto, lixo acumulado, descarte irregular, semáforo quebrado, sinalização danificada, terreno abandonado, foco de dengue, zeladoria urbana, ouvidoria municipal, prefeitura denúncias, soluções urbanas, manutenção da cidade, serviços públicos, smart cities, cidades inteligentes, como denunciar buraco na rua, reclamar da iluminação pública, reportar entulho na calçada, melhorar o meu bairro, aplicativo para reclamar da prefeitura
   - 
-  - 
-repository-code: 
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2026-07-31
