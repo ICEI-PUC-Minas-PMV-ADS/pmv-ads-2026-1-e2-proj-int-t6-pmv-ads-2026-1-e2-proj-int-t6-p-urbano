@@ -45,18 +45,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ## Requisitos Funcionais
 
-| ID    | Descrição do Requisito                                             | Prioridade |
-|-------|--------------------------------------------------------------------|------------|
-| RF-01 | Realizar cadastro                                                  | ALTA       |
-| RF-02 | Fazer login                                                        | ALTA       |
-| RF-03 | Recuperar senha por e-mail                                         | ALTA       |
-| RF-04 | Gerenciar denúncias no perfil do usuário                           | ALTA       |
-| RF-05 | Definir georreferência na criação da denúncia                      | ALTA       |
-| RF-06 | Listar denúncias em mapa interativo                                | ALTA       |
-| RF-07 | Gerenciar status das denúncias com base nas interações dos usuários| ALTA       |
-| RF-08 | Filtrar denúncias por categoria, data ou localização      | MÉDIA      |
-| RF-09 | Exibir denúncias em feed cronológico                               | MÉDIA      |
-| RF-10 | Excluir denúncias indevidas automaticamente                        | MÉDIA      |
+| ID    | Descrição do Requisito                                              | Prioridade |
+| ----- | ------------------------------------------------------------------- | ---------- |
+| RF-01 | Realizar cadastro                                                   | ALTA       |
+| RF-02 | Fazer login                                                         | ALTA       |
+| RF-03 | Recuperar senha por e-mail                                          | ALTA       |
+| RF-04 | Gerenciar denúncias no perfil do usuário                            | ALTA       |
+| RF-05 | Definir georreferência na criação da denúncia                       | ALTA       |
+| RF-06 | Listar denúncias em mapa interativo                                 | ALTA       |
+| RF-07 | Gerenciar status das denúncias com base nas interações dos usuários | ALTA       |
+| RF-08 | Filtrar denúncias por categoria, data ou localização                | MÉDIA      |
+| RF-09 | Exibir denúncias em feed cronológico                                | MÉDIA      |
+| RF-10 | Analisar denúncias com Inteligência Artificial                      | ALTA       |
+| RF-11 | Registrar advertências por conteúdo impróprio                       | ALTA       |
+| RF-12 | Banir usuários após três advertências                               | ALTA       |
+| RF-13 | Permitir denunciar publicações inadequadas                          | ALTA       |
+| RF-14 | Permitir reações de "Gostei" nas denúncias                          | MÉDIA      |
+| RF-15 | Permitir comentários nas denúncias                                  | MÉDIA      |
 
 ### Requisitos Não Funcionais
 
