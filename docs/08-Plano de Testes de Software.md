@@ -45,9 +45,10 @@ Os casos de teste apresentados a seguir têm como objetivo validar as principais
 | Passos 	| - Acessar o sistema logado <br> - Ir té  Aba "Perfil" no canto superior direito <br> 
 |Critério de Êxito |O sistema deverá exibir:Nome do usuário,Mensagem de boas-vindas,Botão Logout,Seção “Suas postagens”,Botões:,“Editar Posts”,“Criar nova denúncia” e visualizar a área destinada à exibição das postagens.|
 
-| Caso de Teste 	| **CT08 –Analisar denúncias com Inteligência Artificial**	|
-|Requisito Associado | RF-10: Analisar denúncias com Inteligência Artificial,RF-11: Registrar advertências por conteúdo impróprio,RF-12	Banir usuários após três advertências,RF-13: Permitir denunciar publicações inadequadas
-| Objetivo do Teste 	| Permitir que o usuário registre uma denúncia.|
-| Passos 	| - Acessar a sistema logado <br> - CAcessar a tela de criação de denúncias <br> - Informar um título ou descrição contendo palavras impróprias, ofensivas ou conteúdo sem relação com problemas urbanos.nformar um título ou descrição contendo palavras impróprias, ofensivas ou conteúdo sem relação com problemas urbanos.<br> - Clicar em "Enviar denúncia" <br> |
-|Critério de Êxito |Denúncia registrada com sucesso e visível no sistema. |
-|  	|  	|
+| Campo | Descrição |
+|--------|--------|
+| Caso de Teste | CT08 – Validar análise automática de denúncias por API |
+| Requisito Associado | RF-10: Analisar denúncias com Inteligência Artificial;<br>RF-11: Registrar advertências por conteúdo impróprio;<br>RF-12: Banir usuários após três advertências;<br>RF-13: Permitir denunciar publicações inadequadas |
+| Objetivo do Teste | Validar se o sistema analisa o título e a descrição da denúncia através de uma API utilizando Inteligência Artificial (IA), identificando palavras impróprias ou conteúdos que não estejam relacionados a problemas urbanos, registrando advertências ao usuário e aplicando banimento após três advertências. |
+| Passos | 1. Acessar o sistema logado.<br>2. Acessar a tela de criação de denúncia.<br>3. Informar um título ou descrição contendo palavras impróprias ou conteúdo sem relação com problemas urbanos.<br>4. Clicar em "Enviar Denúncia".<br>5. Verificar se a API com Inteligência Artificial (IA) realiza a análise do conteúdo informado.<br>6. Confirmar se o sistema exibe uma advertência ao usuário quando o conteúdo for considerado inadequado.<br>7. Repetir o processo até que o usuário acumule três advertências.<br>8. Tentar criar uma nova denúncia após o terceiro aviso. |
+| Critério de Êxito | O sistema deverá analisar o título e a descrição da denúncia através de uma API utilizando Inteligência Artificial (IA). Caso sejam identificadas palavras impróprias ou conteúdo incompatível com denúncias de problemas urbanos, o sistema deverá registrar uma advertência e exibir uma mensagem ao usuário. Ao acumular três advertências, o usuário deverá ser automaticamente banido, perdendo a permissão de criar novas denúncias e recebendo uma mensagem informando o bloqueio da conta. |
