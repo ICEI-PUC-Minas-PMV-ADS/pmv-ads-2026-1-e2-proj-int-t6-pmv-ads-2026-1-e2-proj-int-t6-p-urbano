@@ -83,7 +83,15 @@ Os testes de usabilidade realizados permitiram avaliar a eficiência, navegabili
 | Usuário 4 | 20 | 2 | Sim | Nenhum | Informações bem distribuídas |
 | Usuário 5 | 30 | 3 | Sim | Nenhum | Navegação rápida e intuitiva |
 
+## Cenário 8: Análise de Denúncias com Inteligência Artificial
 
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa concluída? | Erros cometidos | Feedback do Usuário |
+|----------|-------------------|----------------------|-------------------|----------------|---------------------|
+| Usuário 1 | 75 | 8 | Sim | Dificuldade em entender o motivo da advertência inicialmente | Sistema fácil de usar após ler a mensagem de aviso |
+| Usuário 2 | 30 | 5 | Sim | Nenhum | Processo rápido e mensagens claras |
+| Usuário 3 | 110 | 10 | Parcialmente | Não compreendeu imediatamente o funcionamento das advertências | Gostaria de explicações mais simples sobre os avisos |
+| Usuário 4 | 28 | 4 | Sim | Nenhum | IA identificou corretamente o conteúdo inadequado |
+| Usuário 5 | 35 | 5 | Sim | Nenhum | Mensagens de advertência e bloqueio fáceis de entender |
 
 ## Relatório dos testes de usabilidade 
 
