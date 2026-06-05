@@ -20,7 +20,7 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-06: Listar denúncias em mapa interativo
-|Registro de evidência |<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/22#issue-4412396188"> Visualizar Denúncias no Mapa</a></span>|
+|Registro de evidência |<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/36#issue-4597179194"> Visualizar Denúncias no Mapa</a></span>|
 
 | **Caso de Teste** 	| **CT05 – Funcionamento da tela Feed** 	|
 |:---:	|:---:	|
