@@ -24,7 +24,7 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 
 | **Caso de Teste** 	| **CT05 – Funcionamento da tela Feed** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico
+|	Requisito Associado 	| RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico,RF-14:Permitir reações de "Gostei" nas denúncias,RF-15:Permitir comentários nas denúncias.
 |Registro de evidência |<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/35#issue-4597144063"> Funcionamento da Tela Feed</a></span>|
 
 | **Caso de Teste** 	| **CT06 – Criar Denúncia** 	|
@@ -37,6 +37,10 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 |	Requisito Associado 	| RF-04:Gerenciar denúncias no perfil do usuário
 |Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/33#issue-4597105474"> Visualizar Postagens do Usuário</a></span>|
 
+| **Caso de Teste** 	| **CT08 – Visualizar Postagens do Usuário** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-04:Gerenciar denúncias no perfil do usuário
+|Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/33#issue-4597105474"> Visualizar Postagens do Usuário</a></span>|
 ## Relatório de testes de software
 
 Apresente e discuta detalhadamente os resultados obtidos nos testes realizados, destacando tanto os pontos fortes quanto as fragilidades identificadas na solução. Explique como os aspectos positivos contribuem para o desempenho e a usabilidade do sistema, e como os pontos fracos impactam sua eficácia.
