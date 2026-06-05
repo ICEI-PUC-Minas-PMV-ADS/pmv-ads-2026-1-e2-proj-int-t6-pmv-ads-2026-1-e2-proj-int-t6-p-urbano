@@ -45,7 +45,7 @@ Os casos de teste apresentados a seguir têm como objetivo validar as principais
 | Passos 	| - Acessar o sistema logado <br> - Ir té  Aba "Perfil" no canto superior direito <br> 
 |Critério de Êxito |O sistema deverá exibir:Nome do usuário,Mensagem de boas-vindas,Botão Logout,Seção “Suas postagens”,Botões:,“Editar Posts”,“Criar nova denúncia” e visualizar a área destinada à exibição das postagens.|
 
-| Caso de Teste | CT08 – Validar análise automática de denúncias por API |
+| Caso de Teste | CT08 – Validar análise automática de denúncias por Inteligência Artificial|
 |--------|--------|
 | Requisito Associado | RF-10: Analisar denúncias com Inteligência Artificial;<br>RF-11: Registrar advertências por conteúdo impróprio;<br>RF-12: Banir usuários após três advertências;<br>RF-13: Permitir denunciar publicações inadequadas |
 | Objetivo do Teste | Validar se o sistema analisa o título e a descrição da denúncia através de uma API utilizando Inteligência Artificial (IA), identificando palavras impróprias ou conteúdos que não estejam relacionados a problemas urbanos, registrando advertências ao usuário e aplicando banimento após três advertências. |
