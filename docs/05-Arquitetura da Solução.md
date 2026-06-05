@@ -13,7 +13,8 @@ As classes principais do sistema incluem Usuário, Categoria, Denúncia, Coment�
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-![Banco de dados](img/MER.jpeg)
+<img width="1600" height="931" alt="MER" src="https://github.com/user-attachments/assets/d865a625-0142-446d-b061-0a8a4abaaaad" />
+
 
 ## Projeto da Base de Dados
 
