@@ -37,7 +37,7 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 |	Requisito Associado 	| RF-04:Gerenciar denúncias no perfil do usuário
 |Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/33#issue-4597105474"> Visualizar Postagens do Usuário</a></span>|
 
-| **Caso de Teste** 	| **CT08 – Visualizar Postagens do Usuário** 	|
+| **Caso de Teste** 	| **CT08 – Validar análise automática de denúncias por Inteligência Artificial** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04:Gerenciar denúncias no perfil do usuário
 |Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/33#issue-4597105474"> Visualizar Postagens do Usuário</a></span>|
