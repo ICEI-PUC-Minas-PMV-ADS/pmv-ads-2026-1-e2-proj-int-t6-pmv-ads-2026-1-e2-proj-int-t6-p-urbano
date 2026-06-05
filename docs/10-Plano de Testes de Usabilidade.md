@@ -162,6 +162,33 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 - Os botões "Editar Posts" e "Criar nova denúncia" estão visíveis
 - As informações do usuário aparecem corretamente
 
+
+**Cenário 7-Análise de Denúncias com Inteligência Artificial**
+
+**Objetivo:** Avaliar o funcionamento da Inteligência Artificial na análise automática de denúncias.
+
+**Contexto:** O usuário deseja registrar uma denúncia. O sistema utiliza uma API com Inteligência Artificial (IA) para analisar o título e a descrição informados, verificando se o conteúdo está relacionado a problemas urbanos e se não contém palavras impróprias ou ofensivas.
+
+**Tarefa(s):** 
+- Acessar o sistema
+- Ir até a tela "Criar Denúncia"
+- Preencher os campos de título e descrição
+- Inserir conteúdo inadequado (palavras impróprias ou sem relação com problemas urbanos)
+- Clicar em "Enviar Denúncia"
+- Verificar a mensagem de advertência gerada pela IA
+- Repetir o processo até acumular três advertências
+- Tentar registrar uma nova denúncia após o terceiro aviso
+
+**Critério(s) de Sucesso(s):**
+- A Inteligência Artificial analisa corretamente o título e a descrição da denúncia
+- Conteúdos inadequados são identificados pela IA
+- O sistema exibe advertências ao usuário quando necessário
+- As advertências são registradas corretamente na conta do usuário
+- Após três advertências, o usuário é banido automaticamente
+- O usuário perde a permissão de criar novas denúncias após o banimento
+- As mensagens de advertência e bloqueio são exibidas de forma clara e compreensível ao usuário
+- A navegação e interação com a funcionalidade ocorrem sem dificuldades significativas para o usuário
+
 ## Métodos de coleta de dados
 
 Os dados coletados têm como objetivo analisar a experiência dos usuários ao utilizar a plataforma de registro e visualização de denúncias ambientais.
