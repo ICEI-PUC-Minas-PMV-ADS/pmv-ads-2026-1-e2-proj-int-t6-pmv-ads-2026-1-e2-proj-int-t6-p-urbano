@@ -25,7 +25,7 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT05 – Funcionamento da tela Feed** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico
-|Registro de evidência |<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/21#issue-4412384742"> Funcionamento da Tela Feed</a></span>|
+|Registro de evidência |<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/35#issue-4597144063"> Funcionamento da Tela Feed</a></span>|
 
 | **Caso de Teste** 	| **CT06 – Criar Denúncia** 	|
 |:---:	|:---:	|
