@@ -163,7 +163,7 @@ Critério de sucesso: Como identificar se a tarefa foi concluída corretamente, 
 - As informações do usuário aparecem corretamente
 
 
-**Cenário 7-Análise de Denúncias com Inteligência Artificial**
+**Cenário 8-Análise de Denúncias com Inteligência Artificial**
 
 **Objetivo:** Avaliar o funcionamento da Inteligência Artificial na análise automática de denúncias.
 
