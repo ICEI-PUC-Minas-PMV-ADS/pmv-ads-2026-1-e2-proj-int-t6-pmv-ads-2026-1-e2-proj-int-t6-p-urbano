@@ -30,7 +30,7 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT06 – Criar Denúncia** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04:Gerenciar denúncias, RF-05:Definir georreferência
-|Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/20#issue-4412346943"> Criar Denúncia</a></span>|
+|Registro de evidência | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2026-1-e2-proj-int-t6-pmv-ads-2026-1-e2-proj-int-t6-p-urbano/issues/34#issue-4597126292"> Criar Denúncia</a></span>|
 
 | **Caso de Teste** 	| **CT07 – Visualizar Postagens do Usuário** 	|
 |:---:	|:---:	|
