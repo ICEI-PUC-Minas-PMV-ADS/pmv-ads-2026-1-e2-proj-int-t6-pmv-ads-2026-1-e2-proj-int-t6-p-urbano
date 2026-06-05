@@ -28,7 +28,7 @@ Os casos de teste apresentados a seguir têm como objetivo validar as principais
 |Critério de Êxito |Denúncias exibidas corretamente na tela mapa. |
 |  	|  	|
 | Caso de Teste 	| **CT05 – Funcionamento da tela Feed**	|
-|Requisito Associado | RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico|
+|Requisito Associado | RF-07: Gerenciar status das denúncias com base nas interações dos usuários, RF-08:Filtrar denúncias por categoria, data ou localização, RF-09: Exibir denúncias em feed cronológico,RF-14:Permitir reações de "Gostei" nas denúncias,RF-15:Permitir comentários nas denúncias|
 | Objetivo do Teste 	| Exibir denúncias, permitir refinar a busca de denúncias, através de filtros e criar post.|
 | Passos 	| - Acessar a tela "Feed"<br>  - Selecionar o filtro que deseja "Tudo", "Categoria", "Data", "Região" <br> - Clicar em uma dessas opções para filtrar ou clicar em "Criar Post" |
 |Critério de Êxito |Exibir as informações filtradas e o botão criar novo post. |
@@ -44,6 +44,21 @@ Os casos de teste apresentados a seguir têm como objetivo validar as principais
 | Objetivo do Teste 	| Validar se o sistema exibe corretamente a tela “Suas postagens” após o login do usuário.|
 | Passos 	| - Acessar o sistema logado <br> - Ir té  Aba "Perfil" no canto superior direito <br> -
 |Critério de Êxito |O sistema deverá exibir:Nome do usuário,Mensagem de boas-vindas,Botão Logout,Seção “Suas postagens”,Botões:,“Editar Posts”,“Criar nova denúncia” e visualizar a área destinada à exibição das postagens.|
+
+| Caso de Teste 	| **CT08 – Analisar denúncias com Inteligência Artificial**	|
+|Requisito Associado | RF-04:Gerenciar denúncias no perfil do usuário, RF-11:Registrar advertências por conteúdo impróprio, RF-12:Banir usuários após três advertências,RF-13:Permitir denunciar publicações inadequadas |
+| Objetivo do Teste 	| Validar se o sistema utiliza Inteligência Artificial (IA), por meio de uma API integrada, para analisar automaticamente o título e a descrição das denúncias, identificando conteúdos impróprios ou não relacionados a problemas urbanos, aplicando advertências e banimentos quando necessário.
+Passos	- Acessar o sistema logado.
+- Acessar a tela de criação de denúncias.
+- Informar um título ou descrição contendo palavras impróprias, ofensivas ou conteúdo sem relação com problemas urbanos.
+- Clicar em "Enviar Denúncia".
+- Verificar se a Inteligência Artificial (IA) analisa automaticamente o conteúdo enviado através da API integrada.
+- Confirmar se o sistema exibe uma advertência ao usuário quando a IA identificar conteúdo inadequado.
+- Repetir o procedimento até que o usuário acumule três advertências.
+- Após a terceira advertência, tentar realizar uma nova denúncia.
+Critério de Êxito	O sistema deverá utilizar uma Inteligência Artificial (IA) integrada por API para analisar o título e a descrição das denúncias. Caso a IA identifique palavras impróprias, ofensivas ou conteúdos incompatíveis com o contexto de problemas urbanos, o sistema deverá registrar uma advertência e exibir uma mensagem informativa ao usuário. Ao atingir três advertências, o usuário deverá ser automaticamente banido, ficando impedido de criar novas denúncias, e o sistema deverá exibir uma mensagem informando o bloqueio de sua conta devido ao descumprimento das regras da plataforma.|
+| Passos 	| - Acessar o sistema logado <br> - Acessar a tela de criação de denúncias. <br> - Informar um título ou descrição contendo palavras impróprias, ofensivas ou conteúdo sem relação com problemas urbanos.<br> - Clicar em "Enviar Denúncia"<br> - Verificar se a Inteligência Artificial (IA) analisa automaticamente o conteúdo enviado através da API integrada.<br> - Confirmar se o sistema exibe uma advertência ao usuário quando a IA identificar conteúdo inadequado.<br> -Repetir o procedimento até que o usuário acumule três advertências.<br> - Após a terceira advertência, tentar realizar uma nova denúncia.
+|Critério de Êxito |O sistema deverá utilizar uma Inteligência Artificial (IA) integrada por API para analisar o título e a descrição das denúncias. Caso a IA identifique palavras impróprias, ofensivas ou conteúdos incompatíveis com o contexto de problemas urbanos, o sistema deverá registrar uma advertência e exibir uma mensagem informativa ao usuário. Ao atingir três advertências, o usuário deverá ser automaticamente banido, ficando impedido de criar novas denúncias, e o sistema deverá exibir uma mensagem informando o bloqueio de sua conta devido ao descumprimento das regras da plataforma.|
 
 
 
