@@ -1,0 +1,667 @@
+@model portal_urbano.Models.Usuario
+@{
+    Layout = "_PortalLayout";
+    ViewBag.Title = "Meu Perfil - Portal Urbano";
+    ViewBag.ActiveMenu = "profile";
+
+    var iniciais = string.IsNullOrWhiteSpace(Model.Nome)
+        ? "?"
+        : string.Concat(Model.Nome.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries)
+            .Take(2)
+            .Select(p => char.ToUpper(p[0])));
+
+    var criadoEm = Model.CriadoEm.HasValue
+        ? Model.CriadoEm.Value.ToLocalTime().ToString("dd/MM/yyyy")
+        : "—";
+
+    var denuncias = ViewBag.DenunciasCount as int? ?? 0;
+    var minhasDenuncias = ViewBag.MinhasDenuncias as List<portal_urbano.Models.PerfilDenunciaItem> ?? new();
+    var cidade = string.IsNullOrWhiteSpace(Model.Cidade) ? "Não informada" : Model.Cidade;
+    var bairro = string.IsNullOrWhiteSpace(Model.Bairro) ? "Não informado" : Model.Bairro;
+    var uf = string.IsNullOrWhiteSpace(Model.Uf) ? "—" : Model.Uf.ToUpperInvariant();
+    var localizacao = !string.IsNullOrWhiteSpace(Model.Cidade)
+        ? $"{Model.Cidade}{(string.IsNullOrWhiteSpace(Model.Bairro) ? "" : $", {Model.Bairro}")} - {uf}"
+        : "Localização não informada";
+}
+
+@section Styles {
+    <style>
+        .profile-wrap {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .page-header {
+            margin-bottom: 28px;
+        }
+
+        .page-header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .page-header p {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .profile-hero {
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0.18) 0%, rgba(15, 23, 42, 0.95) 55%);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 32px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-hero::after {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -10%;
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle, rgba(249, 115, 22, 0.25) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), #c2410c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 800;
+            color: #fff;
+            flex-shrink: 0;
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.35);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-info {
+            position: relative;
+            z-index: 1;
+            min-width: 0;
+        }
+
+        .hero-info h2 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            word-break: break-word;
+        }
+
+        .hero-info .email {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 12px;
+            word-break: break-all;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            background: rgba(34, 197, 94, 0.12);
+            color: #4ade80;
+            border: 1px solid rgba(34, 197, 94, 0.25);
+        }
+
+        .badge.warn {
+            background: rgba(239, 68, 68, 0.12);
+            color: #f87171;
+            border-color: rgba(239, 68, 68, 0.25);
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-card .value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .stat-card .label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .info-card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .info-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--text-light);
+        }
+
+        .info-grid {
+            display: grid;
+            gap: 14px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .info-row svg {
+            flex-shrink: 0;
+            color: var(--primary);
+            margin-top: 2px;
+        }
+
+        .info-row .meta label {
+            display: block;
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .info-row .meta span {
+            font-size: 15px;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #c2410c);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-light);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-danger {
+            background: rgba(239, 68, 68, 0.12);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-danger:hover {
+            background: rgba(239, 68, 68, 0.2);
+        }
+
+        .alert-success {
+            background: rgba(34, 197, 94, 0.12);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #4ade80;
+            padding: 14px 18px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .alert-error {
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
+            padding: 14px 18px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .denuncias-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+
+        .denuncias-header h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .denuncia-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .denuncia-item {
+            display: grid;
+            grid-template-columns: 96px 1fr auto;
+            gap: 16px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            align-items: start;
+        }
+
+        .denuncia-thumb {
+            width: 96px;
+            height: 96px;
+            border-radius: 12px;
+            object-fit: cover;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 12px;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .denuncia-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .denuncia-body h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0 0 6px;
+            word-break: break-word;
+        }
+
+        .denuncia-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .status-pill {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .status-pill.aberta {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+        }
+
+        .status-pill.lista-negra {
+            background: rgba(234, 179, 8, 0.15);
+            color: #facc15;
+        }
+
+        .status-pill.removida {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+        }
+
+        .cat-pill {
+            font-size: 12px;
+            color: var(--primary);
+            background: rgba(249, 115, 22, 0.1);
+            padding: 4px 10px;
+            border-radius: 100px;
+        }
+
+        .denuncia-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0 0 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .denuncia-stats {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .denuncia-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            min-width: 120px;
+        }
+
+        .btn-sm {
+            padding: 8px 12px;
+            font-size: 13px;
+            border-radius: 10px;
+        }
+
+        .empty-denuncias {
+            text-align: center;
+            padding: 32px 16px;
+            color: var(--text-muted);
+        }
+
+        .empty-denuncias p {
+            margin: 0 0 16px;
+        }
+
+        @@media (max-width: 720px) {
+            .denuncia-item {
+                grid-template-columns: 1fr;
+            }
+
+            .denuncia-thumb {
+                width: 100%;
+                height: 160px;
+            }
+
+            .denuncia-actions {
+                flex-direction: row;
+                flex-wrap: wrap;
+                min-width: 0;
+            }
+        }
+
+        @@media (max-width: 640px) {
+            .profile-hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            .stats-row {
+                grid-template-columns: 1fr;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+}
+
+<div class="profile-wrap">
+    <header class="page-header">
+        <h1>Meu perfil</h1>
+        <p>Gerencie suas informações e acompanhe sua participação na comunidade.</p>
+    </header>
+
+    @if (TempData["SenhaAlterada"] as bool? == true)
+    {
+        <div class="alert-success">Senha alterada com sucesso.</div>
+    }
+    @if (TempData["PerfilAtualizado"] as bool? == true)
+    {
+        <div class="alert-success">Perfil atualizado com sucesso.</div>
+    }
+    @if (TempData["DenunciaExcluida"] as bool? == true)
+    {
+        <div class="alert-success">Denúncia excluída com sucesso.</div>
+    }
+    @if (TempData["ErroDenuncia"] is string erroDenuncia)
+    {
+        <div class="alert-error">@erroDenuncia</div>
+    }
+
+    <section class="profile-hero">
+        <div class="avatar" aria-hidden="true">@iniciais</div>
+        <div class="hero-info">
+            <h2>@Model.Nome</h2>
+            <p class="email">@Model.Email</p>
+            <p class="email" style="margin-bottom:0;font-size:14px;">@localizacao</p>
+            @if (Model.Banido)
+            {
+                <span class="badge warn">Conta suspensa</span>
+            }
+            else
+            {
+                <span class="badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    Conta ativa
+                </span>
+            }
+        </div>
+    </section>
+
+    <div class="stats-row">
+        <div class="stat-card">
+            <div class="value">@denuncias</div>
+            <div class="label">Denúncias publicadas</div>
+        </div>
+        <div class="stat-card">
+            <div class="value">@Model.Avisos</div>
+            <div class="label">Avisos recebidos</div>
+        </div>
+        <div class="stat-card">
+            <div class="value">@criadoEm</div>
+            <div class="label">Membro desde</div>
+        </div>
+    </div>
+
+    <section class="info-card">
+        <h3>Dados da conta</h3>
+        <div class="info-grid">
+            <div class="info-row">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <div class="meta">
+                    <label>Nome completo</label>
+                    <span>@Model.Nome</span>
+                </div>
+            </div>
+            <div class="info-row">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"></path><path d="m22 6-10 7L2 6"></path></svg>
+                <div class="meta">
+                    <label>E-mail</label>
+                    <span>@Model.Email</span>
+                </div>
+            </div>
+            <div class="info-row">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div class="meta">
+                    <label>Cidade</label>
+                    <span>@cidade</span>
+                </div>
+            </div>
+            <div class="info-row">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                <div class="meta">
+                    <label>Bairro</label>
+                    <span>@bairro</span>
+                </div>
+            </div>
+            <div class="info-row">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon></svg>
+                <div class="meta">
+                    <label>Estado</label>
+                    <span>@uf</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-card">
+        <div class="denuncias-header">
+            <h3>Minhas denúncias</h3>
+            <a href="/Home/CriarDenuncia" class="btn btn-primary btn-sm">Nova denúncia</a>
+        </div>
+
+        @if (minhasDenuncias.Count == 0)
+        {
+            <div class="empty-denuncias">
+                <p>Você ainda não publicou nenhuma denúncia.</p>
+                <a href="/Home/CriarDenuncia" class="btn btn-primary">Criar primeira denúncia</a>
+            </div>
+        }
+        else
+        {
+            <div class="denuncia-list">
+                @foreach (var item in minhasDenuncias)
+                {
+                    var img = string.IsNullOrWhiteSpace(item.ImagemUrl)
+                        ? null
+                        : item.ImagemUrl.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).FirstOrDefault();
+                    var statusClass = item.Status switch
+                    {
+                        "Lista Negra" => "lista-negra",
+                        "Removida" => "removida",
+                        _ => "aberta"
+                    };
+                    var dataLocal = item.CriadoEm.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
+
+                    <article class="denuncia-item">
+                        <div class="denuncia-thumb">
+                            @if (!string.IsNullOrEmpty(img))
+                            {
+                                <img src="@img" alt="Imagem da denúncia" loading="lazy" />
+                            }
+                            else
+                            {
+                                <span>Sem imagem</span>
+                            }
+                        </div>
+                        <div class="denuncia-body">
+                            <h4>@item.Titulo</h4>
+                            <div class="denuncia-meta">
+                                <span class="status-pill @statusClass">@item.Status</span>
+                                <span class="cat-pill">@item.Categoria</span>
+                                @if (item.Anonima)
+                                {
+                                    <span class="cat-pill" style="color:#94a3b8;background:rgba(255,255,255,0.06);">Anônima</span>
+                                }
+                            </div>
+                            @if (!string.IsNullOrWhiteSpace(item.Descricao))
+                            {
+                                <p class="denuncia-desc">@item.Descricao</p>
+                            }
+                            <p class="denuncia-stats">
+                                @dataLocal
+                                @if (!string.IsNullOrWhiteSpace(item.Endereco) && item.Endereco != "- /")
+                                {
+                                    <span> · @item.Endereco</span>
+                                }
+                                <br />
+                                @item.TotalLikes curtida@(item.TotalLikes == 1 ? "" : "s") · @item.TotalComentarios comentário@(item.TotalComentarios == 1 ? "" : "s")
+                            </p>
+                        </div>
+                        <div class="denuncia-actions">
+                            <a href="/Home/Feed" class="btn btn-ghost btn-sm">Ver no feed</a>
+                            <a href="/Home/Index" class="btn btn-ghost btn-sm">Ver no mapa</a>
+                            <form method="post" asp-action="ExcluirDenuncia" asp-route-id="@item.IdDenuncia" onsubmit="return confirm('Excluir esta denúncia? Esta ação não pode ser desfeita.');">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-danger btn-sm" style="width:100%;">Excluir</button>
+                            </form>
+                        </div>
+                    </article>
+                }
+            </div>
+        }
+    </section>
+
+    <div class="actions">
+        <a href="/Account/EditProfile" class="btn btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            Editar perfil
+        </a>
+        <a href="/Home/Feed" class="btn btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Voltar ao feed
+        </a>
+        <a href="/Account/ChangePassword" class="btn btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Alterar senha
+        </a>
+        <form method="post" asp-action="Logout" style="display:inline;margin:0;">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-danger" id="btnLogout">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                <span id="btnLogoutText">Sair da conta</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const btnLogout = document.getElementById('btnLogout');
+        const btnLogoutText = document.getElementById('btnLogoutText');
+        btnLogout?.closest('form')?.addEventListener('submit', () => {
+            btnLogout.disabled = true;
+            btnLogoutText.textContent = 'Saindo...';
+        });
+    </script>
+}

@@ -1,0 +1,58 @@
+@{
+    var id = ViewData["UfSelectId"] as string ?? "uf";
+    var name = ViewData["UfSelectName"] as string ?? "uf";
+    var selected = (ViewData["UfSelected"] as string ?? "").ToUpperInvariant();
+    var cssClass = ViewData["UfSelectClass"] as string ?? "input select-uf";
+    var estados = new[] { "AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO" };
+}
+<style>
+    select.select-uf {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color-scheme: dark;
+        background-color: #061425;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 32px;
+        cursor: pointer;
+        color: #f8fafc;
+    }
+
+    select.select-uf option {
+        background-color: #0f172a;
+        color: #f8fafc;
+    }
+
+    select.select-uf option:checked {
+        background-color: #f97316;
+        color: #071027;
+    }
+
+    select.select-uf:focus {
+        outline: none;
+        border-color: #f97316;
+    }
+</style>
+<select id="@id" name="@name" class="@cssClass" required>
+    @if (string.IsNullOrEmpty(selected))
+    {
+        <option value="" disabled selected>UF</option>
+    }
+    else
+    {
+        <option value="" disabled>UF</option>
+    }
+    @foreach (var uf in estados)
+    {
+        if (selected == uf)
+        {
+            <option value="@uf" selected>@uf</option>
+        }
+        else
+        {
+            <option value="@uf">@uf</option>
+        }
+    }
+</select>

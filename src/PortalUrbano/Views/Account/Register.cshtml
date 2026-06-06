@@ -1,0 +1,137 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Criar Conta - Portal Urbano</title>
+    <style>
+        :root{--bg:#071027;--panel:#061425;--accent:#f97316;--muted:#94a3b8;--input-bg:transparent}
+        *{box-sizing:border-box}
+        body,html{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg)}
+        .page{display:flex;height:100vh;min-height:100vh}
+        .left{flex:0 0 50%;width:50%;background:url('/images/banner.png') center center/cover no-repeat;position:relative;display:flex;align-items:flex-start;justify-content:flex-start;min-height:100vh}
+        .left::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(2,6,23,0.3), rgba(2,6,23,0.6));z-index:1}
+        .right{flex:0 0 50%;width:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:48px}
+        .card{width:100%;max-width:460px;background:var(--panel);padding:32px;border-radius:12px;box-shadow:none;display:flex;flex-direction:column;gap:12px}
+        .brand-header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+        .brand-header img{width:48px;height:auto;display:block}
+        .brand-header .site-name{color:var(--accent);font-size:34px;font-weight:800;line-height:1}
+        .title{color:var(--accent);font-size:34px;font-weight:800;margin:0 0 8px 0}
+        label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px}
+        .input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:#061425;color:#fff;margin-bottom:14px;height:48px;font-size:15px}
+        .input::placeholder{color:rgba(255,255,255,0.3)}
+        select.input{color-scheme:dark}
+        .row-2 select.input{margin-bottom:0}
+        .actions{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+        .btn-primary{background:var(--accent);color:#071027;border:none;padding:12px;border-radius:10px;font-weight:800;cursor:pointer;font-size:15px}
+        .forgot{color:#3ea0ff;text-decoration:none;font-size:13px}
+        .footer-links{text-align:center;margin-top:18px;color:var(--muted);font-size:14px}
+        .footer-links a{color:#3ea0ff;text-decoration:none}
+        .error-box{background:#4b1414;color:#ffdede;padding:10px;border-radius:8px;margin-bottom:12px}
+        .field-wrap{position:relative;margin-bottom:14px}
+        .field-wrap .input{margin-bottom:0}
+        .toggle-pass{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.04);border:none;color:var(--muted);cursor:pointer;width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;z-index:3}
+        .row-2{display:grid;grid-template-columns:1fr 88px;gap:12px;margin-bottom:14px}
+        .row-2 .input{margin-bottom:0}
+        .section-label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em;margin:8px 0 10px}
+
+        @@media(max-width:900px){
+            .left{display:none!important}
+            .page{flex-direction:column;min-height:100vh}
+            .right{width:100%;padding:24px;height:100vh;display:flex;align-items:center;justify-content:center}
+            .card{max-width:100%;padding:20px}
+            .brand-header .site-name{font-size:22px}
+            .title{font-size:22px}
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="left"><div class="brand"><!-- banner --></div></div>
+        <div class="right">
+            <div class="card">
+                <div class="brand-header">
+                    <img src="~/images/logo.png" alt="Portal Urbano" />
+                    <div class="site-name">Portal Urbano</div>
+                </div>
+
+                <div class="title">Criar Conta</div>
+
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="error-box">@foreach (var e in ViewData.ModelState.Values.SelectMany(v=>v.Errors)) {<div>@e.ErrorMessage</div>}</div>
+                }
+
+                <form id="registerForm" method="post" asp-action="Register">
+                    @Html.AntiForgeryToken()
+
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input id="nome" name="nome" type="text" class="input" placeholder="Seu nome" required />
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" class="input" placeholder="usuario@gmail.com" required />
+                    </div>
+
+                    <div class="section-label">Onde você mora</div>
+
+                    <div class="row-2">
+                        <div>
+                            <label for="cidade">Cidade</label>
+                            <input id="cidade" name="cidade" type="text" class="input" placeholder="Ex: Belo Horizonte" required />
+                        </div>
+                        <div>
+                            <label for="uf">Estado</label>
+                            @{ ViewData["UfSelectId"] = "uf"; ViewData["UfSelectName"] = "uf"; ViewData["UfSelected"] = ""; }
+                            @await Html.PartialAsync("_UfSelect")
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="bairro">Bairro <span style="color:var(--muted);font-weight:400">(opcional)</span></label>
+                        <input id="bairro" name="bairro" type="text" class="input" placeholder="Ex: Centro" />
+                    </div>
+
+                    <div>
+                        <label for="senha">Senha</label>
+                        <div class="field-wrap">
+                            <input id="senha" name="senha" type="password" class="input" placeholder="Crie uma senha" required minlength="6" />
+                            <button type="button" class="toggle-pass" id="togglePass" aria-label="Mostrar senha">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button id="btnRegister" type="submit" class="btn-primary"><span id="btnRegisterText">Registrar</span></button>
+                    </div>
+
+                    <div class="footer-links">Já tem conta? <a href="@Url.Action("Login","Account")">Entrar</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const registerForm = document.getElementById('registerForm');
+        const btnR = document.getElementById('btnRegister');
+        const btnRText = document.getElementById('btnRegisterText');
+        registerForm.addEventListener('submit', () => {
+            btnR.disabled = true;
+            btnRText.innerText = 'Carregando...';
+        });
+
+        const toggle = document.getElementById('togglePass');
+        const senha = document.getElementById('senha');
+        toggle.addEventListener('click', () => {
+            if (senha.type === 'password') { senha.type = 'text'; } else { senha.type = 'password'; }
+        });
+    </script>
+</body>
+</html>

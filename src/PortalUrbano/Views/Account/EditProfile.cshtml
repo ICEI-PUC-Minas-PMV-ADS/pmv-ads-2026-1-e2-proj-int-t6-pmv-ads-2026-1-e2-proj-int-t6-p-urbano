@@ -1,0 +1,149 @@
+@model portal_urbano.Models.Usuario
+@{
+    Layout = "_PortalLayout";
+    ViewBag.Title = "Editar perfil - Portal Urbano";
+    ViewBag.ActiveMenu = "profile";
+}
+
+@section Styles {
+    <style>
+        .form-wrap { max-width: 520px; margin: 0 auto; }
+        .page-header { margin-bottom: 28px; }
+        .page-header h1 { font-size: 32px; font-weight: 800; margin-bottom: 6px; }
+        .page-header p { color: var(--text-muted); font-size: 15px; }
+        .form-card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px;
+        }
+        .form-card label {
+            display: block;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .form-card .input {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-light);
+            font-size: 15px;
+            margin-bottom: 18px;
+            height: 48px;
+        }
+        .row-2 {
+            display: grid;
+            grid-template-columns: 1fr 88px;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+        .row-2 .input { margin-bottom: 0; }
+        select.select-uf,
+        select.input {
+            color-scheme: dark;
+            background-color: rgba(255, 255, 255, 0.03);
+            color: var(--text-light);
+        }
+        select.select-uf option,
+        select.input option {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .email-readonly {
+            padding: 12px 14px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .error-box {
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
+            padding: 12px 14px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+        .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #c2410c);
+            color: #fff;
+        }
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-light);
+            border: 1px solid var(--border-color);
+        }
+    </style>
+}
+
+<div class="form-wrap">
+    <header class="page-header">
+        <h1>Editar perfil</h1>
+        <p>Atualize seu nome e localização na comunidade.</p>
+    </header>
+
+    <div class="form-card">
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="error-box">
+                @foreach (var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <div>@e.ErrorMessage</div>
+                }
+            </div>
+        }
+
+        <form method="post" asp-action="EditProfile">
+            @Html.AntiForgeryToken()
+
+            <label>Nome</label>
+            <input name="nome" type="text" class="input" value="@Model.Nome" required />
+
+            <label>E-mail</label>
+            <div class="email-readonly">@Model.Email</div>
+
+            <div class="row-2">
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" name="cidade" type="text" class="input" value="@Model.Cidade" required />
+                </div>
+                <div>
+                    <label for="uf">Estado</label>
+                    @{
+                        ViewData["UfSelectId"] = "uf";
+                        ViewData["UfSelectName"] = "uf";
+                        ViewData["UfSelected"] = Model.Uf ?? "";
+                    }
+                    @await Html.PartialAsync("_UfSelect")
+                </div>
+            </div>
+
+            <label for="bairro">Bairro <span style="font-weight:400;color:var(--text-muted)">(opcional)</span></label>
+            <input id="bairro" name="bairro" type="text" class="input" value="@Model.Bairro" />
+
+            <div class="actions">
+                <button type="submit" class="btn btn-primary">Salvar alterações</button>
+                <a href="/Account/Profile" class="btn btn-ghost">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
