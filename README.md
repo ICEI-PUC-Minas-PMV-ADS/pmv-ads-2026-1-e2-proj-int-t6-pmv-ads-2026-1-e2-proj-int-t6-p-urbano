@@ -18,7 +18,7 @@ A aplicação conta com autenticação de usuários, georreferenciamento de den�
 ## Orientador
 * Bernardo Jeunon de Alencar
 
-## Instruções de Instalação, Execução e Acesso
+## Instruções de Execução e Acesso
 
 **Acesso rápido (produção)**
 * URL da aplicação: https://portalurbano.onrender.com
