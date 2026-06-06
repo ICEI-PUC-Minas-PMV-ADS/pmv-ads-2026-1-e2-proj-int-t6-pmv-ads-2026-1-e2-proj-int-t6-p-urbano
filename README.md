@@ -1,15 +1,13 @@
 # Portal Urbano
-
 `Analise e Desenvolvimento de Sistemas- PUC Minas`
-
 `Desenvolvimento de uma Aplicação Interativa`
-
 `1° Semestre/ 2026`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Portal Urbano é uma plataforma web colaborativa que permite aos cidadãos registrar e acompanhar denúncias sobre problemas urbanos, como buracos, iluminação, descarte irregular de lixo e outros. O sistema conecta moradores à realidade da sua cidade, promovendo engajamento cívico por meio de um feed de denúncias com mapa interativo, reações e comentários.
+
+A aplicação conta com autenticação de usuários, georreferenciamento de denúncias, moderação automática por Inteligência Artificial e um sistema de advertências para garantir a qualidade do conteúdo publicado. Foi desenvolvida com ASP.NET Core MVC e está hospedada na plataforma Render.
 
 ## Integrantes
-
 * Ana Luísa Gonçalves de Oliveira
 * Maria Carolina Passos Resende
 * Marianna Flaviane Teodoro Farias
@@ -18,22 +16,23 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Vitor Lucas Matias de Souza
 
 ## Orientador
-
 * Bernardo Jeunon de Alencar
 
 ## Instruções de Instalação, Execução e Acesso
 
 **Acesso rápido (produção)**
-* URL da aplicação: https://seu-dominio.com/caminho
-* Status: online / instável / em manutenção (atualize conforme o caso)
-* Ambiente: produção / homologação
+* URL da aplicação: https://portalurbano.onrender.com
+* Status: online
+* Ambiente: produção
 
-**Usuário(s) de teste (se houver):**
-* Login: usuario_teste
-* Senha: senha_teste
+> ⚠️ O sistema está hospedado no plano gratuito do Render. Na primeira abertura, pode demorar até 1 minuto para carregar.
+
+**Para criar uma conta:**
+1. Acesse o link acima e clique em **"Crie a sua conta"**
+2. Preencha nome, e-mail, cidade, estado, bairro (opcional) e senha
+3. Clique em **"Registrar"** e faça login
 
 # Documentação
-
 <ol>
 <li><a href="docs/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
 <li><a href="docs/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
@@ -51,9 +50,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 </ol>
 
 # Código
-
 <li><a href="src/README.md"> Código Fonte</a></li>
 
 # Apresentação
-
 <li><a href="docs/12-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
