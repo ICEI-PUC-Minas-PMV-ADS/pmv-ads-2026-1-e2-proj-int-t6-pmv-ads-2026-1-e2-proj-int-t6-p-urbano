@@ -10,7 +10,7 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT02 – Login do Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - Fazer login |
-|Registro de evidência | [Fazer login](https://github.com/user-attachments/assets/d1d2aa52-1dfe-40e6-96a1-686b910d9a65)  |   
+|Registro de evidência | [Fazer login](https://github.com/user-attachments/assets/8ac4ccb9-1635-4591-9aa3-19d99d86c171)  |   
 
 | **Caso de Teste** 	| **CT03 – Recuperar Senha** 	|
 |:---:	|:---:	|
