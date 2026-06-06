@@ -15,7 +15,7 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 | **Caso de Teste** 	| **CT03 – Recuperar Senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-03 - Recuperar senha por e-mail |
-|Registro de evidência | [Recuperar senha por e-mail](https://github.com/user-attachments/assets/a5b49c55-e233-4399-beab-073e031a51bc)  | 
+|Registro de evidência | [Recuperar senha por e-mail](https://github.com/user-attachments/assets/cb10c979-a90a-4f66-a9ab-a17bb523d714)  | 
 
 | **Caso de Teste** 	| **CT04 – Visualizar denúncias no Mapa** 	|
 |:---:	|:---:	|
