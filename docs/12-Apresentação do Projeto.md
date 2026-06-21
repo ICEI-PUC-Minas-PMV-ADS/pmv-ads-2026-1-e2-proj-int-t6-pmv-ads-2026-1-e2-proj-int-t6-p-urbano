@@ -22,14 +22,15 @@ Conjunto de Slides (Estrutura) - Etapa 01
 
 Conjunto de Slides (Estrutura) - Etapa 05
 
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/d23455e7-fff1-4cdc-8fd4-a4dc96b51eb5" />
-<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/0510ca56-56cf-4a36-af46-3094e46c4cf4" />
-<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/0e167cfb-5eb3-47ac-9488-9dcc0707c98e" />
-<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/1d2a3095-c911-4c21-bafe-cea018f6111f" />
-<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/1235a79b-33e3-403c-b42b-a7525ef4933c" />
-<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/20cedbcc-a5b3-4332-9d5f-de2c865518fa" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/4056f3bf-b7ea-4aa2-b937-3e5c26676e91" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/e5944fb4-7df7-42f5-8e78-e783038c41e9" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/36fe35dd-12e8-443e-8118-bad645903999" />
 
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/9acc3b65-b05f-4995-aa63-26fc6988c496" />
 
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/b392fc1e-67a5-40e0-88f1-603fb12c268a" />
+
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/d34b4c8a-82ad-4b0c-af40-0261776cf949" />
 
 ## Vídeo de apresentação - Etapa 01
 
