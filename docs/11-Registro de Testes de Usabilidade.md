@@ -93,8 +93,6 @@ Os testes de usabilidade realizados permitiram avaliar a eficiência, navegabili
 | Usuário 4 | 28 | 4 | Sim | Nenhum | IA identificou corretamente o conteúdo inadequado |
 | Usuário 5 | 35 | 5 | Sim | Nenhum | Mensagens de advertência e bloqueio fáceis de entender |
 
-## Relatório dos testes de usabilidade 
-
 # Relatório de Testes de Software – Portal Urbano
 
 ## Introdução
