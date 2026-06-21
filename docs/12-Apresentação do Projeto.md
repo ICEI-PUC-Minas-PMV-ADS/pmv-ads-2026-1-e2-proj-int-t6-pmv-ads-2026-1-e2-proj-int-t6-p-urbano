@@ -40,7 +40,11 @@ https://github.com/user-attachments/assets/ba4be4f0-b898-410c-a8aa-f4020f2bcef1
 
 Inclua aqui o vídeo de APRESENTAÇÃO FINAL do projeto produzido na Etapa 05.
 
-### Orientações para Produção do Vídeo Pitch (Etapa 05)
+###  Vídeo Pitch - Portal Urbano 
+
+https://github.com/user-attachments/assets/dd038a60-caba-438e-909b-dd0dbf55188b
+
+
 
 
 https://github.com/user-attachments/assets/dbc49006-f8c5-4ead-b0a8-cc4e8e840f71
