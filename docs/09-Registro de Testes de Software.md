@@ -42,7 +42,6 @@ Os testes realizados na aplicação tiveram como objetivo validar o funcionament
 |	Requisito Associado 	| RF-04:Gerenciar denúncias no perfil do usuário
 |Registro de evidência | <a href=""> Validar análise automática de denúncias por Inteligência Artificial</a></span>|
 
-## Relatório de testes de software
 # Relatório de Testes de Software
 
 ## Resultados dos Testes Realizados
