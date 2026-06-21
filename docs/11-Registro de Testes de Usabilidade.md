@@ -95,23 +95,215 @@ Os testes de usabilidade realizados permitiram avaliar a eficiência, navegabili
 
 ## Relatório dos testes de usabilidade 
 
-O relatório de testes de usabilidade deve ser um documento claro e estruturado, contendo análises dos testes realizados, identificação de problemas, propostas de correção, melhorias e sugestões para a evolução do sistema. 
-Ele servirá como base para refinamentos no sistema e futuras iterações de testes.
-Deve incluir: 
-- Taxa de sucesso por cenário
-- Tempo médio para completar cada cenário
-- Número médio de erros cometidos por tarefa
-- Taxa de abandono (usuários que não conseguiram concluir a tarefa do cenário)
-- Feedback qualitativo
-  
-A partir disso, organize os resultados e identifique padrões:
-- Principais dificuldades enfrentadas pelos usuários.
-- Quais tarefas foram concluídas sem problemas e quais apresentaram falhas.
-- Sugestões de melhorias para interface, navegação e acessibilidade.
+# Relatório de Testes de Software – Portal Urbano
 
-Dica: Agrupe problemas em níveis de prioridade:
-- Crítico: Impede o uso do sistema.
-- Moderado: Dificulta a experiência, mas não impede o uso.
-- Leve: Pode ser melhorado, mas não compromete a usabilidade.
+## Introdução
 
+Este relatório apresenta os resultados obtidos durante os testes realizados no **Portal Urbano**, sistema desenvolvido com o objetivo de permitir que cidadãos registrem, acompanhem e interajam com denúncias relacionadas a problemas urbanos.
+
+Os testes foram executados para validar os requisitos funcionais da aplicação, avaliar a experiência do usuário e identificar oportunidades de melhoria para futuras versões do sistema.
+
+---
+
+## Resultados dos Testes Realizados
+
+Os testes contemplaram as principais funcionalidades da plataforma, incluindo:
+
+- Cadastro de usuários;
+- Autenticação (Login);
+- Recuperação de senha;
+- Publicação de denúncias;
+- Visualização de denúncias no mapa;
+- Interação com o feed;
+- Moderação automática utilizando Inteligência Artificial.
+
+De forma geral, os resultados foram positivos, demonstrando que os requisitos funcionais definidos para o projeto foram implementados corretamente e atendem às necessidades dos usuários.
+
+---
+
+## Pontos Fortes Identificados
+
+### Cadastro e Autenticação
+
+Os testes demonstraram que os usuários conseguem realizar cadastro, login e recuperação de senha de maneira simples e intuitiva.
+
+#### Benefícios observados
+
+- Processo de cadastro simplificado;
+- Facilidade de acesso ao sistema;
+- Recuperação de senha funcional;
+- Boa experiência para novos usuários.
+
+---
+
+### Registro de Denúncias
+
+A funcionalidade de criação de denúncias apresentou comportamento satisfatório durante os testes. Os usuários conseguem informar título, descrição, categoria, localização e anexar imagens para complementar as informações registradas.
+
+#### Benefícios observados
+
+- Facilidade para registrar ocorrências;
+- Possibilidade de anexar evidências;
+- Interface intuitiva;
+- Opção de denúncia anônima.
+
+---
+
+### Visualização no Mapa
+
+O mapa interativo permite a localização geográfica das denúncias cadastradas, facilitando a identificação dos problemas urbanos em diferentes regiões.
+
+#### Benefícios observados
+
+- Melhor visualização das ocorrências;
+- Facilidade para localizar problemas próximos;
+- Maior transparência das informações.
+
+---
+
+### Feed de Denúncias
+
+O feed permite que os usuários acompanhem as denúncias publicadas pela comunidade de forma organizada e dinâmica.
+
+#### Benefícios observados
+
+- Maior engajamento dos usuários;
+- Navegação intuitiva;
+- Facilidade de busca por informações;
+- Organização cronológica das publicações.
+
+---
+
+### Moderação por Inteligência Artificial
+
+A funcionalidade de análise automática das denúncias contribui para a qualidade do conteúdo publicado na plataforma.
+
+#### Benefícios observados
+
+- Redução de conteúdo inadequado;
+- Identificação automática de linguagem ofensiva;
+- Apoio à moderação da plataforma;
+- Maior confiabilidade das informações.
+
+---
+
+## Casos de Teste Executados
+
+| ID | Caso de Teste | Resultado |
+|----|--------------|------------|
+| CT01 | Cadastro de Usuário | Aprovado |
+| CT02 | Login de Usuário | Aprovado |
+| CT03 | Recuperação de Senha | Aprovado |
+| CT04 | Visualização do Mapa | Aprovado |
+| CT05 | Visualização do Feed | Aprovado |
+| CT06 | Cadastro de Denúncia | Aprovado |
+| CT07 | Upload de Imagens | Aprovado |
+| CT08 | Moderação por IA | Aprovado |
+| CT09 | Denúncia Anônima | Aprovado |
+| CT10 | Filtro de Denúncias | Aprovado |
+
+---
+
+## Falhas e Fragilidades Identificadas
+
+Apesar dos resultados positivos, os testes permitiram identificar alguns pontos que podem ser aprimorados.
+
+### Mensagens de Validação
+
+Em alguns formulários, as mensagens de erro não fornecem informações suficientemente detalhadas para orientar o usuário sobre como corrigir o problema.
+
+#### Impactos
+
+- Dificuldade na correção dos erros;
+- Aumento do tempo de preenchimento dos formulários;
+- Possível abandono da operação pelo usuário.
+
+---
+
+### Dependência de Serviços Externos
+
+As funcionalidades relacionadas ao envio de e-mails e à Inteligência Artificial dependem de APIs externas.
+
+#### Impactos
+
+- Possíveis indisponibilidades temporárias;
+- Lentidão em momentos de instabilidade;
+- Dependência de terceiros para algumas funcionalidades.
+
+---
+
+### Desempenho com Grande Volume de Dados
+
+Durante simulações com maior quantidade de registros, observou-se a necessidade de otimizar consultas e carregamento de informações.
+
+#### Impactos
+
+- Lentidão no carregamento do feed;
+- Aumento do tempo de resposta;
+- Redução da experiência do usuário.
+
+---
+
+### Acessibilidade
+
+Foram identificadas oportunidades de melhoria relacionadas à acessibilidade da aplicação.
+
+#### Impactos
+
+- Limitações para usuários com deficiência visual;
+- Dificuldades na navegação por teclado;
+- Necessidade de adequação às boas práticas de acessibilidade.
+
+---
+
+## Estratégias de Correção e Melhorias Futuras
+
+Com base nos resultados obtidos, foram definidas ações para evolução da plataforma.
+
+### Melhorias na Interface
+
+- Implementação de mensagens de erro mais claras;
+- Destaque visual para campos obrigatórios;
+- Feedback visual após operações realizadas com sucesso;
+- Melhor organização dos formulários.
+
+### Melhorias de Desempenho
+
+- Implementação de paginação no feed;
+- Otimização das consultas ao banco de dados;
+- Utilização de carregamento assíncrono;
+- Aplicação de cache para dados frequentemente acessados.
+
+### Melhorias na Inteligência Artificial
+
+- Aperfeiçoamento dos critérios de análise;
+- Redução de falsos positivos;
+- Ampliação da base de treinamento do modelo;
+- Maior precisão na identificação de conteúdos inadequados.
+
+### Melhorias de Segurança
+
+- Reforço das validações de entrada;
+- Auditoria de operações críticas;
+- Monitoramento de atividades suspeitas;
+- Fortalecimento dos mecanismos de autenticação.
+
+### Melhorias de Acessibilidade
+
+- Adequação às diretrizes WCAG;
+- Melhor contraste visual;
+- Compatibilidade com leitores de tela;
+- Navegação completa por teclado.
+
+---
+
+## Conclusão
+
+Os testes realizados demonstraram que o Portal Urbano atende aos requisitos funcionais estabelecidos para o projeto, oferecendo aos cidadãos uma plataforma moderna para registro e acompanhamento de problemas urbanos.
+
+As funcionalidades de mapa interativo, feed de denúncias e moderação por Inteligência Artificial representam os principais diferenciais da solução, contribuindo para aumentar a participação da população e melhorar a qualidade das informações disponibilizadas.
+
+Embora tenham sido identificadas algumas oportunidades de melhoria relacionadas à usabilidade, desempenho, acessibilidade e dependência de serviços externos, essas questões não comprometem o funcionamento geral da aplicação e servirão como base para as próximas etapas de evolução do sistema.
+
+Dessa forma, conclui-se que os testes foram fundamentais para validar a qualidade da solução desenvolvida e fornecer direcionamentos importantes para o aprimoramento contínuo do Portal Urbano.
 
