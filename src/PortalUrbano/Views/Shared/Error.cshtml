@@ -1,0 +1,32 @@
+﻿@model ErrorViewModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Erro";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erro - Portal Urbano</title>
+    <style>
+        body { font-family: Inter, system-ui, sans-serif; background: #020617; color: #f8fafc; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+        .card { max-width: 520px; background: #111827; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px; }
+        h1 { color: #f87171; margin: 0 0 8px; font-size: 24px; }
+        p { color: #94a3b8; line-height: 1.6; }
+        code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; }
+        a { color: #f97316; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Ocorreu um erro</h1>
+        <p>Nao foi possivel processar sua solicitacao.</p>
+        @if (Model.ShowRequestId)
+        {
+            <p><strong>Request ID:</strong> <code>@Model.RequestId</code></p>
+        }
+        <p><a href="/Home/Feed">Voltar ao feed</a></p>
+    </div>
+</body>
+</html>

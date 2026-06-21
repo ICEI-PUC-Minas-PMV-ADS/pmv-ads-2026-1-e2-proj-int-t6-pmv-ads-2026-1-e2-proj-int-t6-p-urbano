@@ -1,0 +1,42 @@
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using System.Security.Claims
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Urbano</title>
+</head>
+<body>
+    <header>
+        <nav style="display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid rgba(255,255,255,0.02);background:rgba(2,6,23,0.8);">
+            <a href="/Home/Feed" style="color:#fff;text-decoration:none;font-weight:600;">Feed</a>
+
+            <div style="margin-left:auto;display:flex;align-items:center;gap:12px;">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a href="/Account/Profile" style="color:#fff;text-decoration:none;font-weight:600;">@User.Identity.Name</a>
+                    <form method="post" asp-controller="Account" asp-action="Logout" style="display:inline;margin:0;">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" style="background:transparent;border:none;color:#f97316;cursor:pointer;font-weight:600;">Sair</button>
+                    </form>
+                }
+                else
+                {
+                    <a href="/Account/Login" style="color:#fff;text-decoration:none;font-weight:600;">Entrar</a>
+                    <a href="/Account/Register" style="color:#f97316;text-decoration:none;font-weight:600;">Registrar</a>
+                }
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>Portal Urbano</p>
+    </footer>
+</body>
+</html>
